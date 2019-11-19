@@ -1,0 +1,52 @@
+# depslib dependency file v1.0
+1574068947 source:/home/mithirsan/Desktop/pMinaria/src/model/Block.cpp
+	"model/Block.h"
+	<sstream>
+
+1574020150 /home/mithirsan/Desktop/pMinaria/include/model/Block.h
+	<string>
+	<vector>
+
+1574068963 source:/home/mithirsan/Desktop/pMinaria/src/model/BlockDiamond.cpp
+	"model/BlockDiamond.h"
+
+1573557476 /home/mithirsan/Desktop/pMinaria/include/model/BlockDiamond.h
+	"Block.h"
+
+1574068970 source:/home/mithirsan/Desktop/pMinaria/src/model/BlockEmerald.cpp
+	"model/BlockEmerald.h"
+
+1574020120 /home/mithirsan/Desktop/pMinaria/include/model/BlockEmerald.h
+	"Block.h"
+
+1574068977 source:/home/mithirsan/Desktop/pMinaria/src/model/BlockGold.cpp
+	"model/BlockGold.h"
+
+1573557502 /home/mithirsan/Desktop/pMinaria/include/model/BlockGold.h
+	"Block.h"
+
+1574068958 source:/home/mithirsan/Desktop/pMinaria/src/model/BlockDirt.cpp
+	"model/BlockDirt.h"
+
+1574069006 /home/mithirsan/Desktop/pMinaria/include/model/BlockDirt.h
+	"Block.h"
+
+1574069039 source:/home/mithirsan/Desktop/pMinaria/src/model/BlockIron.cpp
+	"model/BlockIron.h"
+
+1574023036 /home/mithirsan/Desktop/pMinaria/include/model/BlockIron.h
+	"Block.h"
+
+1574069067 source:/home/mithirsan/Desktop/pMinaria/src/model/Enemy.cpp
+	"model/Enemy.h"
+
+1573937804 /home/mithirsan/Desktop/pMinaria/include/model/Enemy.h
+	"Entity.h"
+
+1573998604 /home/mithirsan/Desktop/pMinaria/include/model/Entity.h
+	"Block.h"
+	<iostream>
+
+1574069073 source:/home/mithirsan/Desktop/pMinaria/src/model/Entity.cpp
+	"model/Entity.h"
+
