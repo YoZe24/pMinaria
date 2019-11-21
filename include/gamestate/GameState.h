@@ -1,13 +1,13 @@
 #ifndef GAMESTATE_H
 #define GAMESTATE_H
 
+#include "Game.h"
+class Game;
 
 class GameState
 {
     public:
-        GameState();
-        virtual ~GameState();
-        GameState(const GameState& other);
+        Game* game;
 
         virtual void draw (const float dt) = 0;
         virtual void update(const float dt)= 0;

@@ -5,7 +5,7 @@
 #include <vector>
 
 enum EnumBlock {
-    VOID = -1,DIRT, STONE, IRON, GOLD, DIAMOND,EMERALD,LAVA
+    VOID = -1,DIRT, STONE, IRON, GOLD, DIAMOND,EMERALD,OBSIDIAN,LAVA
 };
 
 

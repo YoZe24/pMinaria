@@ -13,10 +13,11 @@
 class EntityComponent
 {
     public:
-
+        EntityComponent(){}
         EntityComponent(AnimationManager& a,AnimationManager& aF,TileMap* tileMap,int X, int Y);
 
         virtual ~EntityComponent();
+        EntityComponent& operator=(const EntityComponent& other);
 
         virtual void update(float time)=0;
 

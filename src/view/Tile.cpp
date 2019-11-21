@@ -4,6 +4,15 @@
 
 using namespace sf;
 using namespace std;
+
+Tile::Tile(){
+    this->block = Block({},0.0,EnumBlock::VOID);
+    this->x = 0;
+    this->y = 0;
+    this->w = 0;
+    this->h = 0;
+}
+
 Tile::Tile(Block block,AnimationManager anim,int x,int y, int w,int h):block(block),animManager(anim),x(x),y(y),w(w),h(h)
 {
     animManager.set("stay");

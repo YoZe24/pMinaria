@@ -16,6 +16,21 @@ EntityComponent::EntityComponent(AnimationManager& a,AnimationManager& af,TileMa
     timer = 0;
 }
 
+EntityComponent& EntityComponent::operator=(const EntityComponent& other){
+    if(this != &other){
+        this->anim = other.anim;
+        this->animFire = other.animFire;
+        this->tileMap = other.tileMap;
+        this->x = x;
+        this->y = y;
+        this->dir = other.dir;
+        this->dx = other.dx;
+        this->dy = other.dy;
+        this->timer = other.timer;
+    }
+    return *this;
+}
+
 void EntityComponent::option(std::string NAME, Entity* e, float SPEED, std::string FIRST_ANIM)
 {
     entity = e->clone();

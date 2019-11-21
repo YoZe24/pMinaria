@@ -8,7 +8,7 @@
 class Tile
 {
     public:
-        Tile(){}
+        Tile();
         Tile(Block block,AnimationManager anim,int x,int y ,int w,int h);
         virtual ~Tile();
         Tile(const Tile& other);

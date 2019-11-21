@@ -17,6 +17,8 @@ class TileMap
         TileMap(const TileMap& other);
         TileMap& operator=(const TileMap& other);
 
+        void load(int,int,int,int,int);
+
         std::map<int,Tile>* getTiles(){return &tiles;}
         std::map<int,Tile>::iterator getItStart(int pos);
         std::map<int,Tile>::iterator getItFinish(int pos);
@@ -25,12 +27,14 @@ class TileMap
         int getTileSize(){return tileSize;}
         int getNbBlockMined()const{return nbBlockMined;}
 
+
         void setNbBlockMined(int nb){nbBlockMined = nb;}
         void printTiles()const;
 
         void draw(sf::RenderWindow& window,float dt,sf::Vector2f v);
-        bool add(const Tile& t);
+        bool add(const Tile& t,int pos);
         EnumBlock deleteTileAt(float x, float y,float power);
+        EnumBlock deleteTileAt(int pos);
         Tile& getTileAt(int pos);
         EnumBlock getEnumBlockAt(int pos);
         EnumBlock getEnumBlockAt(int x,int y);

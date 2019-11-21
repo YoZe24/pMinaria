@@ -1465,166 +1465,170 @@
 1574022973 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminorz - copie - copie\src\model\blockemerald.cpp
 	"BlockEmerald.h"
 
-1574025892 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\main.cpp
+1574347045 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\main.cpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
 	<ctime>
-	"AnimationManager.h"
-	"Entity.h"
-	"Player.h"
-	"EntityComponent.h"
-	"PlayerComponent.h"
-	"TileMap.h"
-	"BlockDirt.h"
-	"BlockStone.h"
-	"BlockIron.h"
-	"BlockGold.h"
-	"BlockDiamond.h"
-	"BlockEmerald.h"
-	"LavaBlock.h"
-	"Pickaxe.h"
-	<unordered_map>
+	"view/AnimationManager.h"
+	"model/Entity.h"
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/Pickaxe.h"
 	<map>
-	"EnemyComponent.h"
+	<cmath>
+	"view/EnemyComponent.h"
+	"gamestate/Game.h"
+	"gamestate/GameStateGame.h"
 
-1573730927 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animationmanager.h
-	"Animation.h"
+1574066190 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animationmanager.h
+	"view/Animation.h"
 
-1573729211 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animation.h
+1573729212 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animation.h
 	<vector>
 	<SFML/Graphics.hpp>
 	<sstream>
 	<iostream>
 
-1573998603 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\entity.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\entity.h
+	"model/Block.h"
 	<iostream>
 
-1574020148 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\block.h
+1574183399 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\block.h
 	<string>
 	<vector>
 
-1573805110 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\player.h
-	"Entity.h"
-	"Pickaxe.h"
+1574066179 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\player.h
+	"model/Entity.h"
+	"model/Pickaxe.h"
 	<map>
 
-1574016545 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
+	"model/Block.h"
 	<iostream>
 
-1574001247 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\entitycomponent.h
-	"AnimationManager.h"
+1574346255 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\entitycomponent.h
+	"view/AnimationManager.h"
 	<SFML/Graphics.hpp>
 	<iostream>
-	"Tile.h"
-	"TileMap.h"
+	"view/Tile.h"
+	"view/TileMap.h"
 	<vector>
-	"Player.h"
-	"Entity.h"
+	"model/Player.h"
+	"model/Entity.h"
 
-1573941283 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tile.h
-	<Block.h>
-	<AnimationManager.h>
+1574329813 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tile.h
+	<model/Block.h>
+	<view/AnimationManager.h>
 	<SFML/Graphics.hpp>
 
-1574025787 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tilemap.h
-	<Tile.h>
+1574346694 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tilemap.h
+	<view/Tile.h>
 	<vector>
 	<SFML/Graphics.hpp>
 	<deque>
 	<map>
 
-1574001485 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
-	"EntityComponent.h"
+1574346117 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
+	"view/EntityComponent.h"
 	<iostream>
 
-1573557480 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockdirt.h
-	<Block.h>
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockdirt.h
+	"model/Block.h"
 
-1573557468 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockstone.h
-	<Block.h>
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockstone.h
+	"model/Block.h"
 
-1574023035 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockiron.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockiron.h
+	"model/Block.h"
 
-1573557500 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockgold.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockgold.h
+	"model/Block.h"
 
-1573557475 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockdiamond.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockdiamond.h
+	"model/Block.h"
 
-1574020119 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockemerald.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockemerald.h
+	"model/Block.h"
 
-1573719044 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\lavablock.h
-	"Block.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\lavablock.h
+	"model/Block.h"
 
-1573997232 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\enemycomponent.h
-	"Enemy.h"
-	"EntityComponent.h"
+1574066196 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\enemycomponent.h
+	"model/Enemy.h"
+	"view/EntityComponent.h"
 
-1573937802 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\enemy.h
-	"Entity.h"
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\enemy.h
+	"model/Entity.h"
 
-1573557586 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\block.cpp
-	"Block.h"
+1574068946 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\block.cpp
+	"model/Block.h"
 	<sstream>
 
-1574025697 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockdiamond.cpp
-	"BlockDiamond.h"
+1574068962 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockdiamond.cpp
+	"model/BlockDiamond.h"
 
-1573557420 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockdirt.cpp
-	"BlockDirt.h"
+1574068958 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockdirt.cpp
+	"model/BlockDirt.h"
 
-1574022973 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockemerald.cpp
-	"BlockEmerald.h"
+1574068970 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockemerald.cpp
+	"model/BlockEmerald.h"
 
-1574025688 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockgold.cpp
-	"BlockGold.h"
+1574068976 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockgold.cpp
+	"model/BlockGold.h"
 
-1574025737 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockiron.cpp
-	"BlockIron.h"
+1574069038 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockiron.cpp
+	"model/BlockIron.h"
 
-1574025747 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockstone.cpp
-	"BlockStone.h"
+1574069044 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockstone.cpp
+	"model/BlockStone.h"
 
-1573937739 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\enemy.cpp
-	"Enemy.h"
+1574069066 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\enemy.cpp
+	"model/Enemy.h"
 
-1574000003 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\entity.cpp
-	"Entity.h"
+1574069072 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\entity.cpp
+	"model/Entity.h"
 
-1573727486 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\lavablock.cpp
-	"LavaBlock.h"
+1574069060 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\lavablock.cpp
+	"model/LavaBlock.h"
 
-1573805140 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
-	"Player.h"
+1574069084 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
+	"model/Player.h"
 
-1573939040 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animation.cpp
-	"Animation.h"
+1574069090 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animation.cpp
+	"view/Animation.h"
 
-1573432968 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animationmanager.cpp
-	"AnimationManager.h"
+1574065801 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animationmanager.cpp
+	"view/AnimationManager.h"
 
-1574024734 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\enemycomponent.cpp
-	"EnemyComponent.h"
+1574071794 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\enemycomponent.cpp
+	"view/EnemyComponent.h"
 
-1574024879 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
-	"EntityComponent.h"
+1574346437 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
+	"view/EntityComponent.h"
 
-1574024862 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
-	"PlayerComponent.h"
+1574348288 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
+	"view/PlayerComponent.h"
+	<cmath>
 
-1574025580 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
-	"Tile.h"
+1574329821 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
+	"view/Tile.h"
 	<sstream>
 	<iostream>
 
-1574025775 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
-	"TileMap.h"
+1574346679 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
+	"view/TileMap.h"
 	"iostream"
+	<cmath>
 
 1574158606 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria2\main.cpp
 	<SFML/Graphics.hpp>
@@ -1791,4 +1795,48 @@
 
 1574069090 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria2\src\view\animation.cpp
 	"view/Animation.h"
+
+1574343695 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
+	"model/Pickaxe.h"
+
+1574180704 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestate.cpp
+	"GameState.h"
+
+1574347300 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestate.h
+	"Game.h"
+
+1574347290 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\game.h
+	<stack>
+	<string>
+	<SFML/Graphics.hpp>
+	"gamestate/GameState.h"
+
+1574347325 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
+	"Game.h"
+
+1574347874 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
+	"gamestate/GameStateGame.h"
+
+1574348144 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
+	"gamestate/GameState.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/Pickaxe.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
 

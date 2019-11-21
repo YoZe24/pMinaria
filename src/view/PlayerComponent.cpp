@@ -20,7 +20,23 @@ PlayerComponent::PlayerComponent(AnimationManager &a,AnimationManager& animFire,
 
 PlayerComponent::~PlayerComponent()
 {
-    //dtor
+
+}
+
+PlayerComponent& PlayerComponent::operator=(const PlayerComponent& other){
+    if(this != &other){
+        EntityComponent::operator=(other);
+        Player* p = new Player(100,true);
+        updateStrAnimation("0");
+        option("Player",p,0,stayStr);
+
+        STATE=stay;
+        miningDown = false;
+        hit=false;
+        setFire(false);
+        setTimerFire(0);
+    }
+    return *this;
 }
 
 void PlayerComponent::updateStrAnimation(string i){
@@ -99,6 +115,7 @@ void PlayerComponent::Animation(float time){
 }
 
 void PlayerComponent::update(float time){
+    cout << "Miner : " << getTileMap() << endl;
     sf::Clock c;
     if(!getEntity()->getLife()){
         reset(100);
@@ -127,9 +144,10 @@ void PlayerComponent::Collision(int num){
     int pos = tileMap.getPos(getX(),getY());
     int xD,yD;
 
+    EnumBlock blockCollide;
     map<int,Tile>::iterator itFinish = tileMap.getItFinish(pos);
     for(auto i = tileMap.getItStart(pos) ; i != itFinish ; i++){
-
+            blockCollide = i->second.getBlock().getType();
             sf::FloatRect fr = i->second.getRect();
             if(getRect().intersects(fr)){
 
@@ -143,31 +161,31 @@ void PlayerComponent::Collision(int num){
                         STATE=stay;
                         xD = getX() + getW() / 2;       yD = getY() + getH();
 
-                        if(isMinable(xD,yD) && miningDown)
+                        if(isMinable(xD,yD,blockCollide) && miningDown){
                             if(tryToDeleteAt(xD,yD)) break;
-
+                        }
                     }
                     if (getDY()<0 && num==1){
                         setY(fr.top + fr.height);
                         setDY(0);
                         xD = getX() + getW() / 2;       yD = getY() - getH();
 
-                        if(isMinable(xD,yD))
+                        if(isMinable(xD,yD,blockCollide))
                             if(tryToDeleteAt(xD,yD)) break;
 
                     }
                     if (getDX()>0 && num==0)	{
                         setX(fr.left -  getW());
                         xD = getX() + getW() ;          yD = getY() - 4;
-                        if(isMinable(xD,yD))
+                        if(isMinable(xD,yD,blockCollide))
                             if(tryToDeleteAt(xD,yD)) break;
 
-                        }
                     }
+
                     if (getDX()<0 && num==0){
                         setX(fr.left + fr.width);
                         xD = getX() - getW() ;          yD = getY() - 4;
-                        if(isMinable(xD,yD))
+                        if(isMinable(xD,yD,blockCollide))
                             if(tryToDeleteAt(xD,yD)) break;
 
                     }
@@ -177,7 +195,9 @@ void PlayerComponent::Collision(int num){
     CollisionBord();
 }
 
+
 bool PlayerComponent::tryToDeleteAt(int x,int y){
+
     EnumBlock blockMined = getTileMap()->deleteTileAt(x,y,power);
     hit = blockMined == EnumBlock::VOID;
     if(!hit){
@@ -188,7 +208,7 @@ bool PlayerComponent::tryToDeleteAt(int x,int y){
     return false;
 }
 
-bool PlayerComponent::isMinable(int x,int y){
+bool PlayerComponent::isMinable(int x,int y,EnumBlock blockCollide){
     EnumBlock blockToMine = getTileMap()->getEnumBlockAt(x,y);
-    return getEntity()->isBreakable(lastBlockMined);
+    return getEntity()->isBreakable(blockToMine);
 }

@@ -25,15 +25,37 @@ width(other.width),height(other.height),tileSize(other.tileSize),tiles(other.til
     //copy ctor
 }
 
+TileMap& TileMap::operator=(const TileMap& other){
+    if(this != &other){
+        this->width = other.width;
+        this->height = other.height;
+        this->tileSize = other.tileSize;
+        this->tiles = other.tiles;
+        this->screenW = other.screenW;
+        this->screenH = other.screenH;
+        this->nbBlockMined = other.nbBlockMined;
+        this->time = other.time;
+    }
+    return *this;
+}
+
+void TileMap::load(int width,int height,int tileSize,int sW,int sH){
+    this->width = width;
+    this->height = height;
+    this->tileSize = tileSize;
+    this->screenW = sW;
+    this->screenH = sH;
+}
+
 map<int,Tile>::iterator TileMap::getItStart(int pos){
-    int start = pos - (width * 2) - nbBlockMined < 0 ? 0 : pos - (width * 2) - nbBlockMined;
+    int start = pos - (width * 1) - nbBlockMined < 0 ? 0 : pos - (width * 1) - nbBlockMined;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,start);
     return it;
 }
 
 map<int,Tile>::iterator TileMap::getItFinish(int pos){
-    int finish = pos + width * 2 > tiles.size() ? tiles.size() : pos+width*2;
+    int finish = pos + width * 1 > tiles.size() ? tiles.size() : pos+width*1;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,finish);
     return it;
@@ -52,26 +74,23 @@ void TileMap::draw(RenderWindow& window,float dt,sf::Vector2f vPos){
     advance(itFinish,limit);
 
     for(auto i = it ; i != itFinish;  i++){
-        i->second.draw(window,dt);
+        if(i->second.getBlock().getType() != EnumBlock::VOID)
+            i->second.draw(window,dt);
     }
 }
 
-bool TileMap::add(const Tile& t){
-    tiles.insert(make_pair(tiles.size(),t));
+bool TileMap::add(const Tile& t,int pos){
+    tiles.insert(make_pair(pos,t));
     return true;
 }
 
-TileMap& TileMap::operator=(const TileMap& other){
-    if(this != &other){
-        this->width = other.width;
-        this->height = other.height;
-        this->tileSize = other.tileSize;
-        this->tiles = other.tiles;
-        this->screenH = other.screenH;
-        this->screenW = other.screenW;
-        this->time = other.time;
-    }
-    return *this;
+
+EnumBlock TileMap::deleteTileAt(int pos){
+    EnumBlock eb = tiles[pos].getBlock().getType();
+    tilesDeleted.push_back(pos);
+    tiles.erase(tiles.find(pos));
+    nbBlockMined++;
+    return eb;
 }
 
 EnumBlock TileMap::deleteTileAt(float x,float y,float power){

@@ -7,9 +7,11 @@
 class PlayerComponent: public EntityComponent
 {
     public:
+        PlayerComponent():EntityComponent(){}
         enum{stay,walk,jump,mining} STATE;
         PlayerComponent(AnimationManager &a,AnimationManager& animFire,TileMap* tileMap,int x,int y);
         virtual ~PlayerComponent();
+        PlayerComponent& operator=(const PlayerComponent& other);
 
         void updateStrAnimation(std::string i);
         void keyboard();
@@ -21,7 +23,7 @@ class PlayerComponent: public EntityComponent
 
         void setHitByMob(bool b){hitByMob = b;}
 
-        bool isMinable(int x,int y);
+        bool isMinable(int x,int y,EnumBlock eb);
         bool tryToDeleteAt(int x,int y);
         bool getHitByMob()const{return hitByMob;}
         bool getHit()const{return hit;}
@@ -31,7 +33,7 @@ class PlayerComponent: public EntityComponent
     protected:
 
     private:
-        float power;
+        float power,time;
         bool hit,miningDown,hitByMob;
         EnumBlock lastBlockMined;
         std::map<std::string,bool> key;
