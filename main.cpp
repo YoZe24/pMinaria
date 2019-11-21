@@ -21,19 +21,16 @@
 #include "view/EnemyComponent.h"
 #include "gamestate/Game.h"
 #include "gamestate/GameStateGame.h"
+#include "util/Timer.h"
+
 
 using namespace sf;
 using namespace std;
 
-const int tileMap_height = 200,tileMap_width = 50,tile_size = 32,h_miner = 24,w_miner = 16;
-const int screen_h = 600,screen_w = 1200;
-int level[tileMap_width * tileMap_height];
-TileMap tileMap(tileMap_width,tileMap_height,tile_size,screen_w,screen_h);
-
-
 int main()
 {
     srand(time(NULL));
+
     Game game;
     game.pushState(new GameStateGame(&game));
     game.gameLoop();

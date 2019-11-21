@@ -4,7 +4,7 @@ using namespace std;
 
 Pickaxe::Pickaxe()
 {
-    this->px_s = new PX_Strategy_Wood;
+    this->px_s = new PX_Strategy_Emerald;
 }
 
 

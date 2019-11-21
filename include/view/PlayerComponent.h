@@ -23,7 +23,7 @@ class PlayerComponent: public EntityComponent
 
         void setHitByMob(bool b){hitByMob = b;}
 
-        bool isMinable(int x,int y,EnumBlock eb);
+        bool isMinable(int x,int y);
         bool tryToDeleteAt(int x,int y);
         bool getHitByMob()const{return hitByMob;}
         bool getHit()const{return hit;}

@@ -1538,7 +1538,7 @@
 	<deque>
 	<map>
 
-1574346117 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
+1574353016 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
 	"view/EntityComponent.h"
 	<iostream>
 
@@ -1613,10 +1613,10 @@
 1574071794 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\enemycomponent.cpp
 	"view/EnemyComponent.h"
 
-1574346437 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
+1574354510 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
 	"view/EntityComponent.h"
 
-1574348288 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
+1574352981 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
 	"view/PlayerComponent.h"
 	<cmath>
 
@@ -1625,7 +1625,7 @@
 	<sstream>
 	<iostream>
 
-1574346679 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
+1574354187 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
 	"view/TileMap.h"
 	"iostream"
 	<cmath>
@@ -1796,7 +1796,7 @@
 1574069090 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria2\src\view\animation.cpp
 	"view/Animation.h"
 
-1574343695 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
+1574354133 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
 1574180704 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestate.cpp
@@ -1814,10 +1814,10 @@
 1574347325 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
 	"Game.h"
 
-1574347874 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
+1574348356 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
-1574348144 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
+1574355187 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
 	"gamestate/GameState.h"
 	<SFML/Graphics.hpp>
 	"view/AnimationManager.h"
@@ -1839,4 +1839,9 @@
 	<map>
 	<cmath>
 	"view/EnemyComponent.h"
+
+1574355940 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\util\timer.cpp
+	"Timer.h"
+
+1574355940 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\util\timer.h
 
