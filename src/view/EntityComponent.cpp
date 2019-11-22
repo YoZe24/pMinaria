@@ -67,8 +67,10 @@ void EntityComponent::CollisionBord(){
     }
     if(getY() <= -100)
         setY(-100);
-    else if(getY() >= tileMap.getHeight() * tileMap.getTileSize())
-        setY(tileMap.getHeight() * tileMap.getTileSize());
+//    else if(getY() >= tileMap.getHeight() * tileMap.getTileSize())
+//        setY(tileMap.getHeight() * tileMap.getTileSize());
+    else if(getY() >= tileMap.getHeight() * tileMap.getTileSize() + 2000)
+        getEntity()->setHealth(0);
 }
 
 void EntityComponent::setFire(bool b){

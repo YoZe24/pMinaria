@@ -48,14 +48,14 @@ void TileMap::load(int width,int height,int tileSize,int sW,int sH){
 }
 
 map<int,Tile>::iterator TileMap::getItStart(int pos){
-    int start = pos - (width * 1) - nbBlockMined < 0 ? 0 : pos - (width * 1) - nbBlockMined;
+    int start = pos - (width * 3) - nbBlockMined < 0 ? 0 : pos - (width * 3) - nbBlockMined;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,start);
     return it;
 }
 
 map<int,Tile>::iterator TileMap::getItFinish(int pos){
-    int finish = pos + width * 1 > tiles.size() ? tiles.size() : pos+width*1;
+    int finish = pos + width * 3 > (width * height)-3 ? (width * height)-3 : pos+width*3;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,finish);
     return it;

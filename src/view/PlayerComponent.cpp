@@ -135,6 +135,7 @@ void PlayerComponent::update(float time){
 
     updateY(getDY() * time);
     Collision(1);
+
 }
 
 void PlayerComponent::Collision(int num){
@@ -142,7 +143,6 @@ void PlayerComponent::Collision(int num){
     int width = tileMap.getWidth();
     int pos = tileMap.getPos(getX(),getY());
     int xD,yD;
-
     EnumBlock blockCollide;
     map<int,Tile>::iterator itFinish = tileMap.getItFinish(pos);
     for(auto i = tileMap.getItStart(pos) ; i != itFinish ; i++){
@@ -160,7 +160,7 @@ void PlayerComponent::Collision(int num){
                         STATE=stay;
                         xD = getX() + getW() / 2;       yD = getY() + getH();
 
-                        if(isMinable(xD,yD,blockCollide) && miningDown){
+                        if(isMinable(xD,yD) && miningDown){
                             if(tryToDeleteAt(xD,yD)) break;
                         }
                     }
@@ -169,14 +169,14 @@ void PlayerComponent::Collision(int num){
                         setDY(0);
                         xD = getX() + getW() / 2;       yD = getY() - getH();
 
-                        if(isMinable(xD,yD,blockCollide))
+                        if(isMinable(xD,yD))
                             if(tryToDeleteAt(xD,yD)) break;
 
                     }
                     if (getDX()>0 && num==0)	{
                         setX(fr.left -  getW());
                         xD = getX() + getW() ;          yD = getY() - 4;
-                        if(isMinable(xD,yD,blockCollide))
+                        if(isMinable(xD,yD))
                             if(tryToDeleteAt(xD,yD)) break;
 
                     }
@@ -184,7 +184,7 @@ void PlayerComponent::Collision(int num){
                     if (getDX()<0 && num==0){
                         setX(fr.left + fr.width);
                         xD = getX() - getW() ;          yD = getY() - 4;
-                        if(isMinable(xD,yD,blockCollide))
+                        if(isMinable(xD,yD))
                             if(tryToDeleteAt(xD,yD)) break;
 
                     }
@@ -207,7 +207,7 @@ bool PlayerComponent::tryToDeleteAt(int x,int y){
     return false;
 }
 
-bool PlayerComponent::isMinable(int x,int y,EnumBlock blockCollide){
+bool PlayerComponent::isMinable(int x,int y){
     EnumBlock blockToMine = getTileMap()->getEnumBlockAt(x,y);
     return getEntity()->isBreakable(blockToMine);
 }
