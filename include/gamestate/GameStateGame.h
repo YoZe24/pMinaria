@@ -50,7 +50,7 @@ class GameStateGame : public GameState
         vector<float> spawnEnemy;
         vector<EnemyComponent*> enemies;
         PlayerComponent* miner;
-        const int tileMap_height = 200,tileMap_width = 50,tile_size = 32,h_miner = 24,w_miner = 16;
+        const int tileMap_height = 400,tileMap_width = 50,tile_size = 32,h_miner = 24,w_miner = 16;
         const int screen_h = 600,screen_w = 1200;
         const static int nbBlock = 10,posLava = 9;
         AnimationManager animMinerFire,animMiner,animEnemy,animBlock[nbBlock];

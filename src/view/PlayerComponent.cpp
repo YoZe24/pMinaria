@@ -115,7 +115,6 @@ void PlayerComponent::Animation(float time){
 }
 
 void PlayerComponent::update(float time){
-    cout << "Miner : " << getTileMap() << endl;
     sf::Clock c;
     if(!getEntity()->getLife()){
         reset(100);

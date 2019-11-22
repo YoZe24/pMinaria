@@ -56,6 +56,7 @@ void GameStateGame::draw(const float time)
 }
 void GameStateGame::update(const float time)
 {
+    cout << floor(miner->getY()/32) << endl;
     miner->update(time);
     int toDisplay = (screen_h+tile_size*2)/2;
 
