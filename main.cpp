@@ -27,6 +27,7 @@
 #include "gamestate/Game.h"
 #include "gamestate/GameStateGame.h"
 #include "gui/MainMenu.h"
+#include "gui/OptionMenu.h"
 
 using namespace sf;
 using namespace std;
@@ -42,6 +43,7 @@ int main()
     GestionUser* gestion = GestionUser::getInstance();
     gestion->readFromFile("User.txt");
     cout<<gestion->str();
+
     /*srand(time(NULL));
     Game game;
     game.pushState(new GameStateGame(&game));
@@ -63,7 +65,8 @@ int main()
     InterfaceAdmin interAdmin = InterfaceAdmin(textureTitle,textureBG,textureBTN,textureTXT,font,window);
     InterfaceConAdmin interConAdmin = InterfaceConAdmin(textureTitle,textureBG,textureBTN,textureTXT,font,window);
     InterfaceTableScore interTable = InterfaceTableScore(textureTitle,textureBG,textureBTN,textureTXT,font,window);
-    //OptionMenu optionMenu = OptionMenu(textureTitle,textureBG,textureBTN,font,window);
+    //MainMenu menu = MainMenu(textureTitle,textureBG,textureBTN,font,window);
+    OptionMenu optionMenu = OptionMenu(textureTitle,textureBG,textureBTN,font,window);
 
     while(window.isOpen())
     {
@@ -76,7 +79,7 @@ int main()
 		    //interAdmin.handleInput(window);
 
 		    //OK
-		    interCon.handleInput(window, event);
+		    //interCon.handleInput(window, event);
 
 		    //OK
 		    //interConAdmin.handleInput(window,event);
@@ -97,6 +100,7 @@ int main()
         //interCon.draw(window);
         //interConAdmin.draw(window);
 		//optionMenu.handleInput(window);
+		optionMenu.handleInput(window);
 		//menu.handleInput(window);
 		window.display();
     }
