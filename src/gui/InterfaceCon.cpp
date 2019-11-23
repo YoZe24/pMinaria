@@ -88,7 +88,7 @@ InterfaceCon::InterfaceCon(const InterfaceCon& other)
 }
 /**
 *   Operator= overloading
-*   Recup all attributes
+*   Recup all attributes from rhs if not equals of current object
 *   @param other : Reference constant of InterfaceCon object
 *
 */

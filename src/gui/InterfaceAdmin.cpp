@@ -103,7 +103,7 @@ InterfaceAdmin::InterfaceAdmin(const InterfaceAdmin& other)
 }
 /**
 *   Operator= overloading
-*   Recup all attributes from rhs
+*   Recup all attributes from rhs if not equals of current object
 *   @param other : Reference constant of InterfaceAdmin object
 *
 */

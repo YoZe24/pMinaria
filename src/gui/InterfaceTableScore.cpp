@@ -105,7 +105,7 @@ InterfaceTableScore::InterfaceTableScore(const InterfaceTableScore& other)
 }
 /**
 *   Operator= overloading
-*   Recup all attributes
+*   Recup all attributes from rhs object if not equals of current object
 *   @param other : Reference constant of InterfaceTableScore object
 *
 */

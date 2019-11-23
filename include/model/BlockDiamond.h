@@ -6,6 +6,7 @@ class BlockDiamond : public Block
 {
     public:
         BlockDiamond(std::vector<float> s);
+        BlockDiamond();
         virtual ~BlockDiamond();
         BlockDiamond(const BlockDiamond& other);
         BlockDiamond& operator=(const BlockDiamond& );
