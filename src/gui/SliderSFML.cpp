@@ -22,7 +22,7 @@ SliderSFML::SliderSFML(int x, int y)
 	sliderWidth = 20;
 	sliderHeight = 30;
 
-	if (!font.loadFromFile("PoliceCool.ttf"))
+	if (!font.loadFromFile("gameFont.ttf"))
 		std::cout << "Error loading font\n";
 
 	text.setFont(font);
@@ -88,12 +88,13 @@ void SliderSFML::create(float min, float max)
 */
 void SliderSFML::logic(sf::RenderWindow &window)
 {
-	if (slider.getGlobalBounds().contains(Mouse::getPosition(window).x, Mouse::getPosition(window).y)
+    Vector2f mousePos = window.mapPixelToCoords(Mouse::getPosition(window));
+	if (slider.getGlobalBounds().contains(mousePos)
 		&& Mouse::isButtonPressed(Mouse::Button::Left))
 	{
-		if (Mouse::getPosition(window).x >= xCord && Mouse::getPosition(window).x <= xCord + axisWidth)
+		if (mousePos.x >= xCord && mousePos.x <= xCord + axisWidth)
 		{
-			slider.setPosition(Mouse::getPosition(window).x, yCord);
+			slider.setPosition(mousePos.x, yCord);
 			sliderValue = (minValue + ((slider.getPosition().x - xCord) / axisWidth * (maxValue - minValue)));
 		}
 	}

@@ -22,6 +22,7 @@
 #include "gamestate/Game.h"
 #include "gamestate/GameStateGame.h"
 #include "gui/MainMenu.h"
+#include "gui/OptionMenu.h"
 
 using namespace sf;
 using namespace std;
@@ -34,10 +35,10 @@ TileMap tileMap(tileMap_width,tileMap_height,tile_size,screen_w,screen_h);
 
 int main()
 {
-    srand(time(NULL));
+    /*srand(time(NULL));
     Game game;
     game.pushState(new GameStateGame(&game));
-    game.gameLoop();
+    game.gameLoop();*/
 
     RenderWindow window(VideoMode(1200, 700), "The Game!");
 
@@ -49,8 +50,8 @@ int main()
     Texture textureTitle;
     textureTitle.loadFromFile("title.png");
 
-    MainMenu menu = MainMenu(textureTitle,textureBG,textureBTN,font,window);
-    //OptionMenu optionMenu = OptionMenu(textureTitle,textureBG,textureBTN,font,window);
+    //MainMenu menu = MainMenu(textureTitle,textureBG,textureBTN,font,window);
+    OptionMenu optionMenu = OptionMenu(textureTitle,textureBG,textureBTN,font,window);
 
     while(window.isOpen())
     {
@@ -65,7 +66,7 @@ int main()
 
 
 		window.clear();
-		//optionMenu.handleInput(window);
+		optionMenu.handleInput(window);
 		//menu.handleInput(window);
 		window.display();
     }
