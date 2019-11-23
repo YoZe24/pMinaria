@@ -20,7 +20,6 @@ class TextField
         virtual ~TextField();
         TextField(const TextField& other);
         TextField& operator=(const TextField& other);
-        bool onHover(RenderWindow& window);
         void draw(RenderWindow& window);
         void setTextInput(sf::String);
         void setPosition(Vector2f position);
@@ -30,6 +29,7 @@ class TextField
         Text getText();
         bool isClicked(RenderWindow& window);
         void setTexture(Texture text);
+        bool isHovered(RenderWindow& window);
 
     protected:
 

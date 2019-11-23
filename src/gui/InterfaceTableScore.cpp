@@ -104,6 +104,12 @@ InterfaceTableScore::InterfaceTableScore(const InterfaceTableScore& other)
     this->listScores = other.listScores;
 }
 /**
+*   Function who permet to manage the action on the window
+*   @param window : a RenderWindow object
+*/
+void InterfaceTableScore::handleInput(RenderWindow& window){
+}
+/**
 *   Operator= overloading
 *   Recup all attributes from rhs object if not equals of current object
 *   @param other : Reference constant of InterfaceTableScore object

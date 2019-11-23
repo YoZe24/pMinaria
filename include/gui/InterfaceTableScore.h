@@ -22,6 +22,7 @@ class InterfaceTableScore
         InterfaceTableScore& operator=(const InterfaceTableScore& other);
         void draw(RenderWindow& window);
         void initListScores(RenderWindow& window, Texture& textureTXT);
+        void handleInput(RenderWindow& window);
 
     protected:
 

@@ -93,7 +93,7 @@ InterfaceAdmin::~InterfaceAdmin()
 */
 InterfaceAdmin::InterfaceAdmin(const InterfaceAdmin& other)
 {
- /* this->title = other.title;
+    this->title = other.title;
     this->background = other.background;
     this->btnBack = other.btnBack;
     this->users = other.users;
@@ -101,7 +101,7 @@ InterfaceAdmin::InterfaceAdmin(const InterfaceAdmin& other)
     this->listName = other.listName;
     this->listScores = other.listScores;
     this->positionSelected = other.positionSelected;
-    this->textfieldSelected = other.textfieldSelected;*/
+    this->textfieldSelected = other.textfieldSelected;
 }
 /**
 *   Operator= overloading

@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Option use_console_runner="0" />
 				<Compiler>
+					<Add option="-std=c++14" />
 					<Add option="-g" />
 					<Add directory="include" />
 					<Add directory="include/model" />
@@ -35,6 +36,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++14" />
 					<Add directory="include" />
 					<Add directory="include/model" />
 					<Add directory="include/view" />
@@ -50,6 +52,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++14" />
 			<Add directory="C:/SFML-2.5.1/include" />
 			<Add directory="/usr/include/SFML" />
 		</Compiler>
@@ -57,6 +60,7 @@
 			<Add directory="C:/SFML-2.5.1/lib" />
 			<Add directory="/usr/lib" />
 		</Linker>
+		<Unit filename="User.txt" />
 		<Unit filename="include/gamestate/Game.h" />
 		<Unit filename="include/gamestate/GameState.h" />
 		<Unit filename="include/gamestate/GameStateGame.h" />

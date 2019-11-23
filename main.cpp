@@ -73,10 +73,10 @@ int main()
 		{
 
             //OK
-		    interAdmin.handleInput(window);
+		    //interAdmin.handleInput(window);
 
 		    //OK
-		    //interCon.handleInput(window, event);
+		    interCon.handleInput(window, event);
 
 		    //OK
 		    //interConAdmin.handleInput(window,event);
@@ -93,12 +93,9 @@ int main()
 
 		window.clear();
 
-        interAdmin.draw(window);
-
+        //interAdmin.draw(window);
         //interCon.draw(window);
         //interConAdmin.draw(window);
-
-
 		//optionMenu.handleInput(window);
 		//menu.handleInput(window);
 		window.display();
