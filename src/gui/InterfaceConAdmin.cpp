@@ -83,8 +83,8 @@ InterfaceConAdmin::InterfaceConAdmin(const InterfaceConAdmin& other)
     this->btnBack = other.btnBack;
     this->btnConfirm = other.btnConfirm;
     this->background = other.background;
-    this->textLogin = other.textMdp;
-    this->inputLogin = other.inputMdp;
+    this->textMdp = other.textMdp;
+    this->inputMdp = other.inputMdp;
 }
 /**
 *   Operator= overloading
@@ -95,12 +95,12 @@ InterfaceConAdmin::InterfaceConAdmin(const InterfaceConAdmin& other)
 InterfaceConAdmin& InterfaceConAdmin::operator=(const InterfaceConAdmin& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    this->title = other.title;
-    this->btnBack = other.btnBack;
-    this->btnConfirm = other.btnConfirm;
-    this->background = other.background;
-    this->textLogin = other.textMdp;
-    this->inputLogin = other.inputMdp;
+    this->title = rhs.title;
+    this->btnBack = rhs.btnBack;
+    this->btnConfirm = rhs.btnConfirm;
+    this->background = rhs.background;
+    this->textMdp = rhs.textMdp;
+    this->inputMdp = rhs.inputMdp;
     return *this;
 }
 /**
@@ -121,6 +121,14 @@ void InterfaceConAdmin::Confirm(RenderWindow& window){
         }
 
     }
+}
+/**
+*   Function who permet to manage the action on the window
+*   @param window : a RenderWindow object
+*/
+void InterfaceConAdmin::handleInput(RenderWindow& window, sf::Event event){
+    InputTextRecup(window,event);
+    Confirm(window);
 }
 /**
 *   Function who permet to create background of window and title

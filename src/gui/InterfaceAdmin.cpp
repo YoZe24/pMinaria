@@ -80,10 +80,10 @@ void InterfaceAdmin::initListScores(RenderWindow& window, Texture& TextureTXT){
 */
 InterfaceAdmin::~InterfaceAdmin()
 {
-    for(int i=0;i<listName.size();i++){
+    /*for(int i=0;i<listName.size();i++){
         delete listName[i];
         delete listScores[i];
-    }
+    }*/
 }
 /**
 *   Copy Constructor
@@ -93,13 +93,15 @@ InterfaceAdmin::~InterfaceAdmin()
 */
 InterfaceAdmin::InterfaceAdmin(const InterfaceAdmin& other)
 {
-    this->title = other.title;
+ /* this->title = other.title;
     this->background = other.background;
     this->btnBack = other.btnBack;
+    this->users = other.users;
+    this->text = other.text;
     this->listName = other.listName;
     this->listScores = other.listScores;
     this->positionSelected = other.positionSelected;
-    this->textfieldSelected = other.textfieldSelected;
+    this->textfieldSelected = other.textfieldSelected;*/
 }
 /**
 *   Operator= overloading
@@ -112,7 +114,9 @@ InterfaceAdmin& InterfaceAdmin::operator=(const InterfaceAdmin& rhs)
     if (this == &rhs) return *this; // handle self assignment
     this->title = rhs.title;
     this->background = rhs.background;
-    this->btnBack = ths.btnBack;
+    this->users = rhs.users;
+    this->text = rhs.text;
+    this->btnBack = rhs.btnBack;
     this->listName = rhs.listName;
     this->listScores = rhs.listScores;
     this->positionSelected = rhs.positionSelected;
@@ -146,17 +150,26 @@ void InterfaceAdmin::initBackGround(Texture& title,Texture& tex,RenderWindow& wi
 void InterfaceAdmin::Delete(RenderWindow& window){
     if(btnDelete.isClicked(window) && getPositionSelected() != -1){
         int pos = getPositionSelected();
+        //cout<<pos;
         User* tmp = *(users.begin()+pos);
         User& u = *tmp;
         GestionUser::getInstance()->removeUser(u);
         listName.erase(listName.begin()+pos);
         listScores.erase(listScores.begin()+pos);
-        delete tmp;
-
+        free(tmp);
         return;
 
     }
 }
+/**
+*   Function who permet to manage the action on the window
+*   @param window : a RenderWindow object
+*/
+void InterfaceAdmin::handleInput(RenderWindow& window){
+    getTextFieldSelected(window);
+    Delete(window);
+}
+
 /**
 *   Function who permet to know wich textfield is selected (to delete)
 *   For all textfield in listName -> call of "isClicked()" from TextField
@@ -172,9 +185,9 @@ void InterfaceAdmin::getTextFieldSelected(RenderWindow& window){
             textClicked.loadFromFile("inputText2.png");
             listName[i]->setTexture(textClicked);
             listScores[i]->setTexture(textClicked);
+
         }
         if (i != getPositionSelected()) {
-            cout<<1;
             textClicked.loadFromFile("inputText.png");
             listName[i]->setTexture(textClicked);
             listScores[i]->setTexture(textClicked);
@@ -235,11 +248,9 @@ void InterfaceAdmin::draw(RenderWindow& window)
 {
     window.draw(background);
     window.draw(title);
-    int i = 0;
-    for(User* user : users){
+    for(int i=0;i<listName.size();i++){
         listName[i]->draw(window);
         listScores[i]->draw(window);
-        i++;
     }
     btnDelete.draw(window);
     btnBack.draw(window);

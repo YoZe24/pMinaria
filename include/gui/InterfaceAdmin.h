@@ -31,6 +31,7 @@ class InterfaceAdmin
         void getTextFieldSelected(RenderWindow& window);
         int getPositionSelected();
         void setPositionSelected(int newPosition);
+        void handleInput(RenderWindow& window);
 
     protected:
 

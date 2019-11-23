@@ -2168,7 +2168,7 @@
 	<iostream>
 	<string>
 
-1574432233 source:c:\users\user\documents\github\pminaria\main.cpp
+1574528701 source:c:\users\user\documents\github\pminaria\main.cpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -2187,6 +2187,11 @@
 	"model/BlockEmerald.h"
 	"model/LavaBlock.h"
 	"model/Pickaxe.h"
+	"model/GestionUser.h"
+	"gui/InterfaceAdmin.h"
+	"gui/InterfaceConAdmin.h"
+	"gui/InterfaceCon.h"
+	"gui/InterfaceTableScore.h"
 	<map>
 	<cmath>
 	"view/EnemyComponent.h"
@@ -2216,7 +2221,7 @@
 	"model/Pickaxe.h"
 	<map>
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\pickaxe.h
+1574519992 c:\users\user\documents\github\pminaria\include\model\pickaxe.h
 	"model/Block.h"
 	<iostream>
 
@@ -2246,22 +2251,22 @@
 	"view/EntityComponent.h"
 	<iostream>
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
+1574522286 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
 	"model/Block.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockstone.h
+1574522776 c:\users\user\documents\github\pminaria\include\model\blockstone.h
 	"model/Block.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockiron.h
+1574522660 c:\users\user\documents\github\pminaria\include\model\blockiron.h
 	"model/Block.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockgold.h
+1574522566 c:\users\user\documents\github\pminaria\include\model\blockgold.h
 	"model/Block.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockdiamond.h
+1574522054 c:\users\user\documents\github\pminaria\include\model\blockdiamond.h
 	"model/Block.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockemerald.h
+1574522422 c:\users\user\documents\github\pminaria\include\model\blockemerald.h
 	"model/Block.h"
 
 1574419633 c:\users\user\documents\github\pminaria\include\model\lavablock.h
@@ -2349,10 +2354,10 @@
 	"gui/Button.h"
 	<iostream>
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\gui\interfaceadmin.cpp
+1574529354 source:c:\users\user\documents\github\pminaria\src\gui\interfaceadmin.cpp
 	"gui/InterfaceAdmin.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\gui\interfaceadmin.h
+1574527276 c:\users\user\documents\github\pminaria\include\gui\interfaceadmin.h
 	"model/GestionUser.h"
 	"TextField.h"
 	"Button.h"
@@ -2384,12 +2389,12 @@
 	<sstream>
 	<vector>
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\gui\interfaceconadmin.cpp
+1574527304 source:c:\users\user\documents\github\pminaria\src\gui\interfaceconadmin.cpp
 	"gui/InterfaceConAdmin.h"
 	"gui/TextField.h"
 	"model/GestionUser.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\gui\interfaceconadmin.h
+1574527091 c:\users\user\documents\github\pminaria\include\gui\interfaceconadmin.h
 	"Button.h"
 	"TextField.h"
 	"GestionUser.h"
@@ -2397,11 +2402,11 @@
 	<iostream>
 	<string>
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\gui\interfacetablescore.cpp
+1574521673 source:c:\users\user\documents\github\pminaria\src\gui\interfacetablescore.cpp
 	"gui/InterfaceTableScore.h"
 	<algorithm>
 
-1574419633 c:\users\user\documents\github\pminaria\include\gui\interfacetablescore.h
+1574516593 c:\users\user\documents\github\pminaria\include\gui\interfacetablescore.h
 	"GestionUser.h"
 	"TextField.h"
 	"Button.h"
@@ -2411,12 +2416,12 @@
 	<vector>
 	<sstream>
 
-1574432146 source:c:\users\user\documents\github\pminaria\src\gui\interfacecon.cpp
+1574527287 source:c:\users\user\documents\github\pminaria\src\gui\interfacecon.cpp
 	"gui/InterfaceCon.h"
 	"gui/TextField.h"
 	"model/GestionUser.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\gui\interfacecon.h
+1574527270 c:\users\user\documents\github\pminaria\include\gui\interfacecon.h
 	"Button.h"
 	"TextField.h"
 	"GestionUser.h"
@@ -2445,35 +2450,35 @@
 1574419634 source:c:\users\user\documents\github\pminaria\src\gui\slidersfml.cpp
 	"gui/SliderSFML.h"
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\block.cpp
+1574521829 source:c:\users\user\documents\github\pminaria\src\model\block.cpp
 	"model/Block.h"
 	<sstream>
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockdiamond.cpp
+1574522386 source:c:\users\user\documents\github\pminaria\src\model\blockdiamond.cpp
 	"model/BlockDiamond.h"
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockdirt.cpp
+1574522411 source:c:\users\user\documents\github\pminaria\src\model\blockdirt.cpp
 	"model/BlockDirt.h"
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockemerald.cpp
+1574522491 source:c:\users\user\documents\github\pminaria\src\model\blockemerald.cpp
 	"model/BlockEmerald.h"
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockgold.cpp
+1574522641 source:c:\users\user\documents\github\pminaria\src\model\blockgold.cpp
 	"model/BlockGold.h"
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockiron.cpp
+1574522748 source:c:\users\user\documents\github\pminaria\src\model\blockiron.cpp
 	"model/BlockIron.h"
 
-1574432166 source:c:\users\user\documents\github\pminaria\src\gui\textfield.cpp
+1574529238 source:c:\users\user\documents\github\pminaria\src\gui\textfield.cpp
 	"gui/TextField.h"
 	<iostream>
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockobsidian.cpp
+1574522959 source:c:\users\user\documents\github\pminaria\src\model\blockobsidian.cpp
 	"BlockObsidian.h"
 
-1574419633 c:\users\user\documents\github\pminaria\include\model\blockobsidian.h
+1574522876 c:\users\user\documents\github\pminaria\include\model\blockobsidian.h
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\blockstone.cpp
+1574522862 source:c:\users\user\documents\github\pminaria\src\model\blockstone.cpp
 	"model/BlockStone.h"
 
 1574419634 source:c:\users\user\documents\github\pminaria\src\model\enemy.cpp
@@ -2482,20 +2487,20 @@
 1574419634 source:c:\users\user\documents\github\pminaria\src\model\entity.cpp
 	"model/Entity.h"
 
-1574422845 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
+1574529040 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
 	"GestionUser.h"
 	<string.h>
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\lavablock.cpp
+1574523032 source:c:\users\user\documents\github\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574419634 source:c:\users\user\documents\github\pminaria\src\model\pickaxe.cpp
+1574520238 source:c:\users\user\documents\github\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
 1574419634 source:c:\users\user\documents\github\pminaria\src\model\player.cpp
 	"model/Player.h"
 
-1574422963 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
+1574529119 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
 	"User.h"
 	<sstream>
 	<iostream>

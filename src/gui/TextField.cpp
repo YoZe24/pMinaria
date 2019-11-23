@@ -84,8 +84,8 @@ void TextField::setTextInput(sf::String str){
 TextField::TextField(const TextField& other)
 {
     this->position = other.position;
-    this->text = other.text;
-    this->texture = other.texture;
+    /*this->text = other.text;
+    this->texture = other.texture;*/
 }
 /**
 *   Operator= overloading
@@ -96,9 +96,9 @@ TextField::TextField(const TextField& other)
 TextField& TextField::operator=(const TextField& rhs)
 {
     if (this == &rhs) return *this;
-    this->position = rhs.position;
+    /*this->position = rhs.position;
     this->text = rhs.text;
-    this->texture = rhs.texture;
+    this->texture = rhs.texture;*/
     return *this;
 }
 /**

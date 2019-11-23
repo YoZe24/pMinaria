@@ -93,12 +93,13 @@ bool GestionUser::contains(const User* u){
 *   @param : reference of a User object
 */
 void GestionUser::removeUser (User& u){
-    for(int i=0; i<users.size(); i++){
+    for(int i=0; i<=users.size(); i++){
         if(*users[i] == u){
+            cout<<2;
             User* tmp = *(users.begin()+i);
             users.erase(users.begin()+i);
             delete tmp;
-            free(tmp);
+            //free(tmp);
             return;
         }
     }

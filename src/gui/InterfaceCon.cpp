@@ -67,6 +67,7 @@ void InterfaceCon::InputTextRecup(RenderWindow& window, sf::Event event){
 */
 InterfaceCon::~InterfaceCon()
 {
+    cout<<"destr";
     delete textLogin;
     delete inputLogin;
 }
@@ -121,6 +122,15 @@ void InterfaceCon::Confirm(RenderWindow& window){
 
     }
 }
+/**
+*   Function who permet to manage the action on the window
+*   @param window : a RenderWindow object
+*/
+void InterfaceCon::handleInput(RenderWindow& window, sf::Event event){
+    InputTextRecup(window, event);
+    Confirm(window);
+}
+
 /**
 *   Function who permet to create background of window and title
 *   initialisation of position (title) + texture' background

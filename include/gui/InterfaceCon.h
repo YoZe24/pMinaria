@@ -21,9 +21,10 @@ class InterfaceCon
         virtual ~InterfaceCon();
         InterfaceCon(const InterfaceCon& other);
         InterfaceCon& operator=(const InterfaceCon& other);
-        void InputTextRecup(RenderWindow& window, Event event);
+        void InputTextRecup(RenderWindow& window, sf::Event event);
         void Confirm(RenderWindow& window);
         void draw(RenderWindow& window);
+        void handleInput(RenderWindow& window, sf::Event event);
 
     protected:
 

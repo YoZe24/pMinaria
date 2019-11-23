@@ -20,6 +20,7 @@ class InterfaceConAdmin
         void InputTextRecup(RenderWindow& window, Event event);
         void Confirm(RenderWindow& window);
         void draw(RenderWindow& window);
+        void handleInput(RenderWindow& window, Event event);
 
     protected:
 
