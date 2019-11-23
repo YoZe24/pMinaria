@@ -4,27 +4,48 @@
 using namespace sf;
 using namespace std;
 
+/**
+*   Default constructor
+*/
 TileMap::TileMap()
 {
     //ctor
 }
 
+/**
+*   Main constructor
+*
+*   @param width : Tilemap's width
+*   @param height : Tilemap's height
+*   @param tileSize : Tile's size
+*   @param sW : Screen's width
+*   @param sH : Screen's height
+*/
 TileMap::TileMap(int width,int height,int tileSize,int sW,int sH):width(width),height(height),tileSize(tileSize),screenW(sW),screenH(sH)
 {
     nbBlockMined = 0;
 }
 
+/**
+*   Destructor
+*/
 TileMap::~TileMap()
 {
     tiles.clear();
 }
 
+/**
+*   Copy constructor
+*/
 TileMap::TileMap(const TileMap& other):
 width(other.width),height(other.height),tileSize(other.tileSize),tiles(other.tiles),screenW(other.screenW),screenH(other.screenH),nbBlockMined(other.nbBlockMined)
 {
     //copy ctor
 }
 
+/**
+*   Operator= to compare 2 tiles
+*/
 TileMap& TileMap::operator=(const TileMap& other){
     if(this != &other){
         this->width = other.width;
@@ -39,6 +60,15 @@ TileMap& TileMap::operator=(const TileMap& other){
     return *this;
 }
 
+/**
+*   Load function to set the tile map
+*
+*   @param width : Tilemap's width
+*   @param height : Tilemap's height
+*   @param tileSize : Tile's size
+*   @param sW : Screen's width
+*   @param sH : Screen's height
+*/
 void TileMap::load(int width,int height,int tileSize,int sW,int sH){
     this->width = width;
     this->height = height;
@@ -47,13 +77,14 @@ void TileMap::load(int width,int height,int tileSize,int sW,int sH){
     this->screenH = sH;
 }
 
+/***/
 map<int,Tile>::iterator TileMap::getItStart(int pos){
     int start = pos - (width * 3) - nbBlockMined < 0 ? 0 : pos - (width * 3) - nbBlockMined;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,start);
     return it;
 }
-
+/***/
 map<int,Tile>::iterator TileMap::getItFinish(int pos){
     int finish = pos + width * 3 > (width * height)-3 ? (width * height)-3 : pos+width*3;
     map<int,Tile>::iterator it = tiles.begin();
@@ -61,6 +92,7 @@ map<int,Tile>::iterator TileMap::getItFinish(int pos){
     return it;
 }
 
+/***/
 void TileMap::draw(RenderWindow& window,float dt,sf::Vector2f vPos){
     int pos = (vPos.x/tileSize) + (vPos.y/tileSize) * width;
     int nbBlocH = (width * ((screenH/tileSize)+3))/2;
@@ -79,12 +111,30 @@ void TileMap::draw(RenderWindow& window,float dt,sf::Vector2f vPos){
     }
 }
 
+/**
+*
+*   Adding function for the map
+*
+*   @param t : Tile to add at the map
+*   @param pos : The position where to add the tile into the map
+*
+*   @return value : Return true
+*/
 bool TileMap::add(const Tile& t,int pos){
     tiles.insert(make_pair(pos,t));
     return true;
 }
 
-
+/**
+*
+*   Delete function from the map
+*
+*   We remove the tile from the map and we added tile removed to the tilesDeleted map.
+*
+*   @param pos : Tile's position in the map
+*
+*   @return eb : Return the block's type
+*/
 EnumBlock TileMap::deleteTileAt(int pos){
     EnumBlock eb = tiles[pos].getBlock().getType();
     tilesDeleted.push_back(pos);
@@ -93,6 +143,14 @@ EnumBlock TileMap::deleteTileAt(int pos){
     return eb;
 }
 
+/**
+*
+*   Delete function from the map
+*
+*   We use x,y to get the position of the tile in the map.
+*
+*
+*/
 EnumBlock TileMap::deleteTileAt(float x,float y,float power){
     int pos = getPos(x,y);
 
@@ -119,6 +177,13 @@ EnumBlock TileMap::deleteTileAt(float x,float y,float power){
 
 }
 
+/**
+*   Test function to find if the tile at position pos is well removed
+*
+*   @param pos : Tile's position
+*
+*   @return value : Return if the tile is removed from the map
+*/
 bool TileMap::isDeleted(int pos){
     return find(tilesDeleted.begin(),tilesDeleted.end(),pos) != tilesDeleted.end();
 }

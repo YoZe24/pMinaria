@@ -3,6 +3,12 @@
 using namespace sf;
 using namespace std;
 
+/**
+*
+*     Default constructor
+*
+*     We set all default values
+*/
 Animation::Animation()
 {
     currentFrame = 0;
@@ -11,6 +17,14 @@ Animation::Animation()
     loop = true;
 }
 
+/**
+*
+*   Main constructor
+*
+*   @param speed : The speed to set the animation
+*   @param step : The pixels between 2 texture of the sprite
+*   @param loop : Value if the texture has animation or not
+*/
 Animation::Animation(float speed,bool loop,sf::Sprite sprite)
 {
     currentFrame = 0;
@@ -22,12 +36,18 @@ Animation::Animation(float speed,bool loop,sf::Sprite sprite)
     this->sprite = sprite;
 }
 
+/**
+*   Destructor
+*/
 Animation::~Animation()
 {
     //dtor
 //    if(rand()%10000 == 1)cout<<"delete";
 }
 
+/**
+*   Copy constructor
+*/
 Animation::Animation(const Animation& other)
 {
     this->currentFrame = other.currentFrame;
@@ -40,6 +60,9 @@ Animation::Animation(const Animation& other)
     this->frames_flip = other.frames_flip;
 }
 
+/**
+*   Operator= to compare 2 animations
+*/
 Animation& Animation::operator=(const Animation& other){
     if(this != &other){
         this->currentFrame = other.currentFrame;
@@ -54,6 +77,12 @@ Animation& Animation::operator=(const Animation& other){
     return *this;
 }
 
+/**
+*
+*   Set the right frame from the animation
+*
+*   @param time : Value to change between 2 frame of the animation
+*/
 void Animation::tick(float time){
     if(!playing) return;
 
@@ -71,14 +100,40 @@ void Animation::tick(float time){
         sprite.setTextureRect(frames_flip[currentFrame]);
 }
 
+/**
+*
+*   Add frame from the sprite
+*
+*   We cut the sprite sheet into Rect and we have one frame.
+*   We can build an animation with this function.
+*
+*   @param ir : Frame's rectangle to set the sprite for the animation
+*/
 void Animation::addFrames(IntRect ir){
     this->frames.push_back(ir);
 }
 
+/**
+*
+*   Add frame from the sprite
+*
+*   We cut the sprite sheet into Rect and we have one frame.
+*   We can build an animation with this function.
+*   It contains flipped frames.
+*
+*   @param ir : Frame's rectangle to set the sprite for the animation
+*/
 void Animation::addFramesFlip(IntRect ir){
     this->frames_flip.push_back(ir);
 }
 
+/**
+*
+*   String function to check our frames
+*
+*   Only used for checking
+*
+*/
 std::string Animation::str() const{
     std::stringstream sstr;
     for(int i = 0 ; i<this->frames.size() ; i++){

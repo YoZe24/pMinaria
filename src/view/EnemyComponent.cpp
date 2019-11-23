@@ -2,6 +2,17 @@
 
 using namespace std;
 
+/**
+*
+*   Main constructor
+*
+*   @param a : AnimationManager to set the animations
+*   @param af : AnimationManager for the fire's animations (superimpose the fire animation and the player animation)
+*   @param tm : The game map with tiles (blocks)
+*   @param x : X position to set the entity's animation
+*   @param y : Y position to set the entity's animation
+*   @param s : Spawning vector to set the enemy's position
+*/
 EnemyComponent::EnemyComponent(AnimationManager& a,AnimationManager& af,TileMap* tm,int x, int y,vector<float> s):EntityComponent(a,af,tm,x,y)
 {
     Enemy* e = new Enemy(60,true,s);
@@ -11,11 +22,19 @@ EnemyComponent::EnemyComponent(AnimationManager& a,AnimationManager& af,TileMap*
     setTimerFire(0);
 }
 
+/**
+*
+*   Destructor
+*/
 EnemyComponent::~EnemyComponent()
 {
     //dtor
 }
 
+/**
+*
+*   Copy constructor
+*/
 EnemyComponent::EnemyComponent(const EnemyComponent& other):EntityComponent(other)
 {
     //option("Enemy",other.entity,10,"move");
@@ -27,6 +46,12 @@ vector<float> EnemyComponent::getSpawn(){
     return enemy->getSpawn();
 }
 
+/**
+*
+*   Change direction function
+*
+*   We change the enemy's direction and his flip his animation
+*/
 void EnemyComponent::swapDir(){
     if(getDir()){
         setDX( getDX() < 0 ? getDX() : getDX() * -1);
@@ -37,6 +62,14 @@ void EnemyComponent::swapDir(){
 
 }
 
+/**
+*
+*   Update the entity's movement and his animation
+*
+*   We call the collision function to set the interactions between the entity and map's blocks.
+*
+*   @param time : Value's time animation
+*/
 void EnemyComponent::update(float time){
     swapDir();
 
@@ -53,6 +86,9 @@ void EnemyComponent::update(float time){
     Collision(1);
 }
 
+/**
+*
+*/
 void EnemyComponent::Collision(int num){
     TileMap& tileMap = *getTileMap();
 

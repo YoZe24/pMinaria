@@ -5,6 +5,9 @@
 using namespace sf;
 using namespace std;
 
+/**
+*   Default constructor
+*/
 Tile::Tile(){
     this->block = Block({},0.0,EnumBlock::VOID);
     this->x = 0;
@@ -13,17 +16,33 @@ Tile::Tile(){
     this->h = 0;
 }
 
+/**
+*   Main constructor
+*
+*   @param block : Set the tile's type block
+*   @param anim : AnimationManager of the tile, contains all animations
+*   @param x : X's position of the tile
+*   @param y : Y's position of the tile
+*   @param w : Width of the tile
+*   @param h : Height of the tile
+*/
 Tile::Tile(Block block,AnimationManager anim,int x,int y, int w,int h):block(block),animManager(anim),x(x),y(y),w(w),h(h)
 {
     animManager.set("stay");
     this->time = 0.0;
 }
 
+/**
+*   Destructor
+*/
 Tile::~Tile()
 {
     //dtor
 }
 
+/**
+*   Copy constructor
+*/
 Tile::Tile(const Tile& other):block(other.block),animManager(other.animManager),x(other.x),y(other.y),w(other.w),h(other.h)
 {
     //copy ctor
@@ -31,6 +50,9 @@ Tile::Tile(const Tile& other):block(other.block),animManager(other.animManager),
     this->time = other.time;
 }
 
+/**
+*   Operator= to compare 2 tiles
+*/
 Tile& Tile::operator=(const Tile& other){
     if(this != &other){
         this->block = other.block;
@@ -44,6 +66,16 @@ Tile& Tile::operator=(const Tile& other){
     return *this;
 }
 
+/**
+*   Load function to set the tile
+*
+*   @param block : Tile's type block
+*   @param anim : AnimationManager of the tile, contains all animations
+*   @param x : X's position of the tile
+*   @param y : Y's position of the tile
+*   @param w : Width of the tile
+*   @param h : Height of the tile
+*/
 void Tile::load(Block block,AnimationManager anim,int x,int y, int w,int h){
     this->block = block;
     this->animManager = anim;
@@ -53,6 +85,10 @@ void Tile::load(Block block,AnimationManager anim,int x,int y, int w,int h){
     this->h = h;
 }
 
+/**
+*
+*   Update animations when the player hit a block or lava
+*/
 void Tile::updateAnimation(){
     if(time/1000 <= 0.05 || block.getType() == EnumBlock::LAVA)
         animManager.set("stay");
@@ -65,6 +101,9 @@ void Tile::updateAnimation(){
 
 }
 
+/**
+*   Update and draw the tile
+*/
 void Tile::draw(RenderWindow& window,float dt){
     updateAnimation();
     animManager.tick(dt);
@@ -81,6 +120,9 @@ string Tile::str()const{
     return sstr.str();
 }
 
+/**
+*   Update the tile's time animation
+*/
 void Tile::updateTime(float timeMS){
     this->time += timeMS;
 }
