@@ -16,6 +16,7 @@ class InterfaceCon
 {
     public:
         InterfaceCon(Texture& title,Texture& textureBG,Texture& textureBTN,Texture& textureTXT,Font& font,RenderWindow& window);
+        InterfaceCon();
         friend void voo();
         virtual ~InterfaceCon();
         InterfaceCon(const InterfaceCon& other);

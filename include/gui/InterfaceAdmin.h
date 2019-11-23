@@ -20,6 +20,7 @@ class InterfaceAdmin
 {
     public:
         InterfaceAdmin(Texture& title,Texture& textureBG,Texture& textureBTN, Texture& TextureTXT,Font& font,RenderWindow& window);
+        InterfaceAdmin();
         virtual ~InterfaceAdmin();
         InterfaceAdmin(const InterfaceAdmin& other);
         InterfaceAdmin& operator=(const InterfaceAdmin& other);

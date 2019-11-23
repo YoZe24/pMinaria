@@ -16,6 +16,7 @@ class InterfaceTableScore
 {
     public:
         InterfaceTableScore(Texture& title,Texture& textureBG,Texture& textureBTN, Texture& TextureTXT,Font& font,RenderWindow& window);
+        InterfaceTableScore();
         virtual ~InterfaceTableScore();
         InterfaceTableScore(const InterfaceTableScore& other);
         InterfaceTableScore& operator=(const InterfaceTableScore& other);

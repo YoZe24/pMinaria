@@ -34,10 +34,10 @@ TileMap tileMap(tileMap_width,tileMap_height,tile_size,screen_w,screen_h);
 
 int main()
 {
-    /*srand(time(NULL));
+    srand(time(NULL));
     Game game;
     game.pushState(new GameStateGame(&game));
-    game.gameLoop();*/
+    game.gameLoop();
 
     RenderWindow window(VideoMode(1200, 700), "The Game!");
 
@@ -66,7 +66,7 @@ int main()
 
 		window.clear();
 		//optionMenu.handleInput(window);
-		menu.handleInput(window);
+		//menu.handleInput(window);
 		window.display();
     }
 

@@ -12,6 +12,7 @@ class InterfaceConAdmin
 {
     public:
         InterfaceConAdmin(Texture& title,Texture& textureBG,Texture& textureBTN,Texture& textureTXT,Font& font,RenderWindow& window);
+        InterfaceConAdmin();
         friend void voo();
         virtual ~InterfaceConAdmin();
         InterfaceConAdmin(const InterfaceConAdmin& other);
