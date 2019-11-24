@@ -159,7 +159,6 @@ void PlayerComponent::Animation(float time){
     anim.tick(time);
 }
 
-
 void PlayerComponent::hittedByMob(){
     getEntity()->updateHealth(-25);
     setDY(-0.17);
