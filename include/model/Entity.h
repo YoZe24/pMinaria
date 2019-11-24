@@ -29,6 +29,7 @@ class Entity
         bool getFire()const{return fire;}
         int getHealth()const{return health;}
         bool getLife();
+        virtual void reset();
 
     protected:
 

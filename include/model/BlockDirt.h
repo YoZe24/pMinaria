@@ -7,6 +7,7 @@ class BlockDirt : public Block
 {
     public:
         BlockDirt(std::vector<float> s);
+        BlockDirt();
         virtual ~BlockDirt();
         BlockDirt(const BlockDirt& other);
         BlockDirt& operator=(const BlockDirt& other);

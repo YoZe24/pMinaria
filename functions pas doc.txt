@@ -1,0 +1,8 @@
+ - void EntityComponent::option(std::string NAME, Entity* e, float SPEED, std::string FIRST_ANIM)
+ - void EnemyComponent::swapDir()
+ - void EnemyComponent::Collision(int num)
+ - void PlayerComponent::Collision(int num)
+ - void TileMap::draw(RenderWindow& window,float dt,sf::Vector2f vPos)
+ - map<int,Tile>::iterator TileMap::getItStart(int pos)
+ - map<int,Tile>::iterator TileMap::getItFinish(int pos)
+ - EnumBlock TileMap::deleteTileAt(float x,float y,float power)

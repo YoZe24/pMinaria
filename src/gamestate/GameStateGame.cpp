@@ -4,6 +4,8 @@
 using namespace sf;
 using namespace std;
 
+const int TIME_TIMER = 120;
+
 GameStateGame::GameStateGame(Game* game)
 {
     this->game = game;
@@ -14,12 +16,20 @@ GameStateGame::GameStateGame(Game* game)
     loadTextures();
     loadAnimations();
     loadTileMap();
+
+    timer = new Timer(TIME_TIMER);
+    timer->setTimeout([&](){
+                 timer->reset();
+                 miner->reset();
+                 },TIME_TIMER * 1000);
+    timer->run();
 }
 
 GameStateGame::~GameStateGame()
 {
     delete tileMap;
     delete miner;
+    delete timer;
 }
 
 GameStateGame::GameStateGame(const GameStateGame& other)
@@ -40,9 +50,9 @@ void GameStateGame::draw(const float time)
 
     view.reset(sf::FloatRect(xView,yView,screen_w,screen_h));
     this->game->window.setView(view);
+
     background.setPosition(sf::Vector2f(view.getCenter().x,-32));
     background_caverne.setPosition(view.getCenter());
-
     this->game->window.draw(background_caverne);
     this->game->window.draw(background);
 
@@ -53,9 +63,13 @@ void GameStateGame::draw(const float time)
        if(ec->getY() >= miner->getY() - toDisplay && ec->getY() <= miner->getY() + toDisplay)
             ec->draw(this->game->window);
     }
+
+    timer->draw(this->game->window);
+    oreBar.draw(this->game->window);
 }
 void GameStateGame::update(const float time)
 {
+    cout << floor(miner->getY()/32) << endl;
     miner->update(time);
     int toDisplay = (screen_h+tile_size*2)/2;
 
@@ -79,18 +93,16 @@ void GameStateGame::update(const float time)
 
             if(miner->getRect().intersects(ec->getRect())){
                 if(!miner->getHitByMob()){
-                    miner->getEntity()->updateHealth(-10);
                     miner->setHitByMob(true);
-                    miner->setDY(-0.17);
-                    if(miner->getDir())
-                        miner->updateX(10);
-                    else
-                        miner->updateX(-10);
+                    miner->hittedByMob();
                 }
             }
         }
     }
 
+    timer->update(miner->getY()/tile_size);
+    Player* player = dynamic_cast<Player*>(miner->getEntity());
+    oreBar.update(player->getNbOresCraftCurrentPickaxe(),player->getNbOresCurrentPickaxe(),player->getType());
 }
 
 void GameStateGame::handleInput()
@@ -112,7 +124,7 @@ void GameStateGame::handleInput()
 
 
 void GameStateGame::loadTextures(){
-	miner_t.loadFromFile("miner2.png");
+	miner_t.loadFromFile("miner.png");
 	bg.loadFromFile("background.png");
 	bgCaverne.loadFromFile("background_caverne.png");
 	blocks_sheet.loadFromFile("blocks_sheet.png");
@@ -124,21 +136,23 @@ void GameStateGame::loadTextures(){
     background_caverne.setTexture(bgCaverne);
     background.setOrigin(bg.getSize().x/2,bg.getSize().y/2);
     background_caverne.setOrigin(bgCaverne.getSize().x/2,bgCaverne.getSize().y/2);
+    background.setScale(Vector2f(1.03,1.0));
     background.setTextureRect(sf::IntRect(0,0,screen_w,12*tile_size - 7));
 
 }
 
 void GameStateGame::loadTileMap(){
     BlockDirt bDirt(        {0.90,0.596,0.34,0.106,0.00,0.00});
-    BlockStone bStone(      {0.10,0.30,0.50,0.690,0.828,0.78});
+    BlockStone bStone(      {0.10,0.30,0.45,0.590,0.628,0.48});
     BlockIron bIron(        {0.00,0.10,0.10,0.10,0.055,0.07});
     BlockGold bGold(        {0.00,0.00,0.05,0.07,0.05,0.06});
     BlockDiamond bDiamond(  {0.00,0.00,0.00,0.02,0.03,0.04});
     BlockEmerald bEmerald(  {0.00,0.00,0.00,0.00,0.015,0.03});
+    BlockObsidian bObsidian({0.00,0.00,0.05,0.10,0.20,0.30});
     LavaBlock bLava(        {0.00,0.002,0.006,0.008,0.014,0.012});
     spawnEnemy =            {0.00,0.002,0.004,0.006,0.008,0.008};
 
-    blocks = {bDirt,bStone,bIron,bGold,bDiamond,bEmerald,bLava};
+    blocks = {bDirt,bStone,bIron,bGold,bDiamond,bEmerald,bObsidian,bLava};
 
     TileMap* temp;
     int pallier = 0,nbVoid = 0;
@@ -171,7 +185,7 @@ void GameStateGame::loadTileMap(){
                             }
                             else if(i == blocks.size()-1){
                                 for(int j = 0 ; j < rand2 ; j++){
-                                    t.load(blocks[i],animBlock[posLava],x*tile_size,(y*tile_size)+h_miner,tile_size,tile_size);
+                                    t.load(blocks[i],animBlock[posLava],x*tile_size,(y*tile_size)+h_miner,tile_size,tile_size/2);
                                     tileMap->add(t,x+y*tileMap_width);
                                     if(++x == tileMap_width){ x = 0;  y++;}
                                 }
@@ -198,12 +212,12 @@ void GameStateGame::loadAnimations(){
     animEnemy.create("move",enemy_t,1,0,12,24,13,0.005,16);
 
     string animations[4] = {"stay","mining1","mining2","mining3"};
-    for(int i = 0 ; i < nbBlock-3 ; i++){
+    for(int i = 0 ; i < nbBlock-2 ; i++){
         for(int j = 0 ; j < 4 ; j++){
             animBlock[i].create(animations[j],blocks_sheet,j * tile_size, tile_size * i,tile_size,tile_size,1,0.0,tile_size);
         }
     }
-    animBlock[posLava].create("stay",blocks_sheet,0,1+tile_size*posLava ,tile_size,tile_size,4,0.001,tile_size);
+    animBlock[posLava].create("stay",blocks_sheet,0,1+tile_size*posLava + tile_size/2 ,tile_size,tile_size/2,4,0.001,tile_size);
 
 
     for(int i = 0 ; i < 6 ; i++){

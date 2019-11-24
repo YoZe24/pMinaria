@@ -7,6 +7,7 @@ class BlockGold : public Block
 {
     public:
         BlockGold(std::vector<float> s);
+        BlockGold();
         virtual ~BlockGold();
         BlockGold(const BlockGold& other);
         BlockGold& operator=(const BlockGold&);

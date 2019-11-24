@@ -21,7 +21,7 @@
 #include "view/EnemyComponent.h"
 #include "gamestate/Game.h"
 #include "gamestate/GameStateGame.h"
-#include "util/Timer.h"
+#include "view/Timer.h"
 
 
 using namespace sf;

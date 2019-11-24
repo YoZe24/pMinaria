@@ -30,3 +30,8 @@ bool Entity::getLife(){
         life = false;
     return life;
 }
+
+void Entity::reset(){
+    health = 100;
+    life = true;
+}

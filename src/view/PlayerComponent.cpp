@@ -3,8 +3,21 @@
 
 using namespace std;
 
+/**
+*   Constant variable to set the gravity for the entity's fall
+*/
 const float GRAVITY = 0.0005;
 
+/**
+*
+*   Main constructor
+*
+*   @param a : AnimationManager to set the animations
+*   @param af : AnimationManager for the fire's animations (superimpose the fire animation and the player animation)
+*   @param tileMap : The game map with tiles (blocks)
+*   @param x : X position to set the entity's animation
+*   @param y : Y position to set the entity's animation
+*/
 PlayerComponent::PlayerComponent(AnimationManager &a,AnimationManager& animFire, TileMap* tileMap,int x,int y):EntityComponent(a,animFire,tileMap,x,y){
     Player* p = new Player(100,true);
     updateStrAnimation("0");
@@ -18,11 +31,18 @@ PlayerComponent::PlayerComponent(AnimationManager &a,AnimationManager& animFire,
 
 }
 
+/**
+*
+*   Destructor
+*/
 PlayerComponent::~PlayerComponent()
 {
 
 }
 
+/**
+*   Operator= to compare 2 entities
+*/
 PlayerComponent& PlayerComponent::operator=(const PlayerComponent& other){
     if(this != &other){
         EntityComponent::operator=(other);
@@ -39,6 +59,13 @@ PlayerComponent& PlayerComponent::operator=(const PlayerComponent& other){
     return *this;
 }
 
+/**
+*   Update variables player's actions for his animations
+*
+*   We define the value with the action and the position number from the sprite sheet
+*
+*   @param i : The animation's position in the sprite sheet
+*/
 void PlayerComponent::updateStrAnimation(string i){
     walkStr = "walk"+i;
     stayStr = "stay"+i;
@@ -46,10 +73,18 @@ void PlayerComponent::updateStrAnimation(string i){
     miningStr = "mining"+i;
 }
 
+/***/
 void PlayerComponent::setKey(string strKey,bool state){
     key[strKey]=state;
 }
 
+/**
+*
+*   User's interactions with the keyboard
+*
+*   We set the direction when the user uses the keyboard.
+*   We update the player's state and adapt the animation (in the function Animation)
+*/
 void PlayerComponent::keyboard(){
     if(key["Q"]){
         setDir(1);
@@ -88,10 +123,20 @@ void PlayerComponent::keyboard(){
     key["Z"]=key["Q"]=key["D"]=key["S"]=false;
 }
 
+/**
+*   Draw function
+*/
 void PlayerComponent::draw(sf::RenderWindow& window){
     EntityComponent::draw(window);
+    healthBar.draw(window);
 }
 
+/**
+*
+*   Update the player's animation in function user's interactions(keyboard function)
+*
+*   @param time : Value's time animation
+*/
 void PlayerComponent::Animation(float time){
     AnimationManager& anim = getAnim();
     if(STATE == stay) anim.set(stayStr);
@@ -114,17 +159,40 @@ void PlayerComponent::Animation(float time){
     anim.tick(time);
 }
 
+
+void PlayerComponent::hittedByMob(){
+    getEntity()->updateHealth(-25);
+    setDY(-0.17);
+    if(getDir())
+       updateX(10);
+    else
+        updateX(-10);
+}
+
+/**
+*
+*   Update all player's values
+*
+*   We check the player's life and reset his life.
+*   We update his animation and texture when he gains a level.
+*   The player gets power in function of this level.
+*   We call the collision function to set the interactions between the entity and map's blocks.
+*
+*   @param time : Value's time animation
+*/
 void PlayerComponent::update(float time){
     sf::Clock c;
     if(!getEntity()->getLife()){
-        reset(100);
+        reset();
     }
+
     Player* player = dynamic_cast<Player*>(getEntity());
     power = player->updatePickaxe();
     updateStrAnimation(to_string(player->getType()));
 
     Fire(time);
     keyboard();
+    healthBar.update(getEntity()->getHealth());
 
     Animation(time);
 
@@ -138,21 +206,25 @@ void PlayerComponent::update(float time){
 
 }
 
+/**
+*
+*/
 void PlayerComponent::Collision(int num){
     TileMap& tileMap = *getTileMap();
-    int width = tileMap.getWidth();
     int pos = tileMap.getPos(getX(),getY());
     int xD,yD;
-    EnumBlock blockCollide;
     map<int,Tile>::iterator itFinish = tileMap.getItFinish(pos);
     for(auto i = tileMap.getItStart(pos) ; i != itFinish ; i++){
-            blockCollide = i->second.getBlock().getType();
             sf::FloatRect fr = i->second.getRect();
             if(getRect().intersects(fr)){
 
+                //If i'm colliding with LavaBlock
                 if(i->second.getBlock().getType() == EnumBlock::LAVA){
-                    setFire(true);
-                    getAnimFire().play();
+                    //If i'm in LavaBlock (don't trigger if i'm above)
+                    if(getY() > i->second.getY()){
+                        setFire(true);
+                        getAnimFire().play();
+                    }
                 }else{
                     if (getDY()>0 && num==1){
                         setY(fr.top -  getH());
@@ -194,7 +266,15 @@ void PlayerComponent::Collision(int num){
     CollisionBord();
 }
 
-
+/**
+*
+*   Test function to check if the block can be deleted from the tile map
+*
+*   @param x : X's position of the block
+*   @param y : Y's position of the block
+*
+*   @return value : Return if the block at the position x,y can be removed from the tile map
+*/
 bool PlayerComponent::tryToDeleteAt(int x,int y){
 
     EnumBlock blockMined = getTileMap()->deleteTileAt(x,y,power);
@@ -207,6 +287,15 @@ bool PlayerComponent::tryToDeleteAt(int x,int y){
     return false;
 }
 
+/**
+*
+*   Test function to check if the block is destroyable by the player
+*
+*   @param x : X's position of the block
+*   @param y : Y's position of the block
+*
+*   @return value : Return if the block is breakable by the player
+*/
 bool PlayerComponent::isMinable(int x,int y){
     EnumBlock blockToMine = getTileMap()->getEnumBlockAt(x,y);
     return getEntity()->isBreakable(blockToMine);

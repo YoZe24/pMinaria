@@ -58,7 +58,6 @@ class PX_Strategy_Wood : public PX_Strategy
 {
     public:
         PX_Strategy_Wood(float power = 1.0,int nbOresCraft = nbOres,EnumPickaxe ep = EnumPickaxe::PX_WOOD);
-        PX_Strategy_Wood(const PX_Strategy_Wood&);
         virtual bool isBreakable(EnumBlock typeBlock);
         virtual PX_Strategy_Wood& operator=(const PX_Strategy_Wood&);
 };

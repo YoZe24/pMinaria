@@ -3,6 +3,7 @@
 
 #include "view/EntityComponent.h"
 #include <iostream>
+#include "HealthBar.h"
 
 class PlayerComponent: public EntityComponent
 {
@@ -18,6 +19,7 @@ class PlayerComponent: public EntityComponent
         void Animation(float time);
         void update(float time);
         void Collision(int num);
+        void hittedByMob();
 
         void draw(sf::RenderWindow& window);
 
@@ -36,6 +38,7 @@ class PlayerComponent: public EntityComponent
         float power,time;
         bool hit,miningDown,hitByMob;
         EnumBlock lastBlockMined;
+        HealthBar healthBar;
         std::map<std::string,bool> key;
         std::string walkStr,stayStr,jumpStr,miningStr;
 

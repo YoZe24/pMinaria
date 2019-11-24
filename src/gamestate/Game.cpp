@@ -1,4 +1,5 @@
-#include "Game.h"
+#include "gamestate/Game.h"
+#include <iostream>
 
 using namespace std;
 using namespace sf;
@@ -36,11 +37,12 @@ GameState* Game::peekState()
 void Game::gameLoop()
 {
     sf::Clock clock;
-
+    float timer;
     while(this->window.isOpen())
     {
         float time = clock.getElapsedTime().asMicroseconds();
         clock.restart();
+        timer += clock.getElapsedTime().asSeconds();
 
         time = time/500;
 		if (time > 40) time = 40;
@@ -51,6 +53,7 @@ void Game::gameLoop()
         this->window.clear(sf::Color::Black);
         peekState()->draw(time);
         this->window.display();
+
     }
 }
 
