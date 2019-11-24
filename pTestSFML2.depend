@@ -2182,7 +2182,7 @@
 	<iostream>
 	<string>
 
-1574609440 source:c:\users\user\documents\github\pminaria\main.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\main.cpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -2215,33 +2215,33 @@
 	"view/Timer.h"
 	"gui/SliderSFML.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\animationmanager.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\animationmanager.h
 	"view/Animation.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\animation.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\animation.h
 	<vector>
 	<SFML/Graphics.hpp>
 	<sstream>
 	<iostream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\entity.h
+1574627034 c:\users\user\documents\github\pminaria\include\model\entity.h
 	"model/Block.h"
 	<iostream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\block.h
+1574629414 c:\users\user\documents\github\pminaria\include\model\block.h
 	<string>
 	<vector>
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\player.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\player.h
 	"model/Entity.h"
 	"model/Pickaxe.h"
 	<map>
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\pickaxe.h
+1574633129 c:\users\user\documents\github\pminaria\include\model\pickaxe.h
 	"model/Block.h"
 	<iostream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\entitycomponent.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\entitycomponent.h
 	"view/AnimationManager.h"
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -2251,62 +2251,62 @@
 	"model/Player.h"
 	"model/Entity.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\tile.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\tile.h
 	<model/Block.h>
 	<view/AnimationManager.h>
 	<SFML/Graphics.hpp>
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\tilemap.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\tilemap.h
 	<view/Tile.h>
 	<vector>
 	<SFML/Graphics.hpp>
 	<deque>
 	<map>
 
-1574613014 c:\users\user\documents\github\pminaria\include\view\playercomponent.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\playercomponent.h
 	"view/EntityComponent.h"
 	<iostream>
 	"HealthBar.h"
 	"model/GestionUser.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockstone.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockstone.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockiron.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockiron.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockgold.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockgold.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockdiamond.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockdiamond.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockemerald.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockemerald.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\lavablock.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\lavablock.h
 	"model/Block.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\enemycomponent.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\enemycomponent.h
 	"model/Enemy.h"
 	"view/EntityComponent.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\enemy.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\enemy.h
 	"model/Entity.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\gamestate\game.h
+1574630080 c:\users\user\documents\github\pminaria\include\gamestate\game.h
 	<stack>
 	<string>
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\gamestate\gamestate.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestate.h
 	"gamestate/Game.h"
 
-1574613279 c:\users\user\documents\github\pminaria\include\gamestate\gamestategame.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestategame.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateMainMenu.h"
 	"gamestate/GameStateTableScore.h"
@@ -2341,42 +2341,42 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\gui\button.h
+1574583314 c:\users\user\documents\github\pminaria\include\gui\button.h
 	<vector>
 	<SFML/Graphics.hpp>
 	"ButtonState.h"
 	<string>
 
-1574585543 c:\users\user\documents\github\pminaria\include\gui\buttonstate.h
+1574583314 c:\users\user\documents\github\pminaria\include\gui\buttonstate.h
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\entitycomponent.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\entitycomponent.cpp
 	"view/EntityComponent.h"
 
-1574613009 source:c:\users\user\documents\github\pminaria\src\view\playercomponent.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\playercomponent.cpp
 	"view/PlayerComponent.h"
 	<cmath>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\tile.cpp
+1574630442 source:c:\users\user\documents\github\pminaria\src\view\tile.cpp
 	"view/Tile.h"
 	<sstream>
 	<iostream>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\tilemap.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\tilemap.cpp
 	"view/TileMap.h"
 	"iostream"
 	<cmath>
 
-1574587992 source:c:\users\user\documents\github\pminaria\src\gamestate\game.cpp
+1574628142 source:c:\users\user\documents\github\pminaria\src\gamestate\game.cpp
 	"gamestate/Game.h"
 	<iostream>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestate.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestate.cpp
 	"gamestate/GameState.h"
 
-1574615287 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestategame.cpp
+1574630220 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
-1574588349 source:c:\users\user\documents\github\pminaria\src\gui\button.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gui\button.cpp
 	"gui/Button.h"
 	<iostream>
 
@@ -2393,7 +2393,7 @@
 	<vector>
 	<sstream>
 
-1574610183 c:\users\user\documents\github\pminaria\include\model\gestionuser.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\gestionuser.h
 	"User.h"
 	<vector>
 	<string>
@@ -2401,14 +2401,14 @@
 	<iostream>
 	<fstream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\user.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\user.h
 	<string>
 	<ostream>
 	<vector>
 	<iostream>
 	<fstream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\gui\textfield.h
+1574583314 c:\users\user\documents\github\pminaria\include\gui\textfield.h
 	<SFML/Graphics.hpp>
 	<string>
 	<sstream>
@@ -2467,78 +2467,78 @@
 	"SliderSFML.h"
 	<iostream>
 
-1574604991 c:\users\user\documents\github\pminaria\include\gui\slidersfml.h
-	<SFML\Graphics.hpp>
+1574626922 c:\users\user\documents\github\pminaria\include\gui\slidersfml.h
+	<SFML/Graphics.hpp>
 	<iostream>
 	<string>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\gui\slidersfml.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gui\slidersfml.cpp
 	"gui/SliderSFML.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\block.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\block.cpp
 	"model/Block.h"
 	<sstream>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockdiamond.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockdiamond.cpp
 	"model/BlockDiamond.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockdirt.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockdirt.cpp
 	"model/BlockDirt.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockemerald.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockemerald.cpp
 	"model/BlockEmerald.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockgold.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockgold.cpp
 	"model/BlockGold.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockiron.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockiron.cpp
 	"model/BlockIron.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\gui\textfield.cpp
+1574627080 source:c:\users\user\documents\github\pminaria\src\gui\textfield.cpp
 	"gui/TextField.h"
 	<iostream>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockobsidian.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockobsidian.cpp
 	"BlockObsidian.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\blockobsidian.h
+1574583314 c:\users\user\documents\github\pminaria\include\model\blockobsidian.h
 	"model/Block.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockstone.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockstone.cpp
 	"model/BlockStone.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\enemy.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\enemy.cpp
 	"model/Enemy.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\entity.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\entity.cpp
 	"model/Entity.h"
 
-1574611245 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
 	"GestionUser.h"
 	<string.h>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\lavablock.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\pickaxe.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\player.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\model\player.cpp
 	"model/Player.h"
 
-1574610881 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
+1574627080 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
 	"User.h"
 	<sstream>
 	<iostream>
 	<string>
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\animation.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\animation.cpp
 	"view/Animation.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\animationmanager.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\animationmanager.cpp
 	"view/AnimationManager.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\enemycomponent.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\enemycomponent.cpp
 	"view/EnemyComponent.h"
 
 1574553526 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animationmanager.h
@@ -2850,31 +2850,32 @@
 	"view/Timer.h"
 	<sstream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\healthbar.h
+1574583314 c:\users\user\documents\github\pminaria\include\view\healthbar.h
 	<SFML/Graphics.hpp>
 
-1574611447 c:\users\user\documents\github\pminaria\include\view\timer.h
+1574627034 c:\users\user\documents\github\pminaria\include\view\timer.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<thread>
 	<string>
+	<functional>
 
-1574585543 c:\users\user\documents\github\pminaria\include\oresbar.h
+1574583314 c:\users\user\documents\github\pminaria\include\oresbar.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Pickaxe.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\oresbar.cpp
+1574627080 source:c:\users\user\documents\github\pminaria\src\oresbar.cpp
 	"OresBar.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\healthbar.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\view\healthbar.cpp
 	"view/HealthBar.h"
 
-1574611472 source:c:\users\user\documents\github\pminaria\src\view\timer.cpp
+1574627080 source:c:\users\user\documents\github\pminaria\src\view\timer.cpp
 	"view/Timer.h"
 	<sstream>
 
-1574603978 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.cpp
 	"GameStateMainMenu.h"
 
 1574587576 c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.h
@@ -2907,7 +2908,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574604585 c:\users\user\documents\github\pminaria\include\gamestate\gamestatemainmenu.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestatemainmenu.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateCon.h"
@@ -2944,7 +2945,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574593044 c:\users\user\documents\github\pminaria\include\gamestate\gamestatecon.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestatecon.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -2979,13 +2980,13 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574615115 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatecon.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatecon.cpp
 	"GameStateCon.h"
 
-1574604259 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateadmin.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateadmin.cpp
 	"GameStateAdmin.h"
 
-1574593629 c:\users\user\documents\github\pminaria\include\gamestate\gamestateadmin.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestateadmin.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -3020,10 +3021,10 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574601129 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateconadmin.cpp
+1574627050 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateconadmin.cpp
 	"GameStateConAdmin.h"
 
-1574600647 c:\users\user\documents\github\pminaria\include\gamestate\gamestateconadmin.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestateconadmin.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -3059,7 +3060,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574615331 c:\users\user\documents\github\pminaria\include\gamestate\gamestatetablescore.h
+1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestatetablescore.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -3100,11 +3101,11 @@
 
 1574601240 c:\users\user\documents\github\pminaria\gamestatetablescore.h
 
-1574615311 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatetablescore.cpp
+1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatetablescore.cpp
 	"GameStateTableScore.h"
 	<algorithm>
 
-1574604581 c:\users\user\documents\github\pminaria\include\gamestate\gamestateoptionmenu.h
+1574627578 c:\users\user\documents\github\pminaria\include\gamestate\gamestateoptionmenu.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -3140,7 +3141,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574605098 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateoptionmenu.cpp
+1574629852 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateoptionmenu.cpp
 	"GameStateOptionMenu.h"
 
 1574583314 source:c:\users\user\desktop\projet\pminaria-master\main.cpp
