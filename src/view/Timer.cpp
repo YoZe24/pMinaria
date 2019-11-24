@@ -92,13 +92,11 @@ void Timer::run(){
 
 void Timer::setTimeout(std::function<void(void)> f, int delay) {
     this->clear = false;
-    endFunction = f;
-    this->delay = delay;
     std::thread t([=]() {
         if(this->clear) return;
         std::this_thread::sleep_for(std::chrono::milliseconds(delay));
         if(this->clear) return;
-        endFunction();
+        f();
     });
     t.detach();
 

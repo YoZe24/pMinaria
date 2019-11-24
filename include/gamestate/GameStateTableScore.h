@@ -61,7 +61,7 @@ class GameStateTableScore : public GameState
         vector <TextField*> listScores;
         vector<User*> users;
         Button btnBack;
-
+        const int screen_h = 700,screen_w = 1200;
         void createButton(Font& font,Texture& tex,RenderWindow& window);
         void initBackGround(Texture& title,Texture& tex, RenderWindow& window);
 };

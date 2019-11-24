@@ -182,7 +182,7 @@ void PlayerComponent::hittedByMob(){
 void PlayerComponent::update(float time){
     sf::Clock c;
     if(!getEntity()->getLife()){
-        reset();
+        //reset();
     }
 
     Player* player = dynamic_cast<Player*>(getEntity());

@@ -2,6 +2,8 @@
 #define GAMESTATEGAME_H
 
 #include "gamestate/GameState.h"
+#include "gamestate/GameStateMainMenu.h"
+#include "gamestate/GameStateTableScore.h"
 #include <SFML/Graphics.hpp>
 #include "view/AnimationManager.h"
 #include <vector>
@@ -20,6 +22,7 @@
 #include "model/LavaBlock.h"
 #include "model/BlockObsidian.h"
 #include "model/Pickaxe.h"
+#include "model/GestionUser.h"
 #include <map>
 #include <cmath>
 #include "view/EnemyComponent.h"
@@ -42,6 +45,7 @@ class GameStateGame : public GameState
         void loadTileMap();
         void loadAnimations();
         void loadBlocks();
+        void setScore(int newScore);
     protected:
 
     private:
@@ -51,12 +55,13 @@ class GameStateGame : public GameState
         sf::Sprite background,background_caverne;
         Timer* timer;
         OresBar oreBar;
+        int score;
         vector<Block> blocks;
         vector<float> spawnEnemy;
         vector<EnemyComponent*> enemies;
         PlayerComponent* miner;
         const int tileMap_height = 400,tileMap_width = 50,tile_size = 32,h_miner = 24,w_miner = 16;
-        const int screen_h = 600,screen_w = 1200;
+        const int screen_h = 700,screen_w = 1200;
         const static int nbBlock = 10,posLava = 9;
         AnimationManager animMinerFire,animMiner,animEnemy,animBlock[nbBlock];
 };

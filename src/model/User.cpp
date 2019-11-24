@@ -59,10 +59,9 @@ User::User(const User& other)
 */
 User& User::operator=(const User& rhs)
 {
-    if (this != &rhs) {
-        this->login = rhs.login;
-        this->scores = rhs.scores;
-    }
+    if(this == &rhs)return *this;
+    this->login = rhs.login;
+    this->scores = rhs.scores;
     return *this;
 }
 /**

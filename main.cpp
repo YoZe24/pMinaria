@@ -43,14 +43,14 @@ int main()
 {
     GestionUser* gestion = GestionUser::getInstance();
     gestion->readFromFile("User.txt");
-    cout<<gestion->str();
+    //cout<<gestion->str();
 
     srand(time(NULL));
     Game game;
     game.pushState(new GameStateMainMenu(&game));
     game.gameLoop();
 
-    gestion->writeFromFile("User.txt");
+    //gestion->writeFromFile("User.txt");
 
 //
 //    RenderWindow window(VideoMode(1200, 700), "The Game!");

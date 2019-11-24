@@ -2182,7 +2182,7 @@
 	<iostream>
 	<string>
 
-1574604164 source:c:\users\user\documents\github\pminaria\main.cpp
+1574609440 source:c:\users\user\documents\github\pminaria\main.cpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -2263,10 +2263,11 @@
 	<deque>
 	<map>
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\playercomponent.h
+1574613014 c:\users\user\documents\github\pminaria\include\view\playercomponent.h
 	"view/EntityComponent.h"
 	<iostream>
 	"HealthBar.h"
+	"model/GestionUser.h"
 
 1574585543 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
 	"model/Block.h"
@@ -2305,8 +2306,10 @@
 1574585543 c:\users\user\documents\github\pminaria\include\gamestate\gamestate.h
 	"gamestate/Game.h"
 
-1574585543 c:\users\user\documents\github\pminaria\include\gamestate\gamestategame.h
+1574613279 c:\users\user\documents\github\pminaria\include\gamestate\gamestategame.h
 	"gamestate/GameState.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateTableScore.h"
 	<SFML/Graphics.hpp>
 	"view/AnimationManager.h"
 	<vector>
@@ -2325,6 +2328,7 @@
 	"model/LavaBlock.h"
 	"model/BlockObsidian.h"
 	"model/Pickaxe.h"
+	"model/GestionUser.h"
 	<map>
 	<cmath>
 	"view/EnemyComponent.h"
@@ -2348,7 +2352,7 @@
 1574585543 source:c:\users\user\documents\github\pminaria\src\view\entitycomponent.cpp
 	"view/EntityComponent.h"
 
-1574585622 source:c:\users\user\documents\github\pminaria\src\view\playercomponent.cpp
+1574613009 source:c:\users\user\documents\github\pminaria\src\view\playercomponent.cpp
 	"view/PlayerComponent.h"
 	<cmath>
 
@@ -2369,7 +2373,7 @@
 1574585543 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestate.cpp
 	"gamestate/GameState.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestategame.cpp
+1574615287 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
 1574588349 source:c:\users\user\documents\github\pminaria\src\gui\button.cpp
@@ -2389,7 +2393,7 @@
 	<vector>
 	<sstream>
 
-1574585543 c:\users\user\documents\github\pminaria\include\model\gestionuser.h
+1574610183 c:\users\user\documents\github\pminaria\include\model\gestionuser.h
 	"User.h"
 	<vector>
 	<string>
@@ -2509,7 +2513,7 @@
 1574585543 source:c:\users\user\documents\github\pminaria\src\model\entity.cpp
 	"model/Entity.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
+1574611245 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
 	"GestionUser.h"
 	<string.h>
 
@@ -2522,7 +2526,7 @@
 1574585543 source:c:\users\user\documents\github\pminaria\src\model\player.cpp
 	"model/Player.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
+1574610881 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
 	"User.h"
 	<sstream>
 	<iostream>
@@ -2849,7 +2853,7 @@
 1574585543 c:\users\user\documents\github\pminaria\include\view\healthbar.h
 	<SFML/Graphics.hpp>
 
-1574585543 c:\users\user\documents\github\pminaria\include\view\timer.h
+1574611447 c:\users\user\documents\github\pminaria\include\view\timer.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<thread>
@@ -2866,7 +2870,7 @@
 1574585543 source:c:\users\user\documents\github\pminaria\src\view\healthbar.cpp
 	"view/HealthBar.h"
 
-1574585543 source:c:\users\user\documents\github\pminaria\src\view\timer.cpp
+1574611472 source:c:\users\user\documents\github\pminaria\src\view\timer.cpp
 	"view/Timer.h"
 	<sstream>
 
@@ -2975,7 +2979,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574593059 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatecon.cpp
+1574615115 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatecon.cpp
 	"GameStateCon.h"
 
 1574604259 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateadmin.cpp
@@ -3055,7 +3059,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574601402 c:\users\user\documents\github\pminaria\include\gamestate\gamestatetablescore.h
+1574615331 c:\users\user\documents\github\pminaria\include\gamestate\gamestatetablescore.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -3096,7 +3100,7 @@
 
 1574601240 c:\users\user\documents\github\pminaria\gamestatetablescore.h
 
-1574603038 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatetablescore.cpp
+1574615311 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatetablescore.cpp
 	"GameStateTableScore.h"
 	<algorithm>
 
@@ -3136,6 +3140,6 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574604294 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateoptionmenu.cpp
+1574605098 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateoptionmenu.cpp
 	"GameStateOptionMenu.h"
 

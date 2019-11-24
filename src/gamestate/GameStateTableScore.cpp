@@ -13,6 +13,8 @@ GameStateTableScore::GameStateTableScore(Game* game)
     initBackGround(textureTitle,textureBG,this->game->window);
     createButton(font,textureBTN,this->game->window);
     initListScores(this->game->window, textureTXT);
+    View viewChange(sf::FloatRect(0,0,screen_w,screen_h));
+    this->game->window.setView(viewChange);
 }
 /**
 *   Destructor

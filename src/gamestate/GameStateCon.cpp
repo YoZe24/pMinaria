@@ -89,8 +89,12 @@ void GameStateCon::Confirm(RenderWindow& window){
         vector<int> scores;
         User* user = new User(nameString,scores);
         GestionUser::getInstance()->addUser(user);
-        cout<<GestionUser::getInstance()->str()<<endl;
-
+        for(int i =0; i<GestionUser::getInstance()->getUsers().size();i++){
+            if(GestionUser::getInstance()->getUsers()[i]->getLogin() == nameString){
+                GestionUser::getInstance()->setUserCurrent(GestionUser::getInstance()->getUsers()[i]);
+                cout<<GestionUser::getInstance()->getUserCurrent()->str();
+            }
+        }
     }
 }
 /**
