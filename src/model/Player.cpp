@@ -34,3 +34,17 @@ float Player::updatePickaxe(){
 EnumPickaxe Player::getType()const{
     return this->pickaxe.getType();
 }
+
+int Player::getNbOresCraftCurrentPickaxe(){
+    return this->pickaxe.getSrategy()->getNbOresCraft();
+}
+
+int Player::getNbOresCurrentPickaxe(){
+    return ores[pickaxe.getType()];
+}
+
+void Player::reset(){
+    Entity::reset();
+    ores.clear();
+    this->pickaxe.setPXStrategy(new PX_Strategy_Wood);
+}

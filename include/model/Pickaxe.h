@@ -1,7 +1,7 @@
 #ifndef PICKAXE_H
 #define PICKAXE_H
 
-#include "model/Block.h";
+#include "model/Block.h"
 #include <iostream>
 
 enum EnumPickaxe{

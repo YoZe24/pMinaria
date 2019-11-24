@@ -21,6 +21,9 @@ class GestionUser
         void addUser(const User*);
         bool contains(const User*);
         void removeUser(User& u);
+        User* getUserCurrent();
+        void setUserCurrent(User* u);
+        void addScoreCurrentUser(int score);
 
         vector<User*> getUsers();
 
@@ -37,6 +40,7 @@ class GestionUser
         GestionUser(const GestionUser& other);
 
         vector<User*> users;
+        User* userCurrent;
         //Instance
         static GestionUser* gestion ;
 

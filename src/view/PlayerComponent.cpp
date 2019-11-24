@@ -128,6 +128,7 @@ void PlayerComponent::keyboard(){
 */
 void PlayerComponent::draw(sf::RenderWindow& window){
     EntityComponent::draw(window);
+    healthBar.draw(window);
 }
 
 /**
@@ -158,6 +159,15 @@ void PlayerComponent::Animation(float time){
     anim.tick(time);
 }
 
+void PlayerComponent::hittedByMob(){
+    getEntity()->updateHealth(-25);
+    setDY(-0.17);
+    if(getDir())
+       updateX(10);
+    else
+        updateX(-10);
+}
+
 /**
 *
 *   Update all player's values
@@ -172,14 +182,16 @@ void PlayerComponent::Animation(float time){
 void PlayerComponent::update(float time){
     sf::Clock c;
     if(!getEntity()->getLife()){
-        reset(100);
+        //reset();
     }
+
     Player* player = dynamic_cast<Player*>(getEntity());
     power = player->updatePickaxe();
     updateStrAnimation(to_string(player->getType()));
 
     Fire(time);
     keyboard();
+    healthBar.update(getEntity()->getHealth());
 
     Animation(time);
 
@@ -198,19 +210,20 @@ void PlayerComponent::update(float time){
 */
 void PlayerComponent::Collision(int num){
     TileMap& tileMap = *getTileMap();
-    int width = tileMap.getWidth();
     int pos = tileMap.getPos(getX(),getY());
     int xD,yD;
-    EnumBlock blockCollide;
     map<int,Tile>::iterator itFinish = tileMap.getItFinish(pos);
     for(auto i = tileMap.getItStart(pos) ; i != itFinish ; i++){
-            blockCollide = i->second.getBlock().getType();
             sf::FloatRect fr = i->second.getRect();
             if(getRect().intersects(fr)){
 
+                //If i'm colliding with LavaBlock
                 if(i->second.getBlock().getType() == EnumBlock::LAVA){
-                    setFire(true);
-                    getAnimFire().play();
+                    //If i'm in LavaBlock (don't trigger if i'm above)
+                    if(getY() > i->second.getY()){
+                        setFire(true);
+                        getAnimFire().play();
+                    }
                 }else{
                     if (getDY()>0 && num==1){
                         setY(fr.top -  getH());

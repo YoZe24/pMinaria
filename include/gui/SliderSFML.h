@@ -1,4 +1,7 @@
-#include <SFML\Graphics.hpp>
+#ifndef SLIDERSFML_H
+#define SLIDERSFML_H
+
+#include <SFML/Graphics.hpp>
 #include <iostream>
 #include <string>
 
@@ -33,4 +36,4 @@ class SliderSFML
         void setSliderValue(float newValue);
         void draw(RenderWindow& window);
 };
-
+#endif // SLIDERSFML_H

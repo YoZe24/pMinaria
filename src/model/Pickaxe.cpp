@@ -13,7 +13,7 @@ using namespace std;
 */
 Pickaxe::Pickaxe()
 {
-    this->px_s = new PX_Strategy_Emerald;
+    this->px_s = new PX_Strategy_Wood;
 }
 
 /**
@@ -237,6 +237,7 @@ bool PX_Strategy_Iron::isBreakable(EnumBlock eb){
         case EnumBlock::VOID:       return false;
         case EnumBlock::DIAMOND:    return false;
         case EnumBlock::EMERALD:    return false;
+        case EnumBlock::OBSIDIAN:   return false;
     }
     return true;
 }
@@ -279,6 +280,7 @@ bool PX_Strategy_Gold::isBreakable(EnumBlock eb){
     switch(eb){
         case EnumBlock::VOID:       return false;
         case EnumBlock::EMERALD:    return false;
+        case EnumBlock::OBSIDIAN:   return false;
     }
     return true;
 }
@@ -320,6 +322,7 @@ PX_Strategy_Diamond::PX_Strategy_Diamond(float power,int nb,EnumPickaxe ep):PX_S
 bool PX_Strategy_Diamond::isBreakable(EnumBlock eb){
     switch(eb){
         case EnumBlock::VOID:       return false;
+        case EnumBlock::OBSIDIAN:   return false;
     }
     return true;
 }

@@ -1,4 +1,5 @@
-#include "Game.h"
+#include "gamestate/Game.h"
+#include <iostream>
 
 using namespace std;
 using namespace sf;
@@ -36,11 +37,12 @@ GameState* Game::peekState()
 void Game::gameLoop()
 {
     sf::Clock clock;
-
+    float timer;
     while(this->window.isOpen())
     {
         float time = clock.getElapsedTime().asMicroseconds();
         clock.restart();
+        timer += clock.getElapsedTime().asSeconds();
 
         time = time/500;
 		if (time > 40) time = 40;
@@ -52,6 +54,8 @@ void Game::gameLoop()
         peekState()->draw(time);
         this->window.display();
 
+        std::cout << "timer" << TIME_TIMER << std::endl;
+
     }
 }
 
@@ -60,7 +64,7 @@ Game::Game()
 //    this->loadTextures();
 //    this->loadTiles();
 
-    this->window.create(sf::VideoMode(1200, 600), "Minaria");
+    this->window.create(sf::VideoMode(1200, 700), "Minaria");
     this->window.setFramerateLimit(60);
 
 //    this->background.setTexture(this->texmgr.getRef("background"));

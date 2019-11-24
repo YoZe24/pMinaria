@@ -21,7 +21,7 @@ TextField::TextField(Vector2f position,string textStr,string strFile)
     font.loadFromFile("PixelEmulator-xq08.ttf");
 
     text.setString(textStr);
-    text.setColor(Color::Black);
+    text.setFillColor(Color::Black);
     text.setFont(font);
     text.setCharacterSize(25);
     text.setPosition(position.x + sprite.getGlobalBounds().width/2 - text.getGlobalBounds().width/2, position.y + sprite.getGlobalBounds().height/2 - text.getGlobalBounds().height/1.2);
@@ -55,7 +55,7 @@ TextField::TextField(Vector2f position, Texture& tex, string textStr){
     font.loadFromFile("PixelEmulator-xq08.ttf");
 
     text.setString(textStr);
-    text.setColor(Color::Black);
+    text.setFillColor(Color::Black);
     text.setFont(font);
     text.setCharacterSize(25);
     text.setPosition(position.x + sprite.getGlobalBounds().width/2 - text.getGlobalBounds().width/2, position.y + sprite.getGlobalBounds().height/2 - text.getGlobalBounds().height/1.2);
@@ -84,8 +84,8 @@ void TextField::setTextInput(sf::String str){
 TextField::TextField(const TextField& other)
 {
     this->position = other.position;
-    this->text = other.text;
-    this->texture = other.texture;
+    /*this->text = other.text;
+    this->texture = other.texture;*/
 }
 /**
 *   Operator= overloading
@@ -96,9 +96,9 @@ TextField::TextField(const TextField& other)
 TextField& TextField::operator=(const TextField& rhs)
 {
     if (this == &rhs) return *this;
-    this->position = rhs.position;
+    /*this->position = rhs.position;
     this->text = rhs.text;
-    this->texture = rhs.texture;
+    this->texture = rhs.texture;*/
     return *this;
 }
 /**
@@ -109,7 +109,7 @@ TextField& TextField::operator=(const TextField& rhs)
 */
 void TextField::draw(RenderWindow& window)
 {
-    onHover(window);
+    isHovered(window);
     window.draw(sprite);
     window.draw(text);
 }
@@ -120,25 +120,14 @@ void TextField::draw(RenderWindow& window)
 *   Return true or false according to the sprite position and mouse position
 *   @param other : reference of RenderWindow object
 */
-bool TextField::onHover(RenderWindow& window)
+bool TextField::isHovered(RenderWindow& window)
 {
-    if(Mouse::getPosition(window).x >= sprite.getPosition().x &&
-       Mouse::getPosition(window).x < sprite.getPosition().x + sprite.getGlobalBounds().width &&
-       Mouse::getPosition(window).y >= sprite.getPosition().y &&
-       Mouse::getPosition(window).y < sprite.getPosition().y + sprite.getGlobalBounds().height)
-    {
-        return true;
-    }
-
-    if(Mouse::getPosition(window).x < sprite.getPosition().x ||
-       Mouse::getPosition(window).x > sprite.getPosition().x + sprite.getGlobalBounds().width ||
-       Mouse::getPosition(window).y < sprite.getPosition().y ||
-       Mouse::getPosition(window).y > sprite.getPosition().y + sprite.getGlobalBounds().height)
-    {
-        return false;
-    }
-
+    Sprite tmpSprite = sprite;
+    FloatRect spriteRect = tmpSprite.getGlobalBounds();
+    Vector2f mousePos = window.mapPixelToCoords(Mouse::getPosition(window));
+    return spriteRect.contains(mousePos);
 }
+
 
 /**
 *   Function to know if textfield is clicked
@@ -149,7 +138,7 @@ bool TextField::onHover(RenderWindow& window)
 bool TextField::isClicked(RenderWindow& window)
 {
     bool mousePressed = Mouse::isButtonPressed(Mouse::Left);
-    return (mousePressed && onHover(window));
+    return (mousePressed && isHovered(window));
 }
 /**
 *   Function who permet to modif the text into texfield

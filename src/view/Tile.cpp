@@ -83,6 +83,7 @@ void Tile::load(Block block,AnimationManager anim,int x,int y, int w,int h){
     this->y = y;
     this->w = w;
     this->h = h;
+    this->time = 0;
 }
 
 /**

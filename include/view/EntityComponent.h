@@ -28,7 +28,7 @@ class EntityComponent
             return sf::FloatRect(x,y,w,h);
         }
 
-        void reset(int health);
+        void reset();
 
         void updateX(float X){x += X;}
         void updateY(float Y){y += Y;}

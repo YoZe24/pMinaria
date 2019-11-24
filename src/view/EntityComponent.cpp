@@ -64,6 +64,7 @@ void EntityComponent::option(std::string NAME, Entity* e, float SPEED, std::stri
     dx = SPEED;
 }
 
+
 /**
 *
 *   Reset health function
@@ -72,11 +73,10 @@ void EntityComponent::option(std::string NAME, Entity* e, float SPEED, std::stri
 *
 *   @param health : Player's health
 */
-void EntityComponent::reset(int Health){
+void EntityComponent::reset(){
     x = 0;
     y = 0;
-    entity->setHealth(Health);
-    entity->setLife(true);
+    this->entity->reset();
 }
 
 /**

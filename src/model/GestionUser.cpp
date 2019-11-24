@@ -32,6 +32,14 @@ GestionUser* GestionUser::getInstance(){
     return gestion;
 }
 
+User* GestionUser::getUserCurrent(){
+    return userCurrent;
+}
+void GestionUser::setUserCurrent(User* u){
+    this->userCurrent = u;
+}
+
+
 /**
 *   Default copy constructor
 *   Parameter passing by reference
@@ -69,6 +77,14 @@ void GestionUser::addUser(const User* u){
     if(contains(u)) return;
     users.push_back(u->clone());
 }
+void GestionUser::addScoreCurrentUser(int score){
+    for (int i = 0; i<users.size();i++){
+        if(users[i]==this->getUserCurrent()){
+            cout<<2;
+            users[i]->addScores(score);
+        }
+    }
+}
 
 /**
 *   Function to check if a user is already present in instance
@@ -93,12 +109,13 @@ bool GestionUser::contains(const User* u){
 *   @param : reference of a User object
 */
 void GestionUser::removeUser (User& u){
-    for(int i=0; i<users.size(); i++){
+    for(int i=0; i<=users.size(); i++){
         if(*users[i] == u){
+            cout<<2;
             User* tmp = *(users.begin()+i);
             users.erase(users.begin()+i);
             delete tmp;
-            free(tmp);
+            //free(tmp);
             return;
         }
     }

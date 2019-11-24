@@ -14,6 +14,7 @@ class Player : public Entity
         Player& operator=(const Player&);
 
         virtual Player* clone(){return new Player(*this);}
+        virtual void reset();
 
         float updatePickaxe();
         EnumPickaxe getType()const;
@@ -21,6 +22,8 @@ class Player : public Entity
         std::map<int,int> getOres()const{return ores;}
         Pickaxe getPickaxe()const{return pickaxe;}
         bool isBreakable(EnumBlock eb){return pickaxe.isBreakable(eb);}
+        int getNbOresCraftCurrentPickaxe();
+        int getNbOresCurrentPickaxe();
 
         void setOres(int key){ores[key-1]++;};
     protected:
