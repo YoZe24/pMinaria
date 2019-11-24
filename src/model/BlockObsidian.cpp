@@ -1,18 +1,11 @@
 #include "BlockObsidian.h"
 using namespace std;
-BlockObsidian::BlockObsidian(vector<float> s):Block(s,13,EnumBlock::OBSIDIAN)
+BlockObsidian::BlockObsidian(vector<float> s):Block(s,13,EnumBlock::OBSIDIAN){}
 
 /**
 *   Default Constructor
 */
-BlockObsidian::BlockObsidian()
-{
-    //ctor
-}
-/**
-*   Destructor
-*   Not implemented
-*/
+
 BlockObsidian::~BlockObsidian()
 {
     //dtor
