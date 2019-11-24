@@ -117,7 +117,7 @@ void GameStateOptionMenu::draw(const float dt){
 *   @param durability : Blocks' durability's value
 *
 **/
-void GameStateOptionMenu::updateSliders(int time, float durability)
+void GameStateOptionMenu::updateSliders(int time, int durability)
 {
     sliderDurability.setSliderValue(durability);
     sliderTime.setSliderValue(time);
@@ -129,10 +129,19 @@ void GameStateOptionMenu::updateSliders(int time, float durability)
 *   Save game options to play with selected values
 *
 */
-void GameStateOptionMenu::saveOptions(Game* game)
+void GameStateOptionMenu::saveOptions()
 {
-    game->TIME_TIMER = (int)sliderTime.getSliderValue();
-    game->DURABILITY = sliderDurability.getSliderValue();
+    /*
+
+        game::getInstance().setFactDurability(sliderDurability.getSliderValue());
+        game::getInstance().setTimer(sliderTime.getSliderValue());
+
+
+    */
+
+    std::cout << sliderTime.getSliderValue() << endl;
+    std::cout << sliderDurability.getSliderValue() << endl;
+    //system("pause");
 }
 /**
 *
@@ -161,7 +170,7 @@ void GameStateOptionMenu::update(const float dt){
     if(easyModeButton.isClicked(this->game->window))
     {
         //cout << "EASY BUTTON CLICKED" << endl;
-        updateSliders(8,0.5);
+        updateSliders(8,0);
     }
     else if(mediumModeButton.isClicked(this->game->window))
     {
@@ -174,8 +183,8 @@ void GameStateOptionMenu::update(const float dt){
     }
     else if(backMainMenuButton.isClicked(this->game->window))
     {
+        saveOptions();
         this->game->pushState(new GameStateMainMenu(this->game));
-        saveOptions(game);
     }
 }
 void GameStateOptionMenu::handleInput(){

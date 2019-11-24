@@ -30,7 +30,7 @@ GameStateConAdmin::GameStateConAdmin(const GameStateConAdmin& other)
 GameStateConAdmin& GameStateConAdmin::operator=(const GameStateConAdmin& rhs)
 {
     if (this == &rhs) return *this; // handle self assignment
-    return *this;
+    //assignment operator
 }
 /**
 *   Function who permet to create background of window and title
