@@ -65,7 +65,7 @@ class GameStateOptionMenu : public GameState
         void initBackGround(Texture& title,Texture& tex,RenderWindow& window);
         void initSliders(RenderWindow& window);
 
-        void updateSliders(int time,float durability);
+        void updateSliders(int time,int durability);
 
         /** Recois en param l'instance unique de jeu et modifie les attributs de gameplay (le time et la durability des blocs)*/
         void saveOptions(Game* game);

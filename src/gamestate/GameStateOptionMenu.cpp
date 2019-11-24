@@ -129,19 +129,10 @@ void GameStateOptionMenu::updateSliders(int time, int durability)
 *   Save game options to play with selected values
 *
 */
-void GameStateOptionMenu::saveOptions()
+void GameStateOptionMenu::saveOptions(Game* game)
 {
-    /*
-
-        game::getInstance().setFactDurability(sliderDurability.getSliderValue());
-        game::getInstance().setTimer(sliderTime.getSliderValue());
-
-
-    */
-
-    std::cout << sliderTime.getSliderValue() << endl;
-    std::cout << sliderDurability.getSliderValue() << endl;
-    //system("pause");
+    game->TIME_TIMER = (int)sliderTime.getSliderValue();
+    game->DURABILITY = sliderDurability.getSliderValue();
 }
 /**
 *
@@ -183,8 +174,8 @@ void GameStateOptionMenu::update(const float dt){
     }
     else if(backMainMenuButton.isClicked(this->game->window))
     {
-        saveOptions();
         this->game->pushState(new GameStateMainMenu(this->game));
+        saveOptions(game);
     }
 }
 void GameStateOptionMenu::handleInput(){

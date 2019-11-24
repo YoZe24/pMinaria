@@ -1465,7 +1465,7 @@
 1574022973 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminorz - copie - copie\src\model\blockemerald.cpp
 	"BlockEmerald.h"
 
-1574554091 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\main.cpp
+1574554091 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\main.cpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -1507,7 +1507,7 @@
 	<sstream>
 	<iostream>
 
-1574546008 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\entity.h
+1574546008 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\entity.h
 	"model/Block.h"
 	<iostream>
 
@@ -1820,14 +1820,14 @@
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gamestate\game.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
 	"gamestate/Game.h"
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gamestate\gamestategame.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
-1574553526 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gamestate\gamestategame.h
+1574553526 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
 	"gamestate/GameState.h"
 	<SFML/Graphics.hpp>
 	"view/AnimationManager.h"
@@ -2182,7 +2182,7 @@
 	<iostream>
 	<string>
 
-1574583314 source:c:\users\user\documents\github\pminaria\main.cpp
+1574609440 source:c:\users\user\documents\github\pminaria\main.cpp
 	<SFML/Graphics.hpp>
 	<vector>
 	<list>
@@ -2215,33 +2215,33 @@
 	"view/Timer.h"
 	"gui/SliderSFML.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\animationmanager.h
+1574585543 c:\users\user\documents\github\pminaria\include\view\animationmanager.h
 	"view/Animation.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\animation.h
+1574585543 c:\users\user\documents\github\pminaria\include\view\animation.h
 	<vector>
 	<SFML/Graphics.hpp>
 	<sstream>
 	<iostream>
 
-1574627034 c:\users\user\documents\github\pminaria\include\model\entity.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\entity.h
 	"model/Block.h"
 	<iostream>
 
-1574629414 c:\users\user\documents\github\pminaria\include\model\block.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\block.h
 	<string>
 	<vector>
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\player.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\player.h
 	"model/Entity.h"
 	"model/Pickaxe.h"
 	<map>
 
-1574627034 c:\users\user\documents\github\pminaria\include\model\pickaxe.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\pickaxe.h
 	"model/Block.h"
 	<iostream>
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\entitycomponent.h
+1574585543 c:\users\user\documents\github\pminaria\include\view\entitycomponent.h
 	"view/AnimationManager.h"
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -2251,62 +2251,62 @@
 	"model/Player.h"
 	"model/Entity.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\tile.h
+1574585543 c:\users\user\documents\github\pminaria\include\view\tile.h
 	<model/Block.h>
 	<view/AnimationManager.h>
 	<SFML/Graphics.hpp>
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\tilemap.h
+1574585543 c:\users\user\documents\github\pminaria\include\view\tilemap.h
 	<view/Tile.h>
 	<vector>
 	<SFML/Graphics.hpp>
 	<deque>
 	<map>
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\playercomponent.h
+1574613014 c:\users\user\documents\github\pminaria\include\view\playercomponent.h
 	"view/EntityComponent.h"
 	<iostream>
 	"HealthBar.h"
 	"model/GestionUser.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockdirt.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockstone.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockstone.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockiron.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockiron.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockgold.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockgold.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockdiamond.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockdiamond.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockemerald.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockemerald.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\lavablock.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\lavablock.h
 	"model/Block.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\view\enemycomponent.h
+1574585543 c:\users\user\documents\github\pminaria\include\view\enemycomponent.h
 	"model/Enemy.h"
 	"view/EntityComponent.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\enemy.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\enemy.h
 	"model/Entity.h"
 
-1574630080 c:\users\user\documents\github\pminaria\include\gamestate\game.h
+1574585543 c:\users\user\documents\github\pminaria\include\gamestate\game.h
 	<stack>
 	<string>
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestate.h
+1574585543 c:\users\user\documents\github\pminaria\include\gamestate\gamestate.h
 	"gamestate/Game.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestategame.h
+1574613279 c:\users\user\documents\github\pminaria\include\gamestate\gamestategame.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateMainMenu.h"
 	"gamestate/GameStateTableScore.h"
@@ -2341,42 +2341,42 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574583314 c:\users\user\documents\github\pminaria\include\gui\button.h
+1574585543 c:\users\user\documents\github\pminaria\include\gui\button.h
 	<vector>
 	<SFML/Graphics.hpp>
 	"ButtonState.h"
 	<string>
 
-1574583314 c:\users\user\documents\github\pminaria\include\gui\buttonstate.h
+1574585543 c:\users\user\documents\github\pminaria\include\gui\buttonstate.h
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\entitycomponent.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\entitycomponent.cpp
 	"view/EntityComponent.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\playercomponent.cpp
+1574613009 source:c:\users\user\documents\github\pminaria\src\view\playercomponent.cpp
 	"view/PlayerComponent.h"
 	<cmath>
 
-1574630442 source:c:\users\user\documents\github\pminaria\src\view\tile.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\tile.cpp
 	"view/Tile.h"
 	<sstream>
 	<iostream>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\tilemap.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\tilemap.cpp
 	"view/TileMap.h"
 	"iostream"
 	<cmath>
 
-1574628142 source:c:\users\user\documents\github\pminaria\src\gamestate\game.cpp
+1574587992 source:c:\users\user\documents\github\pminaria\src\gamestate\game.cpp
 	"gamestate/Game.h"
 	<iostream>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestate.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestate.cpp
 	"gamestate/GameState.h"
 
-1574630220 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestategame.cpp
+1574615287 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\gui\button.cpp
+1574588349 source:c:\users\user\documents\github\pminaria\src\gui\button.cpp
 	"gui/Button.h"
 	<iostream>
 
@@ -2393,7 +2393,7 @@
 	<vector>
 	<sstream>
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\gestionuser.h
+1574610183 c:\users\user\documents\github\pminaria\include\model\gestionuser.h
 	"User.h"
 	<vector>
 	<string>
@@ -2401,14 +2401,14 @@
 	<iostream>
 	<fstream>
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\user.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\user.h
 	<string>
 	<ostream>
 	<vector>
 	<iostream>
 	<fstream>
 
-1574583314 c:\users\user\documents\github\pminaria\include\gui\textfield.h
+1574585543 c:\users\user\documents\github\pminaria\include\gui\textfield.h
 	<SFML/Graphics.hpp>
 	<string>
 	<sstream>
@@ -2467,103 +2467,103 @@
 	"SliderSFML.h"
 	<iostream>
 
-1574626922 c:\users\user\documents\github\pminaria\include\gui\slidersfml.h
-	<SFML/Graphics.hpp>
+1574604991 c:\users\user\documents\github\pminaria\include\gui\slidersfml.h
+	<SFML\Graphics.hpp>
 	<iostream>
 	<string>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\gui\slidersfml.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\gui\slidersfml.cpp
 	"gui/SliderSFML.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\block.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\block.cpp
 	"model/Block.h"
 	<sstream>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockdiamond.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockdiamond.cpp
 	"model/BlockDiamond.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockdirt.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockdirt.cpp
 	"model/BlockDirt.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockemerald.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockemerald.cpp
 	"model/BlockEmerald.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockgold.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockgold.cpp
 	"model/BlockGold.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockiron.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockiron.cpp
 	"model/BlockIron.h"
 
-1574627080 source:c:\users\user\documents\github\pminaria\src\gui\textfield.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\gui\textfield.cpp
 	"gui/TextField.h"
 	<iostream>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockobsidian.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockobsidian.cpp
 	"BlockObsidian.h"
 
-1574583314 c:\users\user\documents\github\pminaria\include\model\blockobsidian.h
+1574585543 c:\users\user\documents\github\pminaria\include\model\blockobsidian.h
 	"model/Block.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\blockstone.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\blockstone.cpp
 	"model/BlockStone.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\enemy.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\enemy.cpp
 	"model/Enemy.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\entity.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\entity.cpp
 	"model/Entity.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
+1574611245 source:c:\users\user\documents\github\pminaria\src\model\gestionuser.cpp
 	"GestionUser.h"
 	<string.h>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\lavablock.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\pickaxe.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\model\player.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\model\player.cpp
 	"model/Player.h"
 
-1574627080 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
+1574610881 source:c:\users\user\documents\github\pminaria\src\model\user.cpp
 	"User.h"
 	<sstream>
 	<iostream>
 	<string>
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\animation.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\animation.cpp
 	"view/Animation.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\animationmanager.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\animationmanager.cpp
 	"view/AnimationManager.h"
 
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\enemycomponent.cpp
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\enemycomponent.cpp
 	"view/EnemyComponent.h"
 
-1574553526 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\animationmanager.h
+1574553526 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animationmanager.h
 	"view/Animation.h"
 
-1573729212 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\animation.h
+1573729212 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\animation.h
 	<vector>
 	<SFML/Graphics.hpp>
 	<sstream>
 	<iostream>
 
-1574183399 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\block.h
+1574183399 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\block.h
 	<string>
 	<vector>
 
-1574545898 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\player.h
+1574545898 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\player.h
 	"model/Entity.h"
 	"model/Pickaxe.h"
 	<map>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\pickaxe.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
 	"model/Block.h"
 	<iostream>
 
-1574546096 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\entitycomponent.h
+1574546096 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\entitycomponent.h
 	"view/AnimationManager.h"
 	<SFML/Graphics.hpp>
 	<iostream>
@@ -2573,48 +2573,48 @@
 	"model/Player.h"
 	"model/Entity.h"
 
-1574329813 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\tile.h
+1574329813 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tile.h
 	<model/Block.h>
 	<view/AnimationManager.h>
 	<SFML/Graphics.hpp>
 
-1574346694 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\tilemap.h
+1574346694 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tilemap.h
 	<view/Tile.h>
 	<vector>
 	<SFML/Graphics.hpp>
 	<deque>
 	<map>
 
-1574547026 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\playercomponent.h
+1574547026 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
 	"view/EntityComponent.h"
 	<iostream>
 	"HealthBar.h"
 
-1574419041 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\healthbar.h
+1574419041 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\healthbar.h
 	<SFML/Graphics.hpp>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockdirt.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockdirt.h
 	"model/Block.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockstone.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockstone.h
 	"model/Block.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockiron.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockiron.h
 	"model/Block.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockgold.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockgold.h
 	"model/Block.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockdiamond.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockdiamond.h
 	"model/Block.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockemerald.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockemerald.h
 	"model/Block.h"
 
-1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\lavablock.h
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\lavablock.h
 	"model/Block.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\gestionuser.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\gestionuser.h
 	"User.h"
 	<vector>
 	<string>
@@ -2622,14 +2622,14 @@
 	<iostream>
 	<fstream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\user.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\user.h
 	<string>
 	<ostream>
 	<vector>
 	<iostream>
 	<fstream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\interfaceadmin.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\interfaceadmin.h
 	"model/GestionUser.h"
 	"TextField.h"
 	"Button.h"
@@ -2640,21 +2640,21 @@
 	<string>
 	<sstream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\textfield.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\textfield.h
 	<SFML/Graphics.hpp>
 	<string>
 	<sstream>
 	<vector>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\button.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\button.h
 	<vector>
 	<SFML/Graphics.hpp>
 	"ButtonState.h"
 	<string>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\buttonstate.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\buttonstate.h
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\interfaceconadmin.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\interfaceconadmin.h
 	"Button.h"
 	"TextField.h"
 	"GestionUser.h"
@@ -2662,7 +2662,7 @@
 	<iostream>
 	<string>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\interfacecon.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\interfacecon.h
 	"Button.h"
 	"TextField.h"
 	"GestionUser.h"
@@ -2670,7 +2670,7 @@
 	<iostream>
 	<string>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\interfacetablescore.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\interfacetablescore.h
 	"GestionUser.h"
 	"TextField.h"
 	"Button.h"
@@ -2680,150 +2680,225 @@
 	<vector>
 	<sstream>
 
-1574066196 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\enemycomponent.h
+1574066196 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\enemycomponent.h
 	"model/Enemy.h"
 	"view/EntityComponent.h"
 
-1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\enemy.h
+1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\enemy.h
 	"model/Entity.h"
 
-1574347290 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gamestate\game.h
+1574347290 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\game.h
 	<stack>
 	<string>
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574547867 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gamestate\gamestate.h
+1574547867 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestate.h
 	"gamestate/Game.h"
 
-1574552565 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\model\blockobsidian.h
+1574552565 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockobsidian.h
 	"model/Block.h"
 
-1574548769 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\timer.h
+1574548769 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\timer.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<thread>
 	<string>
 
-1574546217 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\oresbar.h
+1574546217 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\oresbar.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	"Pickaxe.h"
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\mainmenu.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\mainmenu.h
 	"Button.h"
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\optionmenu.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\optionmenu.h
 	<SFML/Graphics.hpp>
 	"Button.h"
 	"SliderSFML.h"
 	<iostream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\gui\slidersfml.h
+1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\slidersfml.h
 	<SFML\Graphics.hpp>
 	<iostream>
 	<string>
 
-1574547923 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gamestate\gamestate.cpp
+1574547923 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestate.cpp
 	"gamestate/GameState.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\button.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\button.cpp
 	"gui/Button.h"
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\interfaceadmin.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\interfaceadmin.cpp
 	"gui/InterfaceAdmin.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\interfacecon.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\interfacecon.cpp
 	"gui/InterfaceCon.h"
 	"gui/TextField.h"
 	"model/GestionUser.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\interfaceconadmin.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\interfaceconadmin.cpp
 	"gui/InterfaceConAdmin.h"
 	"gui/TextField.h"
 	"model/GestionUser.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\interfacetablescore.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\interfacetablescore.cpp
 	"gui/InterfaceTableScore.h"
 	<algorithm>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\mainmenu.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\mainmenu.cpp
 	"gui/MainMenu.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\optionmenu.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\optionmenu.cpp
 	"gui/OptionMenu.h"
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\slidersfml.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\slidersfml.cpp
 	"gui/SliderSFML.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\gui\textfield.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\textfield.cpp
 	"gui/TextField.h"
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\block.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\block.cpp
 	"model/Block.h"
 	<sstream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockdiamond.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockdiamond.cpp
 	"model/BlockDiamond.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockdirt.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockdirt.cpp
 	"model/BlockDirt.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockemerald.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockemerald.cpp
 	"model/BlockEmerald.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockgold.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockgold.cpp
 	"model/BlockGold.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockiron.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockiron.cpp
 	"model/BlockIron.h"
 
-1574554852 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockobsidian.cpp
+1574554852 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockobsidian.cpp
 	"BlockObsidian.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\blockstone.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockstone.cpp
 	"model/BlockStone.h"
 
-1574069066 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\enemy.cpp
+1574069066 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\enemy.cpp
 	"model/Enemy.h"
 
-1574545866 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\entity.cpp
+1574545866 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\entity.cpp
 	"model/Entity.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\gestionuser.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\gestionuser.cpp
 	"GestionUser.h"
 	<string.h>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\lavablock.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\pickaxe.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
-1574545977 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\player.cpp
+1574545977 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
 	"model/Player.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\model\user.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\user.cpp
 	"User.h"
 	<sstream>
 	<iostream>
 	<string>
 
-1574546629 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\oresbar.cpp
+1574546629 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\oresbar.cpp
 	"OresBar.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\animation.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animation.cpp
 	"view/Animation.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\animationmanager.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animationmanager.cpp
 	"view/AnimationManager.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\enemycomponent.cpp
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\enemycomponent.cpp
+	"view/EnemyComponent.h"
+
+1574554030 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
+	"view/EntityComponent.h"
+
+1574549552 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\healthbar.cpp
+	"view/HealthBar.h"
+
+1574554252 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
+	"view/PlayerComponent.h"
+	<cmath>
+
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
+	"view/Tile.h"
+	<sstream>
+	<iostream>
+
+1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
+	"view/TileMap.h"
+	"iostream"
+	<cmath>
+
+1574549438 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\timer.cpp
+	"view/Timer.h"
+	<sstream>
+
+1574585543 c:\users\user\documents\github\pminaria\include\view\healthbar.h
+	<SFML/Graphics.hpp>
+
+1574611447 c:\users\user\documents\github\pminaria\include\view\timer.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<thread>
+	<string>
+
+1574585543 c:\users\user\documents\github\pminaria\include\oresbar.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Pickaxe.h"
+
+1574585543 source:c:\users\user\documents\github\pminaria\src\oresbar.cpp
+	"OresBar.h"
+
+1574585543 source:c:\users\user\documents\github\pminaria\src\view\healthbar.cpp
+	"view/HealthBar.h"
+
+1574611472 source:c:\users\user\documents\github\pminaria\src\view\timer.cpp
+	"view/Timer.h"
+	<sstream>
+
+1574603978 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.cpp
+	"GameStateMainMenu.h"
+
+1574587576 c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.h
+	"gamestate/GameState.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	<map>
+	<cmath>
 	"view/EnemyComponent.h"
 	"view/HealthBar.h"
 	"view/Timer.h"
@@ -3066,324 +3141,6 @@
 	<iostream>
 
 1574605098 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateoptionmenu.cpp
-	"GameStateOptionMenu.h"
-
-1574554030 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\entitycomponent.cpp
-	"view/EntityComponent.h"
-
-1574549552 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\healthbar.cpp
-	"view/HealthBar.h"
-
-1574554252 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\playercomponent.cpp
-	"view/PlayerComponent.h"
-	<cmath>
-
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\tile.cpp
-	"view/Tile.h"
-	<sstream>
-	<iostream>
-
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\tilemap.cpp
-	"view/TileMap.h"
-	"iostream"
-	<cmath>
-
-1574549438 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\src\view\timer.cpp
-	"view/Timer.h"
-	<sstream>
-
-1574583314 c:\users\user\documents\github\pminaria\include\view\healthbar.h
-	<SFML/Graphics.hpp>
-
-1574627034 c:\users\user\documents\github\pminaria\include\view\timer.h
-	<SFML/Graphics.hpp>
-	<iostream>
-	<thread>
-	<string>
-	<functional>
-
-1574583314 c:\users\user\documents\github\pminaria\include\oresbar.h
-	<SFML/Graphics.hpp>
-	<iostream>
-	"Pickaxe.h"
-
-1574627080 source:c:\users\user\documents\github\pminaria\src\oresbar.cpp
-	"OresBar.h"
-
-1574583314 source:c:\users\user\documents\github\pminaria\src\view\healthbar.cpp
-	"view/HealthBar.h"
-
-1574627080 source:c:\users\user\documents\github\pminaria\src\view\timer.cpp
-	"view/Timer.h"
-	<sstream>
-
-1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.cpp
-	"GameStateMainMenu.h"
-
-1574587576 c:\users\user\documents\github\pminaria\src\gamestate\gamestatemainmenu.h
-	"gamestate/GameState.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestatemainmenu.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateCon.h"
-	"gamestate/GameStateAdmin.h"
-	"gamestate/GameStateConAdmin.h"
-	"gamestate/GameStateTableScore.h"
-	"gamestate/GameStateOptionMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/SliderSFML.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestatecon.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatecon.cpp
-	"GameStateCon.h"
-
-1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateadmin.cpp
-	"GameStateAdmin.h"
-
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestateadmin.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574627050 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateconadmin.cpp
-	"GameStateConAdmin.h"
-
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestateconadmin.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	"gamestate/GameStateAdmin.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574583314 c:\users\user\documents\github\pminaria\include\gamestate\gamestatetablescore.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	"gamestate/GameStateAdmin.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574601240 source:c:\users\user\documents\github\pminaria\gamestatetablescore.cpp
-	"GameStateTableScore.h"
-
-1574601240 c:\users\user\documents\github\pminaria\gamestatetablescore.h
-
-1574583314 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestatetablescore.cpp
-	"GameStateTableScore.h"
-	<algorithm>
-
-1574631769 c:\users\user\documents\github\pminaria\include\gamestate\gamestateoptionmenu.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/SliderSFML.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574631742 source:c:\users\user\documents\github\pminaria\src\gamestate\gamestateoptionmenu.cpp
 	"GameStateOptionMenu.h"
 
 1574583314 source:c:\users\user\desktop\projet\pminaria-master\main.cpp
@@ -3932,3 +3689,551 @@
 1574627080 source:c:\users\user\desktop\projet\pminaria-master\src\view\timer.cpp
 	"view/Timer.h"
 	<sstream>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\main.cpp
+	<SFML/Graphics.hpp>
+	<vector>
+	<list>
+	<ctime>
+	"view/AnimationManager.h"
+	"model/Entity.h"
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/Pickaxe.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"gamestate/Game.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateAdmin.h"
+	"gamestate/GameStateConAdmin.h"
+	"gamestate/GameStateTableScore.h"
+	"gamestate/GameStateOptionMenu.h"
+	"view/Timer.h"
+	"gui/SliderSFML.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\animationmanager.h
+	"view/Animation.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\animation.h
+	<vector>
+	<SFML/Graphics.hpp>
+	<sstream>
+	<iostream>
+
+1574627034 c:\users\user\desktop\projet\pminaria\include\model\entity.h
+	"model/Block.h"
+	<iostream>
+
+1574629414 c:\users\user\desktop\projet\pminaria\include\model\block.h
+	<string>
+	<vector>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\player.h
+	"model/Entity.h"
+	"model/Pickaxe.h"
+	<map>
+
+1574627034 c:\users\user\desktop\projet\pminaria\include\model\pickaxe.h
+	"model/Block.h"
+	<iostream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\entitycomponent.h
+	"view/AnimationManager.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+	"view/Tile.h"
+	"view/TileMap.h"
+	<vector>
+	"model/Player.h"
+	"model/Entity.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\tile.h
+	<model/Block.h>
+	<view/AnimationManager.h>
+	<SFML/Graphics.hpp>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\tilemap.h
+	<view/Tile.h>
+	<vector>
+	<SFML/Graphics.hpp>
+	<deque>
+	<map>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\playercomponent.h
+	"view/EntityComponent.h"
+	<iostream>
+	"HealthBar.h"
+	"model/GestionUser.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\healthbar.h
+	<SFML/Graphics.hpp>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\gestionuser.h
+	"User.h"
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\user.h
+	<string>
+	<ostream>
+	<vector>
+	<iostream>
+	<fstream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockdirt.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockstone.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockiron.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockgold.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockdiamond.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockemerald.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\lavablock.h
+	"model/Block.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\view\enemycomponent.h
+	"model/Enemy.h"
+	"view/EntityComponent.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\enemy.h
+	"model/Entity.h"
+
+1574630080 c:\users\user\desktop\projet\pminaria\include\gamestate\game.h
+	<stack>
+	<string>
+	<SFML/Graphics.hpp>
+	"gamestate/GameState.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestate.h
+	"gamestate/Game.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestategame.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateTableScore.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestatemainmenu.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateCon.h"
+	"gamestate/GameStateAdmin.h"
+	"gamestate/GameStateConAdmin.h"
+	"gamestate/GameStateTableScore.h"
+	"gamestate/GameStateOptionMenu.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestatecon.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateMainMenu.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/User.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+	"gui/Button.h"
+	"gui/TextField.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\model\blockobsidian.h
+	"model/Block.h"
+
+1574627034 c:\users\user\desktop\projet\pminaria\include\view\timer.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<thread>
+	<string>
+	<functional>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\oresbar.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"Pickaxe.h"
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gui\button.h
+	<vector>
+	<SFML/Graphics.hpp>
+	"ButtonState.h"
+	<string>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gui\buttonstate.h
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gui\textfield.h
+	<SFML/Graphics.hpp>
+	<string>
+	<sstream>
+	<vector>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestateadmin.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateMainMenu.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/User.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+	"gui/Button.h"
+	"gui/TextField.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestateconadmin.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateAdmin.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/User.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+	"gui/Button.h"
+	"gui/TextField.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574583314 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestatetablescore.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateAdmin.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/User.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+	"gui/Button.h"
+	"gui/TextField.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574627578 c:\users\user\desktop\projet\pminaria\include\gamestate\gamestateoptionmenu.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateMainMenu.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/User.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	"gui/TextField.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574626922 c:\users\user\desktop\projet\pminaria\include\gui\slidersfml.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+
+1574628142 source:c:\users\user\desktop\projet\pminaria\src\gamestate\game.cpp
+	"gamestate/Game.h"
+	<iostream>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestate.cpp
+	"gamestate/GameState.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestateadmin.cpp
+	"GameStateAdmin.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestatecon.cpp
+	"GameStateCon.h"
+
+1574627050 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestateconadmin.cpp
+	"GameStateConAdmin.h"
+
+1574630220 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestategame.cpp
+	"gamestate/GameStateGame.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestatemainmenu.cpp
+	"GameStateMainMenu.h"
+
+1574629852 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestateoptionmenu.cpp
+	"GameStateOptionMenu.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gamestate\gamestatetablescore.cpp
+	"GameStateTableScore.h"
+	<algorithm>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gui\button.cpp
+	"gui/Button.h"
+	<iostream>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\gui\slidersfml.cpp
+	"gui/SliderSFML.h"
+
+1574627080 source:c:\users\user\desktop\projet\pminaria\src\gui\textfield.cpp
+	"gui/TextField.h"
+	<iostream>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\block.cpp
+	"model/Block.h"
+	<sstream>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockdiamond.cpp
+	"model/BlockDiamond.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockdirt.cpp
+	"model/BlockDirt.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockemerald.cpp
+	"model/BlockEmerald.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockgold.cpp
+	"model/BlockGold.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockiron.cpp
+	"model/BlockIron.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockobsidian.cpp
+	"BlockObsidian.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\blockstone.cpp
+	"model/BlockStone.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\enemy.cpp
+	"model/Enemy.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\entity.cpp
+	"model/Entity.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\gestionuser.cpp
+	"GestionUser.h"
+	<string.h>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\lavablock.cpp
+	"model/LavaBlock.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\pickaxe.cpp
+	"model/Pickaxe.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\model\player.cpp
+	"model/Player.h"
+
+1574627080 source:c:\users\user\desktop\projet\pminaria\src\model\user.cpp
+	"User.h"
+	<sstream>
+	<iostream>
+	<string>
+
+1574627080 source:c:\users\user\desktop\projet\pminaria\src\oresbar.cpp
+	"OresBar.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\animation.cpp
+	"view/Animation.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\animationmanager.cpp
+	"view/AnimationManager.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\enemycomponent.cpp
+	"view/EnemyComponent.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\entitycomponent.cpp
+	"view/EntityComponent.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\healthbar.cpp
+	"view/HealthBar.h"
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\playercomponent.cpp
+	"view/PlayerComponent.h"
+	<cmath>
+
+1574630442 source:c:\users\user\desktop\projet\pminaria\src\view\tile.cpp
+	"view/Tile.h"
+	<sstream>
+	<iostream>
+
+1574583314 source:c:\users\user\desktop\projet\pminaria\src\view\tilemap.cpp
+	"view/TileMap.h"
+	"iostream"
+	<cmath>
+
+1574627080 source:c:\users\user\desktop\projet\pminaria\src\view\timer.cpp
+	"view/Timer.h"
+	<sstream>
+
