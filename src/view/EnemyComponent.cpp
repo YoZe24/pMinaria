@@ -16,7 +16,7 @@ using namespace std;
 EnemyComponent::EnemyComponent(AnimationManager& a,AnimationManager& af,TileMap* tm,int x, int y,vector<float> s):EntityComponent(a,af,tm,x,y)
 {
     Enemy* e = new Enemy(60,true,s);
-    option("Enemy",e,0.05,"move");
+    load("Enemy",e,0.05,"move");
     getAnim().set("move");
     setFire(false);
     setTimerFire(0);
@@ -50,7 +50,7 @@ vector<float> EnemyComponent::getSpawn(){
 *
 *   Change direction function
 *
-*   We change the enemy's direction and his flip his animation
+*   We change the enemy's direction and flip his animation
 */
 void EnemyComponent::swapDir(){
     if(getDir()){
@@ -87,26 +87,18 @@ void EnemyComponent::update(float time){
 }
 
 /**
-*
+*   Test if the entity is colliding with one block situated between his position minus
+*   2 * tilemap_width and plus 2 * tilemap_width => If width is 50 and the entity is at
+*   the position 250 the method will test from tile 150 to tile 350
+*   @param int num: index to know if we test colliding on X (num = 0) or Y (num = 1) axis
 */
 void EnemyComponent::Collision(int num){
     TileMap& tileMap = *getTileMap();
 
-//    int nbBM = tileMap.getNbBlockMined();
-
     int posX = getX()/tileMap.getTileSize();
     int posY = getY()/tileMap.getTileSize();
-//    int width = tileMap.getWidth();
     int pos = posX + posY * tileMap.getWidth();
 
-//    std::map<int,Tile>* tiles = tileMap.getTiles();
-//
-//    int start = pos - (width * 2) - nbBM  < 0 ? 0 : pos - (width * 2) - nbBM;
-//    int limit = pos + width * 2 > tiles->size() ? tiles->size() : pos+width*2;
-
-//    map<int,Tile>::iterator it = tiles->begin(), itFinish = tiles->begin();
-//    advance(it,start);
-//    advance(itFinish,limit);
     map<int,Tile>::iterator itFinish = tileMap.getItFinish(pos);
     for(auto i = tileMap.getItStart(pos); i != itFinish; i++){
 

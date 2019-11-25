@@ -1,39 +1,13 @@
 #ifndef GAMESTATEADMIN_H
 #define GAMESTATEADMIN_H
+
 #include "gamestate/GameState.h"
-#include "gamestate/GameStateGame.h"
-#include "gamestate/GameStateMainMenu.h"
-#include <SFML/Graphics.hpp>
-#include "view/AnimationManager.h"
-#include <vector>
-#include <list>
-#include <ctime>
-#include "model/Player.h"
-#include "view/EntityComponent.h"
-#include "view/PlayerComponent.h"
-#include "view/TileMap.h"
-#include "model/BlockDirt.h"
-#include "model/BlockStone.h"
-#include "model/BlockIron.h"
-#include "model/BlockGold.h"
-#include "model/BlockDiamond.h"
-#include "model/BlockEmerald.h"
-#include "model/LavaBlock.h"
-#include "model/BlockObsidian.h"
-#include "model/Pickaxe.h"
-#include "model/User.h"
-#include "model/GestionUser.h"
-#include <map>
-#include <cmath>
-#include "view/EnemyComponent.h"
-#include "view/HealthBar.h"
-#include "view/Timer.h"
-#include "OresBar.h"
-#include "gui/Button.h"
 #include "gui/TextField.h"
+#include "gui/Button.h"
+#include "gui/SliderSFML.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
-
+#include "model/User.h"
 
 class GameStateAdmin : public GameState
 {
@@ -48,10 +22,10 @@ class GameStateAdmin : public GameState
         virtual void handleInput();
         void loadTextures();
 
-        void initListName(RenderWindow& window, Texture& textureTXT);
-        void initListScores(RenderWindow& window, Texture& textureTXT);
-        void Delete(RenderWindow& window);
-        void getTextFieldSelected(RenderWindow& window);
+        void initListName(sf::RenderWindow& window, sf::Texture& textureTXT);
+        void initListScores(sf::RenderWindow& window, sf::Texture& textureTXT);
+        void Delete(sf::RenderWindow& window);
+        void getTextFieldSelected(sf::RenderWindow& window);
         int getPositionSelected();
         void setPositionSelected(int newPosition);
 
@@ -59,20 +33,20 @@ class GameStateAdmin : public GameState
 
     private:
         sf::Texture textureBG, textureBTN, textureTXT, textureTitle;
-        Font font;
+        sf::Font font;
 
-        Sprite background,title;
+        sf::Sprite background,title;
         TextField* text;
-        vector <TextField*> listName;
-        vector <TextField*> listScores;
-        vector<User*> users;
+        std::vector <TextField*> listName;
+        std::vector <TextField*> listScores;
+        std::vector<User*> users;
         Button btnDelete;
         Button btnBack;
         int positionSelected = -1;
         TextField textfieldSelected;
 
-        void createButton(Font& font,Texture& tex,RenderWindow& window);
-        void initBackGround(Texture& title,Texture& tex, RenderWindow& window);
+        void createButton(sf::Font& font,sf::Texture& tex,sf::RenderWindow& window);
+        void initBackGround(sf::Texture& title,sf::Texture& tex, sf::RenderWindow& window);
 };
 
 #endif // GAMESTATEADMIN_H

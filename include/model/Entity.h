@@ -11,7 +11,6 @@ class Entity
         virtual ~Entity();
         Entity(const Entity& other);
         Entity& operator=(const Entity&);
-//        virtual Entity* clone(){return new Entity(*this);}
         virtual Entity* clone() = 0;
 
         void updateHealth(int Health){health += Health;}

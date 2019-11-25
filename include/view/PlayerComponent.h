@@ -1,10 +1,11 @@
 #ifndef PLAYERCOMPONENT_H
 #define PLAYERCOMPONENT_H
 
-#include "view/EntityComponent.h"
 #include <iostream>
-#include "HealthBar.h"
+#include "view/EntityComponent.h"
+#include "view/HealthBar.h"
 #include "model/GestionUser.h"
+#include "SFML/Audio.hpp"
 
 class PlayerComponent: public EntityComponent
 {
@@ -42,7 +43,6 @@ class PlayerComponent: public EntityComponent
         HealthBar healthBar;
         std::map<std::string,bool> key;
         std::string walkStr,stayStr,jumpStr,miningStr;
-
 };
 
 #endif // PLAYERCOMPONENT_H

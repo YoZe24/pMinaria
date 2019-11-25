@@ -1,4 +1,4 @@
-#include "BlockObsidian.h"
+#include "model/BlockObsidian.h"
 using namespace std;
 BlockObsidian::BlockObsidian(vector<float> s):Block(s,13,EnumBlock::OBSIDIAN){}
 

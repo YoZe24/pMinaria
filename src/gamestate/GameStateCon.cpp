@@ -1,4 +1,11 @@
-#include "GameStateCon.h"
+#include "gamestate/GameStateCon.h"
+#include "gamestate/GameStateMainMenu.h"
+#include "model/User.h"
+#include "model/GestionUser.h"
+
+using namespace sf;
+using namespace std;
+
 /**
 *   Main constructor
 *

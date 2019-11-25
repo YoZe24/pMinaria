@@ -2,12 +2,11 @@
 #define TILEMAP_H
 
 #include <view/Tile.h>
-#include <vector>
 #include <SFML/Graphics.hpp>
 #include <deque>
 #include <map>
+#include <SFML/Audio.hpp>
 
-using namespace std;
 class TileMap
 {
     public:
@@ -34,7 +33,6 @@ class TileMap
         void draw(sf::RenderWindow& window,float dt,sf::Vector2f v);
         bool add(const Tile& t,int pos);
         EnumBlock deleteTileAt(float x, float y,float power);
-        EnumBlock deleteTileAt(int pos);
         Tile& getTileAt(int pos);
         EnumBlock getEnumBlockAt(int pos);
         EnumBlock getEnumBlockAt(int x,int y);
@@ -50,6 +48,8 @@ class TileMap
         int height,screenH;
         int start,limit;
         float timer,time;
+        sf::SoundBuffer sb;
+        sf::Sound soundPop;
 
 };
 

@@ -1,39 +1,12 @@
 #ifndef GAMESTATETABLESCORE_H
 #define GAMESTATETABLESCORE_H
+
 #include "gamestate/GameState.h"
-#include "gamestate/GameStateGame.h"
-#include "gamestate/GameStateMainMenu.h"
-#include "gamestate/GameStateAdmin.h"
-#include <SFML/Graphics.hpp>
-#include "view/AnimationManager.h"
-#include <vector>
-#include <list>
-#include <ctime>
-#include "model/Player.h"
-#include "view/EntityComponent.h"
-#include "view/PlayerComponent.h"
-#include "view/TileMap.h"
-#include "model/BlockDirt.h"
-#include "model/BlockStone.h"
-#include "model/BlockIron.h"
-#include "model/BlockGold.h"
-#include "model/BlockDiamond.h"
-#include "model/BlockEmerald.h"
-#include "model/LavaBlock.h"
-#include "model/BlockObsidian.h"
-#include "model/Pickaxe.h"
-#include "model/User.h"
-#include "model/GestionUser.h"
-#include <map>
-#include <cmath>
-#include "view/EnemyComponent.h"
-#include "view/HealthBar.h"
-#include "view/Timer.h"
-#include "OresBar.h"
-#include "gui/Button.h"
 #include "gui/TextField.h"
+#include "gui/Button.h"
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "model/User.h"
 
 
 class GameStateTableScore : public GameState
@@ -44,7 +17,7 @@ class GameStateTableScore : public GameState
         GameStateTableScore(const GameStateTableScore& other);
         GameStateTableScore& operator=(const GameStateTableScore& other);
 
-        void initListScores(RenderWindow& window, Texture& textureTXT);
+        void initListScores(sf::RenderWindow& window, sf::Texture& textureTXT);
         virtual void draw(const float dt);
         virtual void update(const float dt);
         virtual void handleInput();
@@ -54,16 +27,16 @@ class GameStateTableScore : public GameState
 
     private:
         sf::Texture textureBG, textureBTN, textureTXT, textureTitle;
-        Font font;
-        Sprite background,title;
+        sf::Font font;
+        sf::Sprite background,title;
         TextField* text;
-        vector <TextField*> listName;
-        vector <TextField*> listScores;
-        vector<User*> users;
+        std::vector <TextField*> listName;
+        std::vector <TextField*> listScores;
+        std::vector<User*> users;
         Button btnBack;
         const int screen_h = 700,screen_w = 1200;
-        void createButton(Font& font,Texture& tex,RenderWindow& window);
-        void initBackGround(Texture& title,Texture& tex, RenderWindow& window);
+        void createButton(sf::Font& font,sf::Texture& tex,sf::RenderWindow& window);
+        void initBackGround(sf::Texture& title,sf::Texture& tex, sf::RenderWindow& window);
 };
 
 #endif // GAMESTATETABLESCORE_H

@@ -9,7 +9,8 @@ using namespace std;
 */
 TileMap::TileMap()
 {
-    //ctor
+    if(!sb.loadFromFile("pop.wav")){}
+    soundPop.setBuffer(sb);
 }
 
 /**
@@ -24,6 +25,8 @@ TileMap::TileMap()
 TileMap::TileMap(int width,int height,int tileSize,int sW,int sH):width(width),height(height),tileSize(tileSize),screenW(sW),screenH(sH)
 {
     nbBlockMined = 0;
+    if(!sb.loadFromFile("pop.wav")){}
+    soundPop.setBuffer(sb);
 }
 
 /**
@@ -38,7 +41,8 @@ TileMap::~TileMap()
 *   Copy constructor
 */
 TileMap::TileMap(const TileMap& other):
-width(other.width),height(other.height),tileSize(other.tileSize),tiles(other.tiles),screenW(other.screenW),screenH(other.screenH),nbBlockMined(other.nbBlockMined)
+width(other.width),height(other.height),tileSize(other.tileSize),tiles(other.tiles),
+screenW(other.screenW),screenH(other.screenH),nbBlockMined(other.nbBlockMined),soundPop(other.soundPop),sb(other.sb)
 {
     //copy ctor
 }
@@ -56,6 +60,8 @@ TileMap& TileMap::operator=(const TileMap& other){
         this->screenH = other.screenH;
         this->nbBlockMined = other.nbBlockMined;
         this->time = other.time;
+        this->sb = other.sb;
+        this->soundPop = other.soundPop;
     }
     return *this;
 }
@@ -77,22 +83,37 @@ void TileMap::load(int width,int height,int tileSize,int sW,int sH){
     this->screenH = sH;
 }
 
-/***/
+/**
+*   Return an iterator at a pos minus 2 * width and minus the number of block mined
+*   We substract the number of block mined to avoid aving trouble
+*   We use this function to not iterate over all the element but only necessary tiles
+*   @param int pos: base to compute the iterator
+*/
 map<int,Tile>::iterator TileMap::getItStart(int pos){
-    int start = pos - (width * 3) - nbBlockMined < 0 ? 0 : pos - (width * 3) - nbBlockMined;
+    int start = pos - (width * 2) - nbBlockMined < 0 ? 0 : pos - (width * 2) - nbBlockMined;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,start);
     return it;
 }
-/***/
+
+/**
+*   Return an iterator at a pos plus 2 * width
+*   We use this function to not iterate over all the element but only necessary tiles
+*   @param int pos: base to compute the iterator
+*/
 map<int,Tile>::iterator TileMap::getItFinish(int pos){
-    int finish = pos + width * 3 > (width * height)-3 ? (width * height)-3 : pos+width*3;
+    int finish = pos + width * 2 > (width * height)-2 ? (width * height)-2 : pos+width*2;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,finish);
     return it;
 }
 
-/***/
+/**
+*   Draw all the tiles visible at the screen
+*   @param RenderWindow& window: window to draw
+*   @param float dt: time elapsed
+*   @param vPos : position x and y of the player => to compute which tiles to draw
+*/
 void TileMap::draw(RenderWindow& window,float dt,sf::Vector2f vPos){
     int pos = (vPos.x/tileSize) + (vPos.y/tileSize) * width;
     int nbBlocH = (width * ((screenH/tileSize)+3))/2;
@@ -113,7 +134,7 @@ void TileMap::draw(RenderWindow& window,float dt,sf::Vector2f vPos){
 
 /**
 *
-*   Adding function for the map
+*   Adding tile function for the map
 *
 *   @param t : Tile to add at the map
 *   @param pos : The position where to add the tile into the map
@@ -127,29 +148,14 @@ bool TileMap::add(const Tile& t,int pos){
 
 /**
 *
-*   Delete function from the map
+*   Delete a tile from the map at a position X,Y
 *
-*   We remove the tile from the map and we added tile removed to the tilesDeleted map.
-*
-*   @param pos : Tile's position in the map
-*
-*   @return eb : Return the block's type
-*/
-EnumBlock TileMap::deleteTileAt(int pos){
-    EnumBlock eb = tiles[pos].getBlock().getType();
-    tilesDeleted.push_back(pos);
-    tiles.erase(tiles.find(pos));
-    nbBlockMined++;
-    return eb;
-}
-
-/**
-*
-*   Delete function from the map
-*
-*   We use x,y to get the position of the tile in the map.
-*
-*
+*   We search the good tile with the position X and Y then we update his miningTime
+*   and if the miningTime is superior to the duration of the block divide by the power of the pickaxe
+*   we remove the tile and return his enumeration
+*   @param float x: x position of tiles to delete
+*   @param float y: y position of tiles to delete
+*   @param float power: power of the current pickaxe
 */
 EnumBlock TileMap::deleteTileAt(float x,float y,float power){
     int pos = getPos(x,y);
@@ -164,6 +170,7 @@ EnumBlock TileMap::deleteTileAt(float x,float y,float power){
 
             i->second.updateTime(time);
             if(i->second.getTime()/1000 >= i->second.getDuration()/power){
+                    soundPop.play();
                     EnumBlock eb = i->second.getBlock().getType();
                     tilesDeleted.push_back(i->first);
                     tiles.erase(tiles.find(i->first));

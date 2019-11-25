@@ -5,17 +5,14 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
-using namespace sf;
-
 class SliderSFML
 {
     private:
 
-        RectangleShape slider;
-        RectangleShape axis;
-        Font font;
-        Text text;
+        sf::RectangleShape slider;
+        sf::RectangleShape axis;
+        sf::Font font;
+        sf::Text text;
         float minValue;
         float maxValue;
         int xCord;
@@ -29,11 +26,11 @@ class SliderSFML
     public:
         SliderSFML();
         SliderSFML(int x, int y);
-        Text returnText(float x, float y, float z, int fontSize);
+        sf::Text returnText(float x, float y, float z, int fontSize);
         void create(float min, float max);
-        void logic(RenderWindow &window);
+        void logic(sf::RenderWindow &window);
         float getSliderValue();
         void setSliderValue(float newValue);
-        void draw(RenderWindow& window);
+        void draw(sf::RenderWindow& window);
 };
 #endif // SLIDERSFML_H

@@ -1,5 +1,11 @@
-#include "GameStateConAdmin.h"
+#include "gamestate/GameStateConAdmin.h"
+#include "gamestate/GameStateMainMenu.h"
+#include "gamestate/GameStateAdmin.h"
 #define MDP "123"
+
+using namespace sf;
+using namespace std;
+
 /**
 *   Main constructor
 *

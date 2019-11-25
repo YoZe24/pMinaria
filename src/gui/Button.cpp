@@ -1,6 +1,9 @@
 #include "gui/Button.h"
 #include <iostream>
 
+using namespace std;
+using namespace sf;
+
 /**
 *   Default constructor
 */

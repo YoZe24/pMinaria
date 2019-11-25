@@ -56,9 +56,9 @@ class GameStateGame : public GameState
         Timer* timer;
         OresBar oreBar;
         int score;
-        vector<Block> blocks;
-        vector<float> spawnEnemy;
-        vector<EnemyComponent*> enemies;
+        std::vector<Block> blocks;
+        std::vector<float> spawnEnemy;
+        std::vector<EnemyComponent*> enemies;
         PlayerComponent* miner;
         const int tileMap_height = 400,tileMap_width = 50,tile_size = 32,h_miner = 24,w_miner = 16;
         const int screen_h = 700,screen_w = 1200;

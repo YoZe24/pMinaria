@@ -1,5 +1,8 @@
 #include "gui/SliderSFML.h"
 
+using namespace std;
+using namespace sf;
+
 /**
 *   Default constructor
 */
