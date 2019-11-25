@@ -85,8 +85,8 @@ void GameStateOptionMenu::createButton(Font& font, Texture& tex, RenderWindow& w
 void GameStateOptionMenu::initSliders(RenderWindow& window)
 {
     sliderTime = SliderSFML(window.getSize().x*0.20,window.getSize().y*0.60);
-    sliderTime.create(3,10);
-    sliderTime.setSliderValue(6);
+    sliderTime.create(1,5);
+    sliderTime.setSliderValue(2);
 
     sliderDurability = SliderSFML(window.getSize().x*0.60,window.getSize().y*0.60);
     sliderDurability.create(0.5,2);
@@ -117,7 +117,7 @@ void GameStateOptionMenu::draw(const float dt){
 *   @param durability : Blocks' durability's value
 *
 **/
-void GameStateOptionMenu::updateSliders(int time, int durability)
+void GameStateOptionMenu::updateSliders(int time, float durability)
 {
     sliderDurability.setSliderValue(durability);
     sliderTime.setSliderValue(time);
@@ -131,7 +131,7 @@ void GameStateOptionMenu::updateSliders(int time, int durability)
 */
 void GameStateOptionMenu::saveOptions(Game* game)
 {
-    game->TIME_TIMER = (int)sliderTime.getSliderValue();
+    game->TIME_TIMER = sliderTime.getSliderValue();
     game->DURABILITY = sliderDurability.getSliderValue();
 }
 /**
@@ -161,16 +161,16 @@ void GameStateOptionMenu::update(const float dt){
     if(easyModeButton.isClicked(this->game->window))
     {
         //cout << "EASY BUTTON CLICKED" << endl;
-        updateSliders(8,0);
+        updateSliders(5,0.5);
     }
     else if(mediumModeButton.isClicked(this->game->window))
     {
 
-        updateSliders(6,1);
+        updateSliders(2,1);
     }
     else if(hardModeButton.isClicked(this->game->window))
     {
-        updateSliders(3,2);
+        updateSliders(1,2);
     }
     else if(backMainMenuButton.isClicked(this->game->window))
     {

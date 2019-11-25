@@ -18,7 +18,7 @@ GameStateGame::GameStateGame(Game* game)
     loadTileMap();
 
 
-    int time = game->TIME_TIMER * 60;
+    float time = game->TIME_TIMER * 60;
     timer = new Timer(time);
     timer->setTimeout([&](){
                 GestionUser::getInstance()->addScoreCurrentUser(score);

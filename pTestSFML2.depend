@@ -1824,7 +1824,7 @@
 	"gamestate/Game.h"
 	<iostream>
 
-1574670624 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
+1574672380 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
 1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
@@ -2562,7 +2562,7 @@
 	"model/Pickaxe.h"
 	<map>
 
-1574670123 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
+1574672227 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
 	"model/Block.h"
 	<iostream>
 
@@ -2691,7 +2691,7 @@
 1574066251 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\enemy.h
 	"model/Entity.h"
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\game.h
+1574672382 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\game.h
 	<stack>
 	<string>
 	<SFML/Graphics.hpp>
@@ -2807,7 +2807,7 @@
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574613594 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
+1574671725 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
 1574633062 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
@@ -2841,7 +2841,7 @@
 	"view/PlayerComponent.h"
 	<cmath>
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
+1574670822 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
 	"view/Tile.h"
 	<sstream>
 	<iostream>
@@ -4427,7 +4427,7 @@
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateoptionmenu.h
+1574670963 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateoptionmenu.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
@@ -4466,7 +4466,7 @@
 1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\oresbar.cpp
 	"view/OresBar.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateadmin.cpp
+1574671689 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateadmin.cpp
 	"GameStateAdmin.h"
 
 1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatecon.cpp
@@ -4478,10 +4478,10 @@
 1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatemainmenu.cpp
 	"GameStateMainMenu.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateoptionmenu.cpp
+1574672382 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateoptionmenu.cpp
 	"GameStateOptionMenu.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatetablescore.cpp
+1574671593 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatetablescore.cpp
 	"GameStateTableScore.h"
 	<algorithm>
 

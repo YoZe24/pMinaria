@@ -24,7 +24,7 @@ class Game
 
         void gameLoop();
 
-        int TIME_TIMER = 2;
+        float TIME_TIMER = 2.;
         float DURABILITY = 1.0;
     protected:
 
