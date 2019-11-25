@@ -33,7 +33,6 @@ class TileMap
         void draw(sf::RenderWindow& window,float dt,sf::Vector2f v);
         bool add(const Tile& t,int pos);
         EnumBlock deleteTileAt(float x, float y,float power);
-        EnumBlock deleteTileAt(int pos);
         Tile& getTileAt(int pos);
         EnumBlock getEnumBlockAt(int pos);
         EnumBlock getEnumBlockAt(int x,int y);

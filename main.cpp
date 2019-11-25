@@ -15,7 +15,7 @@ int main()
     if(!music.openFromFile("background_music.wav")){}
     music.play();
     music.setVolume(50);
-
+    music.setLoop(true);
 
 
     GestionUser* gestion = GestionUser::getInstance();

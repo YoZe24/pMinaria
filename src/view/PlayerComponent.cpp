@@ -208,7 +208,12 @@ void PlayerComponent::update(float time){
 }
 
 /**
-*
+*   Test if the player is colliding with one block situated between his position minus
+*   2 * tilemap_width and plus 2 * tilemap_width => If width is 50 and the entity is at
+*   the position 250 the method will test from tile 150 to tile 350
+*   The function also takes in charge to call tryToDelete if the player is colliding
+*   with a block and still try to move in the same direction
+*   @param int num: index to know if we test colliding on X (num = 0) or Y (num = 1) axis
 */
 void PlayerComponent::Collision(int num){
     TileMap& tileMap = *getTileMap();
