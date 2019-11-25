@@ -597,3 +597,376 @@
 	"view/Timer.h"
 	<sstream>
 
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/main.cpp
+	<SFML/Graphics.hpp>
+	<ctime>
+	<cmath>
+	"model/GestionUser.h"
+	"gamestate/Game.h"
+	"gamestate/GameStateMainMenu.h"
+	"SFML/Audio.hpp"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/GestionUser.h
+	"User.h"
+	<vector>
+	<string>
+	<sstream>
+	<iostream>
+	<fstream>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/User.h
+	<string>
+	<ostream>
+	<vector>
+	<iostream>
+	<fstream>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/Game.h
+	<stack>
+	<string>
+	<SFML/Graphics.hpp>
+	"gamestate/GameState.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameState.h
+	"gamestate/Game.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateMainMenu.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gui/TextField.h
+	<SFML/Graphics.hpp>
+	<string>
+	<sstream>
+	<vector>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gui/Button.h
+	<vector>
+	<SFML/Graphics.hpp>
+	"gui/ButtonState.h"
+	<string>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gui/ButtonState.h
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gui/SliderSFML.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<string>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/Game.cpp
+	"gamestate/Game.h"
+	<iostream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameState.cpp
+	"gamestate/GameState.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateAdmin.cpp
+	"gamestate/GameStateAdmin.h"
+	"gamestate/GameStateMainMenu.h"
+	"model/User.h"
+	"model/GestionUser.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateAdmin.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+	"model/User.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateCon.cpp
+	"gamestate/GameStateCon.h"
+	"gamestate/GameStateMainMenu.h"
+	"model/User.h"
+	"model/GestionUser.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateCon.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateConAdmin.cpp
+	"gamestate/GameStateConAdmin.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateAdmin.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateConAdmin.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateGame.cpp
+	"gamestate/GameStateGame.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateGame.h
+	"gamestate/GameState.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateTableScore.h"
+	<SFML/Graphics.hpp>
+	"view/AnimationManager.h"
+	<vector>
+	<list>
+	<ctime>
+	"model/Player.h"
+	"view/EntityComponent.h"
+	"view/PlayerComponent.h"
+	"view/TileMap.h"
+	"model/BlockDirt.h"
+	"model/BlockStone.h"
+	"model/BlockIron.h"
+	"model/BlockGold.h"
+	"model/BlockDiamond.h"
+	"model/BlockEmerald.h"
+	"model/LavaBlock.h"
+	"model/BlockObsidian.h"
+	"model/Pickaxe.h"
+	"model/GestionUser.h"
+	<map>
+	<cmath>
+	"view/EnemyComponent.h"
+	"view/HealthBar.h"
+	"view/Timer.h"
+	"OresBar.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateTableScore.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+	"model/User.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/AnimationManager.h
+	"view/Animation.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/Animation.h
+	<vector>
+	<SFML/Graphics.hpp>
+	<sstream>
+	<iostream>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/Player.h
+	"model/Entity.h"
+	"model/Pickaxe.h"
+	<map>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/Entity.h
+	"model/Block.h"
+	<iostream>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/Block.h
+	<string>
+	<vector>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/Pickaxe.h
+	"model/Block.h"
+	<iostream>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/EntityComponent.h
+	"view/AnimationManager.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+	"view/Tile.h"
+	"view/TileMap.h"
+	"model/Player.h"
+	"model/Entity.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/Tile.h
+	<model/Block.h>
+	<view/AnimationManager.h>
+	<SFML/Graphics.hpp>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/TileMap.h
+	<view/Tile.h>
+	<SFML/Graphics.hpp>
+	<deque>
+	<map>
+	<SFML/Audio.hpp>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/PlayerComponent.h
+	<iostream>
+	"view/EntityComponent.h"
+	"view/HealthBar.h"
+	"model/GestionUser.h"
+	"SFML/Audio.hpp"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/HealthBar.h
+	<SFML/Graphics.hpp>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockDirt.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockStone.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockIron.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockGold.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockDiamond.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockEmerald.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/LavaBlock.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/BlockObsidian.h
+	"model/Block.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/EnemyComponent.h
+	"model/Enemy.h"
+	"view/EntityComponent.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/model/Enemy.h
+	"model/Entity.h"
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/Timer.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	<thread>
+	<string>
+	<functional>
+
+1574681268 /home/aqueduc/Bureau/pMinaria-master/include/view/OresBar.h
+	<SFML/Graphics.hpp>
+	<iostream>
+	"model/Pickaxe.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateMainMenu.cpp
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateCon.h"
+	"gamestate/GameStateConAdmin.h"
+	"gamestate/GameStateOptionMenu.h"
+	"gamestate/GameStateTableScore.h"
+
+1574715785 /home/aqueduc/Bureau/pMinaria-master/include/gamestate/GameStateOptionMenu.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574716240 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateOptionMenu.cpp
+	"gamestate/GameStateOptionMenu.h"
+	"gamestate/GameStateMainMenu.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gamestate/GameStateTableScore.cpp
+	"GameStateTableScore.h"
+	<algorithm>
+	"model/GestionUser.h"
+	"gamestate/GameStateMainMenu.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gui/Button.cpp
+	"gui/Button.h"
+	<iostream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gui/SliderSFML.cpp
+	"gui/SliderSFML.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/gui/TextField.cpp
+	"gui/TextField.h"
+	<iostream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/Block.cpp
+	"model/Block.h"
+	<sstream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockDiamond.cpp
+	"model/BlockDiamond.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockDirt.cpp
+	"model/BlockDirt.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockEmerald.cpp
+	"model/BlockEmerald.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockGold.cpp
+	"model/BlockGold.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockIron.cpp
+	"model/BlockIron.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockObsidian.cpp
+	"model/BlockObsidian.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/BlockStone.cpp
+	"model/BlockStone.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/Enemy.cpp
+	"model/Enemy.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/Entity.cpp
+	"model/Entity.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/GestionUser.cpp
+	"model/GestionUser.h"
+	<string>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/LavaBlock.cpp
+	"model/LavaBlock.h"
+
+1574716364 source:/home/aqueduc/Bureau/pMinaria-master/src/model/Pickaxe.cpp
+	"model/Pickaxe.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/Player.cpp
+	"model/Player.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/model/User.cpp
+	"model/User.h"
+	<sstream>
+	<iostream>
+	<string>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/Animation.cpp
+	"view/Animation.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/AnimationManager.cpp
+	"view/AnimationManager.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/EnemyComponent.cpp
+	"view/EnemyComponent.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/EntityComponent.cpp
+	"view/EntityComponent.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/HealthBar.cpp
+	"view/HealthBar.h"
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/PlayerComponent.cpp
+	"view/PlayerComponent.h"
+	<cmath>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/Tile.cpp
+	"view/Tile.h"
+	<sstream>
+	<iostream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/TileMap.cpp
+	"view/TileMap.h"
+	"iostream"
+	<cmath>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/Timer.cpp
+	"view/Timer.h"
+	<sstream>
+
+1574681268 source:/home/aqueduc/Bureau/pMinaria-master/src/view/OresBar.cpp
+	"view/OresBar.h"
+

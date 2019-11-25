@@ -92,11 +92,17 @@ void GameStateOptionMenu::createButton(Font& font, Texture& tex, RenderWindow& w
 */
 void GameStateOptionMenu::initSliders(RenderWindow& window)
 {
-    sliderTime = SliderSFML(200,350);
+    textTimer = Text("Timer",font,16);
+    textTimer.setFillColor(Color::Black);
+    sliderTime = SliderSFML(window.getSize().x * 0.20,window.getSize().y * 0.60);
+    textTimer.setPosition(window.getSize().x * 0.20 + 20,window.getSize().y * 0.60 - 45);
     sliderTime.create(1,5);
     sliderTime.setSliderValue(2);
 
-    sliderDurability = SliderSFML(700,350);
+    textDurability = Text("Durability",font,16);
+    textDurability.setFillColor(Color::Black);
+    sliderDurability = SliderSFML(window.getSize().x * 0.60,window.getSize().y * 0.60);
+    textDurability.setPosition(window.getSize().x * 0.60 + 20,window.getSize().y * 0.60 - 45);
     sliderDurability.create(0.5,2);
     sliderDurability.setSliderValue(1);
 }
@@ -116,6 +122,8 @@ void GameStateOptionMenu::draw(const float dt){
     backMainMenuButton.draw(this->game->window);
     sliderTime.draw(this->game->window);
     sliderDurability.draw(this->game->window);
+    this->game->window.draw(textTimer);
+    this->game->window.draw(textDurability);
 }
 /**
 *

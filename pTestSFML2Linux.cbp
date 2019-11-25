@@ -54,10 +54,10 @@
 			<Add library="libsfml-graphics" />
 			<Add library="libsfml-window" />
 			<Add library="libsfml-system" />
+			<Add library="libsfml-audio" />
 			<Add directory="/usr/lib" />
 		</Linker>
 		<Unit filename="User.txt" />
-		<Unit filename="include/OresBar.h" />
 		<Unit filename="include/gamestate/Game.h" />
 		<Unit filename="include/gamestate/GameState.h" />
 		<Unit filename="include/gamestate/GameStateAdmin.h" />
@@ -91,12 +91,12 @@
 		<Unit filename="include/view/EnemyComponent.h" />
 		<Unit filename="include/view/EntityComponent.h" />
 		<Unit filename="include/view/HealthBar.h" />
+		<Unit filename="include/view/OresBar.h" />
 		<Unit filename="include/view/PlayerComponent.h" />
 		<Unit filename="include/view/Tile.h" />
 		<Unit filename="include/view/TileMap.h" />
 		<Unit filename="include/view/Timer.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/OresBar.cpp" />
 		<Unit filename="src/gamestate/Game.cpp" />
 		<Unit filename="src/gamestate/GameState.cpp" />
 		<Unit filename="src/gamestate/GameStateAdmin.cpp" />
@@ -129,6 +129,7 @@
 		<Unit filename="src/view/EnemyComponent.cpp" />
 		<Unit filename="src/view/EntityComponent.cpp" />
 		<Unit filename="src/view/HealthBar.cpp" />
+		<Unit filename="src/view/OresBar.cpp" />
 		<Unit filename="src/view/PlayerComponent.cpp" />
 		<Unit filename="src/view/Tile.cpp" />
 		<Unit filename="src/view/TileMap.cpp" />

@@ -54,7 +54,6 @@ void Game::gameLoop()
         peekState()->draw(time);
         this->window.display();
 
-
     }
 }
 

@@ -30,6 +30,7 @@ class GameStateOptionMenu : public GameState
         Button easyModeButton,mediumModeButton,hardModeButton,backMainMenuButton;
         SliderSFML sliderTime, sliderDurability;
         sf::Sprite title;
+        sf::Text textTimer,textDurability;
 
 
         void createButton(sf::Font& font,sf::Texture& tex,sf::RenderWindow& window);
@@ -38,7 +39,6 @@ class GameStateOptionMenu : public GameState
 
         void updateSliders(int time,float durability);
 
-        /** Recois en param l'instance unique de jeu et modifie les attributs de gameplay (le time et la durability des blocs)*/
         void saveOptions(Game* game);
 };
 

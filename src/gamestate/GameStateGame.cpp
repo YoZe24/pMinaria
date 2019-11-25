@@ -92,7 +92,6 @@ void GameStateGame::update(const float time)
             ec->update(time);
             if(!ec->getEntity()->getLife()){
                 it = enemies.erase(it);
-//                    delete ec;
                 continue;
             }
         }
