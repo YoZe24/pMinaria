@@ -49,7 +49,8 @@ void GameStateTableScore::initBackGround(Texture& title,Texture& tex,RenderWindo
     this->title.setTexture(title);
     background.setTexture(texture);
     background.setScale((float) windowSize.x / textureSize.x, (float) windowSize.y / textureSize.y);
-    this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    //this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    this->title.setPosition(450,0);
 }
 /**
 *   Function who permet to create buttons of interface
@@ -69,7 +70,8 @@ void GameStateTableScore::createButton(Font& font,Texture& tex,RenderWindow& win
 
     btnBack = Button(texture,font,"Back");
 
-    btnBack.setPosition(Vector2f(windowW/14,windowH/1.3));
+    //btnBack.setPosition(Vector2f(windowW/14,windowH/1.3));
+    btnBack.setPosition(Vector2f(150,550));
     btnBack.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     btnBack.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
     btnBack.getText().setPosition(22,22);
@@ -133,10 +135,10 @@ void GameStateTableScore::initListScores(RenderWindow& window, Texture& TextureT
         stringstream st;
         st<<maximum[i];
         string score = st.str();
-        text = new TextField(Vector2f((windowW/6)+400, (windowH/5)+sep),TextureTXT,score);
+        text = new TextField(Vector2f(600, 140+sep),TextureTXT,score);
         listScores.push_back(text);
         string name = names[i];
-        text = new TextField(Vector2f(windowW/6, (windowH/5)+sep),TextureTXT,name);
+        text = new TextField(Vector2f(200, 140+sep),TextureTXT,name);
         listName.push_back(text);
         sep = sep+50;
 

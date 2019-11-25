@@ -137,7 +137,8 @@ void GameStateMainMenu::initBackGround(Texture& title,Texture& tex,RenderWindow&
     this->title.setTexture(title);
     background.setTexture(tex);
     background.setScale((float) windowSize.x / textureSize.x, (float) windowSize.y / textureSize.y);
-    this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    //this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    this->title.setPosition(450,0);
 }
 
 /**
@@ -168,28 +169,34 @@ void GameStateMainMenu::createButton(Font& font,Texture& tex,RenderWindow& windo
     scoreBoardButton = Button(tex,font,"Scoreboard");
 
 
-    playButton.setPosition(Vector2f((float)(windowW-windowW/2) - buttonW/2,title.getPosition().y + 125));
+    //playButton.setPosition(Vector2f((float)(windowW-windowW/2) - buttonW/2,title.getPosition().y + 125));
+    playButton.setPosition(Vector2f(470,125));
     playButton.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     playButton.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
 
-    connectionButton.setPosition(Vector2f((float)(windowW-windowW/2) - buttonW/2,playButton.getPosition().y + 125));
+    //connectionButton.setPosition(Vector2f((float)(windowW-windowW/2) - buttonW/2,playButton.getPosition().y + 125));
+    connectionButton.setPosition(Vector2f(470,250));
     connectionButton.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     connectionButton.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
 
-    optionButton.setPosition(Vector2f((float) (windowW-windowW/2) - buttonW/2,connectionButton.getPosition().y + 125));
+    //optionButton.setPosition(Vector2f((float) (windowW-windowW/2) - buttonW/2,connectionButton.getPosition().y + 125));
+    optionButton.setPosition(Vector2f(470,375));
     optionButton.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     optionButton.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
 
 
-    quitButton.setPosition(Vector2f((float)windowW/1.65 - buttonW,optionButton.getPosition().y + 125));
+    //quitButton.setPosition(Vector2f((float)windowW/1.65 - buttonW,optionButton.getPosition().y + 125));
+    quitButton.setPosition(Vector2f(470,500));
     quitButton.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     quitButton.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
 
-    adminButton.setPosition(Vector2f((float)windowW - buttonW + 50,windowH - 100));
+    //adminButton.setPosition(Vector2f((float)windowW - buttonW + 50,windowH - 100));
+    adminButton.setPosition(Vector2f(1000,575));
     adminButton.addSpriteResized(IntRect(0,0,buttonW,buttonH/2),NORMAL, 0.75,0.75);
     adminButton.addSpriteResized(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED, 0.75,0.75);
 
-    scoreBoardButton.setPosition(Vector2f(0,windowH - 100));
+    //scoreBoardButton.setPosition(Vector2f(0,windowH - 100));
+    scoreBoardButton.setPosition(Vector2f(15,575));
     scoreBoardButton.addSpriteResized(IntRect(0,0,buttonW,buttonH/2),NORMAL, 0.75,0.75);
     scoreBoardButton.addSpriteResized(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED, 0.75,0.75);
 

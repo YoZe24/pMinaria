@@ -50,7 +50,7 @@ void GameStateAdmin::initListName(RenderWindow& window, Texture& TextureTXT){
 
     for(User* user : users){
         string name = user->getLogin();
-        text = new TextField(Vector2f(windowW/6, (windowH/5)+sep),TextureTXT,name);
+        text = new TextField(Vector2f(200, 140+sep),TextureTXT,name);
         listName.push_back(text);
         sep = sep+50;
     }
@@ -74,10 +74,14 @@ void GameStateAdmin::initListScores(RenderWindow& window, Texture& TextureTXT){
         vector<int> scores = user->getScores();
         stringstream st;
         for(int i=0; i<scores.size();i++){
-            st<<scores[i]<<", ";
+            if(i>4){
+                st<<"";
+            } else {
+                st<<scores[i]<<", ";
+            }
         }
         string score = st.str();
-        text = new TextField(Vector2f((windowW/6)+400, (windowH/5)+sep),TextureTXT,score);
+        text = new TextField(Vector2f(650, 140+sep),TextureTXT,score);
         listScores.push_back(text);
         sep = sep+50;
     }
@@ -98,7 +102,8 @@ void GameStateAdmin::initBackGround(Texture& title,Texture& tex,RenderWindow& wi
     this->title.setTexture(title);
     background.setTexture(texture);
     background.setScale((float) windowSize.x / textureSize.x, (float) windowSize.y / textureSize.y);
-    this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    //this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    this->title.setPosition(450,0);
 }
 
 GameStateAdmin::GameStateAdmin(const GameStateAdmin& other)
@@ -120,6 +125,7 @@ void GameStateAdmin::Delete(RenderWindow& window){
         listName.erase(listName.begin()+pos);
         listScores.erase(listScores.begin()+pos);
         free(tmp);
+        GestionUser::getInstance()->writeFromFile("User.txt");
         return;
 
     }
@@ -166,14 +172,16 @@ void GameStateAdmin::createButton(Font& font,Texture& tex,RenderWindow& window)
 
     btnDelete = Button(texture,font,"Delete");
 
-    btnDelete.setPosition(Vector2f((windowW-windowW/3),windowH/1.3));
+    //btnDelete.setPosition(Vector2f((windowW-windowW/3),windowH/1.3));
+    btnDelete.setPosition(Vector2f(800,550));
     btnDelete.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     btnDelete.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
     btnDelete.getText().setPosition(22,22);
 
     btnBack = Button(texture,font,"Back");
 
-    btnBack.setPosition(Vector2f(windowW/14,windowH/1.3));
+    //btnBack.setPosition(Vector2f(windowW/14,windowH/1.3));
+    btnBack.setPosition(Vector2f(150,550));
     btnBack.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     btnBack.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
     btnBack.getText().setPosition(22,22);
