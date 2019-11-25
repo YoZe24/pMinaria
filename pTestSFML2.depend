@@ -1465,38 +1465,14 @@
 1574022973 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminorz - copie - copie\src\model\blockemerald.cpp
 	"BlockEmerald.h"
 
-1574670122 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\main.cpp
+1574709897 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\main.cpp
 	<SFML/Graphics.hpp>
-	<vector>
-	<list>
 	<ctime>
-	"view/AnimationManager.h"
-	"model/Entity.h"
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/Pickaxe.h"
-	"model/GestionUser.h"
-	<map>
 	<cmath>
-	"view/EnemyComponent.h"
+	"model/GestionUser.h"
 	"gamestate/Game.h"
-	"gamestate/GameStateGame.h"
 	"gamestate/GameStateMainMenu.h"
-	"gamestate/GameStateAdmin.h"
-	"gamestate/GameStateConAdmin.h"
-	"gamestate/GameStateTableScore.h"
-	"gamestate/GameStateOptionMenu.h"
-	"view/Timer.h"
-	"gui/SliderSFML.h"
+	"SFML/Audio.hpp"
 
 1574066190 c:\users\eliot\desktop\bloc3\devl._jeux_vidï¿½o\pminaria\include\view\animationmanager.h
 	"view/Animation.h"
@@ -1507,7 +1483,7 @@
 	<sstream>
 	<iostream>
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\entity.h
+1574695230 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\entity.h
 	"model/Block.h"
 	<iostream>
 
@@ -1820,14 +1796,14 @@
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
+1574682423 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
 	"gamestate/Game.h"
 	<iostream>
 
-1574672380 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
+1574689486 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
+1574697229 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
 	"gamestate/GameState.h"
 	"gamestate/GameStateMainMenu.h"
 	"gamestate/GameStateTableScore.h"
@@ -2566,13 +2542,12 @@
 	"model/Block.h"
 	<iostream>
 
-1574546096 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\entitycomponent.h
+1574697887 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\entitycomponent.h
 	"view/AnimationManager.h"
 	<SFML/Graphics.hpp>
 	<iostream>
 	"view/Tile.h"
 	"view/TileMap.h"
-	<vector>
 	"model/Player.h"
 	"model/Entity.h"
 
@@ -2581,18 +2556,19 @@
 	<view/AnimationManager.h>
 	<SFML/Graphics.hpp>
 
-1574346694 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tilemap.h
+1574709330 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\tilemap.h
 	<view/Tile.h>
-	<vector>
 	<SFML/Graphics.hpp>
 	<deque>
 	<map>
+	<SFML/Audio.hpp>
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
-	"view/EntityComponent.h"
+1574711338 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\playercomponent.h
 	<iostream>
-	"HealthBar.h"
+	"view/EntityComponent.h"
+	"view/HealthBar.h"
 	"model/GestionUser.h"
+	"SFML/Audio.hpp"
 
 1574419041 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\healthbar.h
 	<SFML/Graphics.hpp>
@@ -2644,16 +2620,16 @@
 	<string>
 	<sstream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\textfield.h
+1574695888 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\textfield.h
 	<SFML/Graphics.hpp>
 	<string>
 	<sstream>
 	<vector>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\button.h
+1574695914 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\button.h
 	<vector>
 	<SFML/Graphics.hpp>
-	"ButtonState.h"
+	"gui/ButtonState.h"
 	<string>
 
 1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\buttonstate.h
@@ -2697,13 +2673,13 @@
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574547867 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestate.h
+1574682592 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestate.h
 	"gamestate/Game.h"
 
 1574552565 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\blockobsidian.h
 	"model/Block.h"
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\timer.h
+1574686982 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\view\timer.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<thread>
@@ -2726,7 +2702,7 @@
 	"SliderSFML.h"
 	<iostream>
 
-1574670178 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\slidersfml.h
+1574695937 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\slidersfml.h
 	<SFML/Graphics.hpp>
 	<iostream>
 	<string>
@@ -2734,7 +2710,7 @@
 1574547923 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestate.cpp
 	"gamestate/GameState.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\button.cpp
+1574696248 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\button.cpp
 	"gui/Button.h"
 	<iostream>
 
@@ -2762,10 +2738,10 @@
 	"gui/OptionMenu.h"
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\slidersfml.cpp
+1574696280 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\slidersfml.cpp
 	"gui/SliderSFML.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\textfield.cpp
+1574696263 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gui\textfield.cpp
 	"gui/TextField.h"
 	<iostream>
 
@@ -2788,8 +2764,8 @@
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockiron.cpp
 	"model/BlockIron.h"
 
-1574554852 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockobsidian.cpp
-	"BlockObsidian.h"
+1574697738 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockobsidian.cpp
+	"model/BlockObsidian.h"
 
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\blockstone.cpp
 	"model/BlockStone.h"
@@ -2800,21 +2776,21 @@
 1574545866 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\entity.cpp
 	"model/Entity.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\gestionuser.cpp
-	"GestionUser.h"
-	<string.h>
+1574697725 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\gestionuser.cpp
+	"model/GestionUser.h"
+	<string>
 
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574671725 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
+1574698621 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
 1574633062 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
 	"model/Player.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\user.cpp
-	"User.h"
+1574697707 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\user.cpp
+	"model/User.h"
 	<sstream>
 	<iostream>
 	<string>
@@ -2828,16 +2804,16 @@
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\animationmanager.cpp
 	"view/AnimationManager.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\enemycomponent.cpp
+1574698870 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\enemycomponent.cpp
 	"view/EnemyComponent.h"
 
-1574554030 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
+1574698044 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\entitycomponent.cpp
 	"view/EntityComponent.h"
 
 1574549552 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\healthbar.cpp
 	"view/HealthBar.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
+1574711489 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\playercomponent.cpp
 	"view/PlayerComponent.h"
 	<cmath>
 
@@ -2846,12 +2822,12 @@
 	<sstream>
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
+1574709930 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tilemap.cpp
 	"view/TileMap.h"
 	"iostream"
 	<cmath>
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\timer.cpp
+1574686996 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\timer.cpp
 	"view/Timer.h"
 	<sstream>
 
@@ -4243,75 +4219,19 @@
 	"view/Timer.h"
 	<sstream>
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestatemainmenu.h
+1574697162 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestatemainmenu.h
 	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateCon.h"
-	"gamestate/GameStateAdmin.h"
-	"gamestate/GameStateConAdmin.h"
-	"gamestate/GameStateTableScore.h"
-	"gamestate/GameStateOptionMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
+	"gui/TextField.h"
 	"gui/Button.h"
 	"gui/SliderSFML.h"
 	<SFML/Graphics.hpp>
 	<iostream>
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestatecon.h
+1574697274 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestatecon.h
 	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
 	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
 	<SFML/Graphics.hpp>
 	<iostream>
 
@@ -4320,168 +4240,178 @@
 	<iostream>
 	"model/Pickaxe.h"
 
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateadmin.h
+1574697454 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateadmin.h
 	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
 	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateconadmin.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	"gamestate/GameStateAdmin.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574670122 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestatetablescore.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	"gamestate/GameStateAdmin.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
-	"gui/Button.h"
-	"gui/TextField.h"
-	<SFML/Graphics.hpp>
-	<iostream>
-
-1574670963 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateoptionmenu.h
-	"gamestate/GameState.h"
-	"gamestate/GameStateGame.h"
-	"gamestate/GameStateMainMenu.h"
-	<SFML/Graphics.hpp>
-	"view/AnimationManager.h"
-	<vector>
-	<list>
-	<ctime>
-	"model/Player.h"
-	"view/EntityComponent.h"
-	"view/PlayerComponent.h"
-	"view/TileMap.h"
-	"model/BlockDirt.h"
-	"model/BlockStone.h"
-	"model/BlockIron.h"
-	"model/BlockGold.h"
-	"model/BlockDiamond.h"
-	"model/BlockEmerald.h"
-	"model/LavaBlock.h"
-	"model/BlockObsidian.h"
-	"model/Pickaxe.h"
-	"model/User.h"
-	"model/GestionUser.h"
-	<map>
-	<cmath>
-	"view/EnemyComponent.h"
-	"view/HealthBar.h"
-	"view/Timer.h"
-	"OresBar.h"
 	"gui/Button.h"
 	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+	"model/User.h"
+
+1574697257 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateconadmin.h
+	"gamestate/GameState.h"
 	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+
+1574695926 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestatetablescore.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	<SFML/Graphics.hpp>
+	<iostream>
+	"model/User.h"
+
+1574695977 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestateoptionmenu.h
+	"gamestate/GameState.h"
+	"gui/TextField.h"
+	"gui/Button.h"
+	"gui/SliderSFML.h"
 	<SFML/Graphics.hpp>
 	<iostream>
 
 1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\oresbar.cpp
 	"view/OresBar.h"
 
-1574671689 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateadmin.cpp
-	"GameStateAdmin.h"
+1574697500 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateadmin.cpp
+	"gamestate/GameStateAdmin.h"
+	"gamestate/GameStateMainMenu.h"
+	"model/User.h"
+	"model/GestionUser.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatecon.cpp
-	"GameStateCon.h"
+1574697545 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatecon.cpp
+	"gamestate/GameStateCon.h"
+	"gamestate/GameStateMainMenu.h"
+	"model/User.h"
+	"model/GestionUser.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateconadmin.cpp
-	"GameStateConAdmin.h"
+1574697516 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateconadmin.cpp
+	"gamestate/GameStateConAdmin.h"
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateAdmin.h"
 
-1574670123 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatemainmenu.cpp
-	"GameStateMainMenu.h"
+1574697347 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatemainmenu.cpp
+	"gamestate/GameStateMainMenu.h"
+	"gamestate/GameStateGame.h"
+	"gamestate/GameStateCon.h"
+	"gamestate/GameStateConAdmin.h"
+	"gamestate/GameStateOptionMenu.h"
+	"gamestate/GameStateTableScore.h"
 
-1574672382 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateoptionmenu.cpp
-	"GameStateOptionMenu.h"
+1574697778 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestateoptionmenu.cpp
+	"gamestate/GameStateOptionMenu.h"
+	"gamestate/GameStateMainMenu.h"
 
-1574671593 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatetablescore.cpp
+1574695617 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestatetablescore.cpp
 	"GameStateTableScore.h"
 	<algorithm>
+	"model/GestionUser.h"
+	"gamestate/GameStateMainMenu.h"
+
+1572354024 c:\sfml-2.5.1\include\sfml\audio.hpp
+	<SFML/System.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/Audio/Listener.hpp>
+	<SFML/Audio/Music.hpp>
+	<SFML/Audio/OutputSoundFile.hpp>
+	<SFML/Audio/Sound.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundBufferRecorder.hpp>
+	<SFML/Audio/SoundFileFactory.hpp>
+	<SFML/Audio/SoundFileReader.hpp>
+	<SFML/Audio/SoundFileWriter.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/Audio/SoundStream.hpp>
+
+1572354024 c:\sfml-2.5.1\include\sfml\audio\inputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<algorithm>
+
+1572354024 c:\sfml-2.5.1\include\sfml\audio\export.hpp
+	<SFML/Config.hpp>
+
+1572354024 c:\sfml-2.5.1\include\sfml\audio\listener.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/Vector3.hpp>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\music.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundStream.hpp>
+	<SFML/Audio/InputSoundFile.hpp>
+	<SFML/System/Mutex.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundstream.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<SFML/System/Mutex.hpp>
+	<cstdlib>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundsource.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Vector3.hpp>
+
+1572354024 c:\sfml-2.5.1\include\sfml\audio\alresource.hpp
+	<SFML/Audio/Export.hpp>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\outputsoundfile.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/System/NonCopyable.hpp>
+	<string>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\sound.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundSource.hpp>
+	<SFML/System/Time.hpp>
+	<cstdlib>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundbuffer.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Time.hpp>
+	<string>
+	<vector>
+	<set>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundbufferrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/SoundBuffer.hpp>
+	<SFML/Audio/SoundRecorder.hpp>
+	<vector>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundrecorder.hpp
+	<SFML/Audio/Export.hpp>
+	<SFML/Audio/AlResource.hpp>
+	<SFML/System/Thread.hpp>
+	<SFML/System/Time.hpp>
+	<vector>
+	<string>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundfilefactory.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+	<vector>
+	<SFML/Audio/SoundFileFactory.inl>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundfilefactory.inl
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundfilereader.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
+
+1572354025 c:\sfml-2.5.1\include\sfml\audio\soundfilewriter.hpp
+	<SFML/Audio/Export.hpp>
+	<string>
 

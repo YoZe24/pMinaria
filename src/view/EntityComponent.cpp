@@ -51,10 +51,13 @@ EntityComponent& EntityComponent::operator=(const EntityComponent& other){
 }
 
 /**
-*
-*
+*   Load attributes name, entity, speed and first anim if necessary
+*   @param string Name : Name of the entity (Player,Enemy,..)
+*   @param Entity* e: Entity from model
+*   @param float speed: speed of the entity if it's a bot
+*   @param string FIRST_ANIM : key of the first animation
 */
-void EntityComponent::option(std::string NAME, Entity* e, float SPEED, std::string FIRST_ANIM)
+void EntityComponent::load(std::string NAME, Entity* e, float SPEED, std::string FIRST_ANIM)
 {
     entity = e->clone();
     name = NAME;

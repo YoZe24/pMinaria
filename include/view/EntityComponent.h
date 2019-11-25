@@ -6,7 +6,6 @@
 #include <iostream>
 #include "view/Tile.h"
 #include "view/TileMap.h"
-#include <vector>
 #include "model/Player.h"
 #include "model/Entity.h"
 
@@ -69,7 +68,7 @@ class EntityComponent
         void Fire(float time);
 
         void CollisionBord();
-        void option(std::string NAME,Entity* e, float SPEED=0,std::string FIRST_ANIM="");
+        void load(std::string NAME,Entity* e, float SPEED=0,std::string FIRST_ANIM="");
 
 
     protected:

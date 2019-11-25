@@ -1,5 +1,11 @@
 #include "GameStateTableScore.h"
 #include <algorithm>
+#include "model/GestionUser.h"
+#include "gamestate/GameStateMainMenu.h"
+
+using namespace sf;
+using namespace std;
+
 /**
 *   Main constructor
 *

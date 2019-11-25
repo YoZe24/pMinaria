@@ -18,19 +18,20 @@ GameStateGame::GameStateGame(Game* game)
     loadTileMap();
 
 
-    float time = game->TIME_TIMER * 60;
-    timer = new Timer(time);
+    float TIME_IN_SECONDS = game->TIME_TIMER * 60;
+
+    timer = new Timer(TIME_IN_SECONDS);
     timer->setTimeout([&](){
                 GestionUser::getInstance()->addScoreCurrentUser(score);
-                cout<<GestionUser::getInstance()->str();
                 GestionUser::getInstance()->writeFromFile("User.txt");
-                this->game->pushState(new GameStateTableScore(this->game));
-                 },time * 1000);
+                this->game->changeState(new GameStateTableScore(this->game));
+                 },TIME_IN_SECONDS * 1000);
     timer->run();
 }
 
 GameStateGame::~GameStateGame()
 {
+    cout << "destructor gameState";
     delete tileMap;
     delete miner;
     delete timer;
@@ -78,12 +79,10 @@ void GameStateGame::update(const float time)
 {
     miner->update(time);
     if(!miner->getEntity()->getLife()){
-        View viewChange(sf::FloatRect(0,0,screen_w,screen_h));
-        this->game->window.setView(viewChange);
         GestionUser::getInstance()->addScoreCurrentUser(score);
-        cout<<GestionUser::getInstance()->str();
         GestionUser::getInstance()->writeFromFile("User.txt");
-        this->game->pushState(new GameStateTableScore(this->game));
+        this->game->changeState(new GameStateTableScore(this->game));
+        this->timer->stop();
     }
     int toDisplay = (screen_h+tile_size*2)/2;
 

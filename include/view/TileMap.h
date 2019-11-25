@@ -2,12 +2,11 @@
 #define TILEMAP_H
 
 #include <view/Tile.h>
-#include <vector>
 #include <SFML/Graphics.hpp>
 #include <deque>
 #include <map>
+#include <SFML/Audio.hpp>
 
-using namespace std;
 class TileMap
 {
     public:
@@ -50,6 +49,8 @@ class TileMap
         int height,screenH;
         int start,limit;
         float timer,time;
+        sf::SoundBuffer sb;
+        sf::Sound soundPop;
 
 };
 

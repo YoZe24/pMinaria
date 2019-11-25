@@ -21,13 +21,14 @@ const float GRAVITY = 0.0005;
 PlayerComponent::PlayerComponent(AnimationManager &a,AnimationManager& animFire, TileMap* tileMap,int x,int y):EntityComponent(a,animFire,tileMap,x,y){
     Player* p = new Player(100,true);
     updateStrAnimation("0");
-    option("Player",p,0,stayStr);
+    load("Player",p,0,stayStr);
 
     STATE=stay;
     miningDown = false;
     hit=false;
     setFire(false);
     setTimerFire(0);
+
 
 }
 
@@ -48,13 +49,14 @@ PlayerComponent& PlayerComponent::operator=(const PlayerComponent& other){
         EntityComponent::operator=(other);
         Player* p = new Player(100,true);
         updateStrAnimation("0");
-        option("Player",p,0,stayStr);
+        load("Player",p,0,stayStr);
 
         STATE=stay;
         miningDown = false;
         hit=false;
         setFire(false);
         setTimerFire(0);
+
     }
     return *this;
 }

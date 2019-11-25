@@ -1,4 +1,12 @@
-#include "GameStateMainMenu.h"
+#include "gamestate/GameStateMainMenu.h"
+#include "gamestate/GameStateGame.h"
+#include "gamestate/GameStateCon.h"
+#include "gamestate/GameStateConAdmin.h"
+#include "gamestate/GameStateOptionMenu.h"
+#include "gamestate/GameStateTableScore.h"
+
+using namespace sf;
+using namespace std;
 
 GameStateMainMenu::GameStateMainMenu(Game* game)
 {

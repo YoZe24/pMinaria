@@ -1,4 +1,8 @@
-#include "GameStateOptionMenu.h"
+#include "gamestate/GameStateOptionMenu.h"
+#include "gamestate/GameStateMainMenu.h"
+using namespace sf;
+using namespace std;
+
 /**
 *   Main constructor
 *
@@ -160,7 +164,6 @@ void GameStateOptionMenu::initBackGround(Texture& title,Texture& tex, RenderWind
 void GameStateOptionMenu::update(const float dt){
     if(easyModeButton.isClicked(this->game->window))
     {
-        //cout << "EASY BUTTON CLICKED" << endl;
         updateSliders(5,0.5);
     }
     else if(mediumModeButton.isClicked(this->game->window))

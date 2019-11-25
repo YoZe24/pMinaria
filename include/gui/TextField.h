@@ -6,39 +6,35 @@
 #include <sstream>
 #include <vector>
 
-using namespace std;
-using namespace sf;
-
-//Classe qui me permet créer des zones de texte
 
 class TextField
 {
     public:
         TextField();
-        TextField(Vector2f position, Texture& texture, string str);
-        TextField(Vector2f position,string textStr,string strFile);
+        TextField(sf::Vector2f position, sf::Texture& texture, std::string str);
+        TextField(sf::Vector2f position,std::string textStr,std::string strFile);
         virtual ~TextField();
         TextField(const TextField& other);
         TextField& operator=(const TextField& other);
-        void draw(RenderWindow& window);
+        void draw(sf::RenderWindow& window);
         void setTextInput(sf::String);
-        void setPosition(Vector2f position);
-        Vector2f getPosition();
+        void setPosition(sf::Vector2f position);
+        sf::Vector2f getPosition();
         void setSelected(bool newSelect);
         bool getSelected();
-        Text getText();
-        bool isClicked(RenderWindow& window);
-        void setTexture(Texture text);
-        bool isHovered(RenderWindow& window);
+        sf::Text getText();
+        bool isClicked(sf::RenderWindow& window);
+        void setTexture(sf::Texture text);
+        bool isHovered(sf::RenderWindow& window);
 
     protected:
 
     private:
-        Texture texture;
-        Text text;
-        Sprite sprite;
-        Font font;
-        Vector2f position;
+        sf::Texture texture;
+        sf::Text text;
+        sf::Sprite sprite;
+        sf::Font font;
+        sf::Vector2f position;
         bool select;
 };
 

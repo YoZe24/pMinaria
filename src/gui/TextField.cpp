@@ -1,6 +1,7 @@
 #include "gui/TextField.h"
 #include <iostream>
-using std::cout;
+using namespace std;
+using namespace sf;
 
 /**
 *   Constructor

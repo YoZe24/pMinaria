@@ -23,11 +23,9 @@ class Timer
     protected:
 
     private:
-        std::function<void(void)> endFunction;
-        std::thread thTimer;
         bool clear = false;
-        float time,timeEnd,sizeX;
-        int delay,score;
+        float timeElapsed,timeEnd,sizeX;
+        int score;
         const float interval = 1.0;
         sf::RectangleShape timerBar,timerBorder;
         sf::Text timerText,scoreText;

@@ -9,7 +9,8 @@ using namespace std;
 */
 TileMap::TileMap()
 {
-    //ctor
+    if(!sb.loadFromFile("pop.wav")){}
+    soundPop.setBuffer(sb);
 }
 
 /**
@@ -24,6 +25,8 @@ TileMap::TileMap()
 TileMap::TileMap(int width,int height,int tileSize,int sW,int sH):width(width),height(height),tileSize(tileSize),screenW(sW),screenH(sH)
 {
     nbBlockMined = 0;
+    if(!sb.loadFromFile("pop.wav")){}
+    soundPop.setBuffer(sb);
 }
 
 /**
@@ -38,7 +41,8 @@ TileMap::~TileMap()
 *   Copy constructor
 */
 TileMap::TileMap(const TileMap& other):
-width(other.width),height(other.height),tileSize(other.tileSize),tiles(other.tiles),screenW(other.screenW),screenH(other.screenH),nbBlockMined(other.nbBlockMined)
+width(other.width),height(other.height),tileSize(other.tileSize),tiles(other.tiles),
+screenW(other.screenW),screenH(other.screenH),nbBlockMined(other.nbBlockMined),soundPop(other.soundPop),sb(other.sb)
 {
     //copy ctor
 }
@@ -56,6 +60,8 @@ TileMap& TileMap::operator=(const TileMap& other){
         this->screenH = other.screenH;
         this->nbBlockMined = other.nbBlockMined;
         this->time = other.time;
+        this->sb = other.sb;
+        this->soundPop = other.soundPop;
     }
     return *this;
 }
@@ -79,14 +85,14 @@ void TileMap::load(int width,int height,int tileSize,int sW,int sH){
 
 /***/
 map<int,Tile>::iterator TileMap::getItStart(int pos){
-    int start = pos - (width * 3) - nbBlockMined < 0 ? 0 : pos - (width * 3) - nbBlockMined;
+    int start = pos - (width * 2) - nbBlockMined < 0 ? 0 : pos - (width * 2) - nbBlockMined;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,start);
     return it;
 }
 /***/
 map<int,Tile>::iterator TileMap::getItFinish(int pos){
-    int finish = pos + width * 3 > (width * height)-3 ? (width * height)-3 : pos+width*3;
+    int finish = pos + width * 2 > (width * height)-2 ? (width * height)-2 : pos+width*2;
     map<int,Tile>::iterator it = tiles.begin();
     advance(it,finish);
     return it;
@@ -164,6 +170,7 @@ EnumBlock TileMap::deleteTileAt(float x,float y,float power){
 
             i->second.updateTime(time);
             if(i->second.getTime()/1000 >= i->second.getDuration()/power){
+                    soundPop.play();
                     EnumBlock eb = i->second.getBlock().getType();
                     tilesDeleted.push_back(i->first);
                     tiles.erase(tiles.find(i->first));
