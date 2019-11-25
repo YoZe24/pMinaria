@@ -55,19 +55,23 @@ void GameStateOptionMenu::createButton(Font& font, Texture& tex, RenderWindow& w
     hardModeButton = Button(texture,font,"HARD");
     backMainMenuButton = Button(texture,font,"BACK");
 
-    easyModeButton.setPosition(Vector2f((float) (windowW*0.15) - texture.getSize().x/2,windowH*0.20));
+    //easyModeButton.setPosition(Vector2f((float) (windowW*0.15) - texture.getSize().x/2,windowH*0.20));
+    easyModeButton.setPosition(Vector2f(100,125));
     easyModeButton.addSpriteResized(IntRect(0,0,buttonW,buttonH/2),NORMAL,1,1);
     easyModeButton.addSpriteResized(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED,1,1);
 
-    mediumModeButton.setPosition(Vector2f((float) (easyModeButton.getPosition().x + easyModeButton.getSprite(NORMAL).getGlobalBounds().width*2) - texture.getSize().x/2,windowH*0.20));
+    //mediumModeButton.setPosition(Vector2f((float) (easyModeButton.getPosition().x + easyModeButton.getSprite(NORMAL).getGlobalBounds().width*2) - texture.getSize().x/2,windowH*0.20));
+    mediumModeButton.setPosition(Vector2f(500,125));
     mediumModeButton.addSpriteResized(IntRect(0,0,buttonW,buttonH/2),NORMAL,1,1);
     mediumModeButton.addSpriteResized(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED,1,1);
 
-    hardModeButton.setPosition(Vector2f((float) (mediumModeButton.getPosition().x + mediumModeButton.getSprite(NORMAL).getGlobalBounds().width*2) - texture.getSize().x/2,windowH*0.20));
+    //hardModeButton.setPosition(Vector2f((float) (mediumModeButton.getPosition().x + mediumModeButton.getSprite(NORMAL).getGlobalBounds().width*2) - texture.getSize().x/2,windowH*0.20));
+    hardModeButton.setPosition(Vector2f(900,125));
     hardModeButton.addSpriteResized(IntRect(0,0,buttonW,buttonH/2),NORMAL,1,1);
     hardModeButton.addSpriteResized(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED,1,1);
 
-    backMainMenuButton.setPosition(Vector2f(easyModeButton.getPosition().x,windowH - 150));
+    //backMainMenuButton.setPosition(Vector2f(easyModeButton.getPosition().x,windowH - 150));
+    backMainMenuButton.setPosition(Vector2f(100,550));
     backMainMenuButton.addSpriteResized(IntRect(0,0,buttonW,buttonH/2),NORMAL,0.75,1);
     backMainMenuButton.addSpriteResized(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED,0.75,1);
 }
@@ -84,11 +88,11 @@ void GameStateOptionMenu::createButton(Font& font, Texture& tex, RenderWindow& w
 */
 void GameStateOptionMenu::initSliders(RenderWindow& window)
 {
-    sliderTime = SliderSFML(window.getSize().x*0.20,window.getSize().y*0.60);
+    sliderTime = SliderSFML(200,350);
     sliderTime.create(1,5);
     sliderTime.setSliderValue(2);
 
-    sliderDurability = SliderSFML(window.getSize().x*0.60,window.getSize().y*0.60);
+    sliderDurability = SliderSFML(700,350);
     sliderDurability.create(0.5,2);
     sliderDurability.setSliderValue(1);
 }
@@ -155,7 +159,8 @@ void GameStateOptionMenu::initBackGround(Texture& title,Texture& tex, RenderWind
     this->title.setTexture(title);
     background.setTexture(texture);
     background.setScale((float) windowSize.x / textureSize.x, (float) windowSize.y / textureSize.y);
-    this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    //this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    this->title.setPosition(450,0);
 }
 void GameStateOptionMenu::update(const float dt){
     if(easyModeButton.isClicked(this->game->window))

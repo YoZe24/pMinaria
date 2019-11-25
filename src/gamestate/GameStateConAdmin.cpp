@@ -48,7 +48,8 @@ void GameStateConAdmin::initBackGround(Texture& title,Texture& tex,RenderWindow&
     this->title.setTexture(title);
     background.setTexture(texture);
     background.setScale((float) windowSize.x / textureSize.x, (float) windowSize.y / textureSize.y);
-    this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    //this->title.setPosition((float) (windowSize.x - windowSize.x/2) - title.getSize().x/2,0);
+    this->title.setPosition(450,0);
 }
 /**
 *   Function who permet to create buttons of interface
@@ -68,14 +69,16 @@ void GameStateConAdmin::createButton(Font& font,Texture& tex,RenderWindow& windo
 
     btnConfirm = Button(texture,font,"Confirm");
 
-    btnConfirm.setPosition(Vector2f((windowW-windowW/3),windowH/1.3));
+    //btnConfirm.setPosition(Vector2f((windowW-windowW/3),windowH/1.3));
+    btnConfirm.setPosition(Vector2f(800,550));
     btnConfirm.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     btnConfirm.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
     btnConfirm.getText().setPosition(22,22);
 
     btnBack = Button(texture,font,"Back");
 
-    btnBack.setPosition(Vector2f(windowW/14,windowH/1.3));
+    //btnBack.setPosition(Vector2f(windowW/14,windowH/1.3));
+    btnBack.setPosition(Vector2f(150,550));
     btnBack.addSpriteFullSize(IntRect(0,0,buttonW,buttonH/2),NORMAL);
     btnBack.addSpriteFullSize(IntRect(0,buttonH/2,buttonW,buttonH/2),PRESSED);
     btnBack.getText().setPosition(22,22);
