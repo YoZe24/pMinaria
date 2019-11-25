@@ -7,10 +7,11 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/pTestSFML2" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/pMinaria" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="0" />
+				<Option type="1" />
 				<Option compiler="gcc" />
+				<Option use_console_runner="0" />
 				<Option projectCompilerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-std=c++14" />
@@ -34,7 +35,7 @@
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/pTestSFML2" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/pMinaria" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -53,7 +54,6 @@
 					<Add library="sfml-graphics" />
 					<Add library="sfml-window" />
 					<Add library="sfml-system" />
-					<Add library="sfml-audio" />
 				</Linker>
 			</Target>
 		</Build>
