@@ -12,6 +12,7 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Option use_console_runner="0" />
+				<Option projectCompilerOptionsRelation="1" />
 				<Compiler>
 					<Add option="-std=c++14" />
 					<Add option="-g" />
@@ -62,10 +63,6 @@
 			<Add directory="C:/SFML-2.5.1/lib" />
 			<Add directory="/usr/lib" />
 		</Linker>
-		<Unit filename="include/OresBar.h" />
-		<Unit filename="include/gamestate/Game.h" />
-		<Unit filename="include/gamestate/GameState.h" />
-		<Unit filename="include/gamestate/GameStateGame.h" />
 		<Unit filename="User.txt" />
 		<Unit filename="include/gamestate/Game.h" />
 		<Unit filename="include/gamestate/GameState.h" />
@@ -100,12 +97,12 @@
 		<Unit filename="include/view/EnemyComponent.h" />
 		<Unit filename="include/view/EntityComponent.h" />
 		<Unit filename="include/view/HealthBar.h" />
+		<Unit filename="include/view/OresBar.h" />
 		<Unit filename="include/view/PlayerComponent.h" />
 		<Unit filename="include/view/Tile.h" />
 		<Unit filename="include/view/TileMap.h" />
 		<Unit filename="include/view/Timer.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/OresBar.cpp" />
 		<Unit filename="src/gamestate/Game.cpp" />
 		<Unit filename="src/gamestate/GameState.cpp" />
 		<Unit filename="src/gamestate/GameStateGame.cpp" />
@@ -138,6 +135,7 @@
 		<Unit filename="src/view/EnemyComponent.cpp" />
 		<Unit filename="src/view/EntityComponent.cpp" />
 		<Unit filename="src/view/HealthBar.cpp" />
+		<Unit filename="src/view/OresBar.cpp" />
 		<Unit filename="src/view/PlayerComponent.cpp" />
 		<Unit filename="src/view/Tile.cpp" />
 		<Unit filename="src/view/TileMap.cpp" />

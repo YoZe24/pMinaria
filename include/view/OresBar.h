@@ -3,7 +3,7 @@
 
 #include <SFML/Graphics.hpp>
 #include <iostream>
-#include "Pickaxe.h"
+#include "view/Pickaxe.h"
 
 class OresBar
 {

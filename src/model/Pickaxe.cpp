@@ -13,7 +13,7 @@ using namespace std;
 */
 Pickaxe::Pickaxe()
 {
-    this->px_s = new PX_Strategy_Wood;
+    this->px_s = new PX_Strategy_Diamond;
 }
 
 /**
@@ -46,7 +46,7 @@ float Pickaxe::getPower()const{
 }
 /**
 *   Function to return a new instance of PX_Strategy object according to EnumPickaxe ep
-*   A switch permet to return the goog instace according to his type
+*   The switch allow concisely to return the good instance according to his type
 *   Return a pointer of PX_Strategy
 *   @param ep : A EnumPickaxe variable
 */
@@ -69,15 +69,17 @@ void Pickaxe::setPXStrategy(){
     setPXStrategy(getNextStrategy(px_s->getType()));
 }
 /**
-*   Function to modif the strategy current
+*   Function which delete the old strategy and modifies the current strategy
 *   @param px : A Pointer of an instance of PX_Strategy
 */
 void Pickaxe::setPXStrategy(PX_Strategy* px){
+    if(getType() != EnumPickaxe::PX_EMERALD)
+        delete px_s;
     this->px_s = px;
 }
 /**
-*   Function to return true if the type of block can be breakable according to pickaxe type
-*   It is the comportement who change according to Pickaxe type (Design Pattern Strategy)
+*   Function which return true if the type of block can be breakable according to Pickaxe type
+*   The behavior will change (due to the polymorphism)according to the current strategy that has been redefined
 *   @param b : an EnumBlock type
 */
 bool Pickaxe::isBreakable(EnumBlock b){
@@ -143,8 +145,8 @@ PX_Strategy_Wood::PX_Strategy_Wood(float power,int nbOresCraft,EnumPickaxe ep):P
 }
 /**
 *   Function virtual
-*   Function to return true if the type of block can be breakable according to pickaxe type
-*   It is the comportement who change according to Pickaxe type (Design Pattern Strategy)
+*   Function which return true if the type of block can be breakable according to pickaxe type
+*   It is the comportement that changes according to Pickaxe type (Design Pattern Strategy)
 *   @param eb : a EnumBlock variable
 */
 bool PX_Strategy_Wood::isBreakable(EnumBlock eb){

@@ -1820,11 +1820,11 @@
 	<SFML/Graphics.hpp>
 	"gamestate/GameState.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
+1574612333 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\game.cpp
 	"gamestate/Game.h"
 	<iostream>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
+1574622445 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\gamestate\gamestategame.cpp
 	"gamestate/GameStateGame.h"
 
 1574553526 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gamestate\gamestategame.h
@@ -2574,7 +2574,7 @@
 	"model/Pickaxe.h"
 	<map>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
+1574610668 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\model\pickaxe.h
 	"model/Block.h"
 	<iostream>
 
@@ -2736,8 +2736,8 @@
 	"SliderSFML.h"
 	<iostream>
 
-1574553525 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\slidersfml.h
-	<SFML\Graphics.hpp>
+1574620873 c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\include\gui\slidersfml.h
+	<SFML/Graphics.hpp>
 	<iostream>
 	<string>
 
@@ -2817,10 +2817,10 @@
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\lavablock.cpp
 	"model/LavaBlock.h"
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
+1574613594 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\pickaxe.cpp
 	"model/Pickaxe.h"
 
-1574545977 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
+1574633062 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\player.cpp
 	"model/Player.h"
 
 1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\model\user.cpp
@@ -2851,7 +2851,7 @@
 	"view/PlayerComponent.h"
 	<cmath>
 
-1574553526 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
+1574630221 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\tile.cpp
 	"view/Tile.h"
 	<sstream>
 	<iostream>
@@ -2861,7 +2861,7 @@
 	"iostream"
 	<cmath>
 
-1574549438 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\timer.cpp
+1574613567 source:c:\users\eliot\desktop\bloc3\devl._jeux_vidéo\pminaria\src\view\timer.cpp
 	"view/Timer.h"
 	<sstream>
 

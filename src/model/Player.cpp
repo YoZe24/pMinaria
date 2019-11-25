@@ -26,7 +26,6 @@ Player& Player::operator=(const Player& other){
 float Player::updatePickaxe(){
     if(ores[pickaxe.getType()] >= pickaxe.getSrategy()->getNbOresCraft()){
         pickaxe.setPXStrategy();
-        std::cout << "level up";
     }
     return pickaxe.getPower();
 }

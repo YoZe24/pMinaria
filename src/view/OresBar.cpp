@@ -1,4 +1,4 @@
-#include "OresBar.h"
+#include "view/OresBar.h"
 
 using namespace std;
 using namespace sf;

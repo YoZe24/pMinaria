@@ -19,8 +19,8 @@ GameStateGame::GameStateGame(Game* game)
 
     timer = new Timer(TIME_TIMER);
     timer->setTimeout([&](){
-                 timer->reset();
-                 miner->reset();
+//                 timer->reset();
+//                 miner->reset();
                  },TIME_TIMER * 1000);
     timer->run();
 }
