@@ -9,7 +9,7 @@
 			<Target title="Debug">
 				<Option output="bin/Debug/pTestSFML2" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
-				<Option type="1" />
+				<Option type="0" />
 				<Option compiler="gcc" />
 				<Option use_console_runner="0" />
 				<Option projectCompilerOptionsRelation="1" />
@@ -21,6 +21,7 @@
 					<Add directory="include/view" />
 					<Add directory="include/gamestate" />
 					<Add directory="include/util" />
+					<Add directory="src/gamestate" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics-d" />
@@ -44,6 +45,7 @@
 					<Add directory="include/view" />
 					<Add directory="include/gamestate" />
 					<Add directory="include/util" />
+					<Add directory="src/gamestate" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -64,17 +66,18 @@
 			<Add directory="/usr/lib" />
 		</Linker>
 		<Unit filename="User.txt" />
+		<Unit filename="include/OresBar.h" />
 		<Unit filename="include/gamestate/Game.h" />
 		<Unit filename="include/gamestate/GameState.h" />
+		<Unit filename="include/gamestate/GameStateAdmin.h" />
+		<Unit filename="include/gamestate/GameStateCon.h" />
+		<Unit filename="include/gamestate/GameStateConAdmin.h" />
 		<Unit filename="include/gamestate/GameStateGame.h" />
+		<Unit filename="include/gamestate/GameStateMainMenu.h" />
+		<Unit filename="include/gamestate/GameStateOptionMenu.h" />
+		<Unit filename="include/gamestate/GameStateTableScore.h" />
 		<Unit filename="include/gui/Button.h" />
 		<Unit filename="include/gui/ButtonState.h" />
-		<Unit filename="include/gui/InterfaceAdmin.h" />
-		<Unit filename="include/gui/InterfaceCon.h" />
-		<Unit filename="include/gui/InterfaceConAdmin.h" />
-		<Unit filename="include/gui/InterfaceTableScore.h" />
-		<Unit filename="include/gui/MainMenu.h" />
-		<Unit filename="include/gui/OptionMenu.h" />
 		<Unit filename="include/gui/SliderSFML.h" />
 		<Unit filename="include/gui/TextField.h" />
 		<Unit filename="include/model/Block.h" />
@@ -105,14 +108,14 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/gamestate/Game.cpp" />
 		<Unit filename="src/gamestate/GameState.cpp" />
+		<Unit filename="src/gamestate/GameStateAdmin.cpp" />
+		<Unit filename="src/gamestate/GameStateCon.cpp" />
+		<Unit filename="src/gamestate/GameStateConAdmin.cpp" />
 		<Unit filename="src/gamestate/GameStateGame.cpp" />
+		<Unit filename="src/gamestate/GameStateMainMenu.cpp" />
+		<Unit filename="src/gamestate/GameStateOptionMenu.cpp" />
+		<Unit filename="src/gamestate/GameStateTableScore.cpp" />
 		<Unit filename="src/gui/Button.cpp" />
-		<Unit filename="src/gui/InterfaceAdmin.cpp" />
-		<Unit filename="src/gui/InterfaceCon.cpp" />
-		<Unit filename="src/gui/InterfaceConAdmin.cpp" />
-		<Unit filename="src/gui/InterfaceTableScore.cpp" />
-		<Unit filename="src/gui/MainMenu.cpp" />
-		<Unit filename="src/gui/OptionMenu.cpp" />
 		<Unit filename="src/gui/SliderSFML.cpp" />
 		<Unit filename="src/gui/TextField.cpp" />
 		<Unit filename="src/model/Block.cpp" />

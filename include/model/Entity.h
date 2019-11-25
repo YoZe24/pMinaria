@@ -23,7 +23,7 @@ class Entity
         void setTimeFire(float f){timeFire = f;}
 
         virtual void setOres(int key){};
-        virtual bool isBreakable(EnumBlock eb){};
+        virtual bool isBreakable(EnumBlock eb){return false;};
 
         float getTimeFire()const{return timeFire;}
         bool getFire()const{return fire;}

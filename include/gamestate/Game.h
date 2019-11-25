@@ -3,7 +3,7 @@
 
 #include <stack>
 #include <string>
-#include <SFML/Graphics.hpp>"
+#include <SFML/Graphics.hpp>
 #include "gamestate/GameState.h"
 
 class GameState;
@@ -23,6 +23,9 @@ class Game
         GameState* peekState();
 
         void gameLoop();
+
+        int TIME_TIMER = 2;
+        float DURABILITY = 1.0;
     protected:
 
     private:

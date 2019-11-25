@@ -4,6 +4,7 @@
 #include "view/EntityComponent.h"
 #include <iostream>
 #include "HealthBar.h"
+#include "model/GestionUser.h"
 
 class PlayerComponent: public EntityComponent
 {

@@ -32,6 +32,14 @@ GestionUser* GestionUser::getInstance(){
     return gestion;
 }
 
+User* GestionUser::getUserCurrent(){
+    return userCurrent;
+}
+void GestionUser::setUserCurrent(User* u){
+    this->userCurrent = u;
+}
+
+
 /**
 *   Default copy constructor
 *   Parameter passing by reference
@@ -68,6 +76,14 @@ GestionUser& GestionUser::operator=(const GestionUser& rhs)
 void GestionUser::addUser(const User* u){
     if(contains(u)) return;
     users.push_back(u->clone());
+}
+void GestionUser::addScoreCurrentUser(int score){
+    for (int i = 0; i<users.size();i++){
+        if(users[i]==this->getUserCurrent()){
+            cout<<2;
+            users[i]->addScores(score);
+        }
+    }
 }
 
 /**

@@ -54,6 +54,8 @@ void Game::gameLoop()
         peekState()->draw(time);
         this->window.display();
 
+        std::cout << "timer" << TIME_TIMER << std::endl;
+
     }
 }
 
@@ -62,7 +64,7 @@ Game::Game()
 //    this->loadTextures();
 //    this->loadTiles();
 
-    this->window.create(sf::VideoMode(1200, 600), "Minaria");
+    this->window.create(sf::VideoMode(1200, 700), "Minaria");
     this->window.setFramerateLimit(60);
 
 //    this->background.setTexture(this->texmgr.getRef("background"));

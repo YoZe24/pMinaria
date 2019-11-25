@@ -4,7 +4,7 @@
 using namespace sf;
 using namespace std;
 
-const int TIME_TIMER = 120;
+//int TIME_TIMER = 120;
 
 GameStateGame::GameStateGame(Game* game)
 {
@@ -17,11 +17,15 @@ GameStateGame::GameStateGame(Game* game)
     loadAnimations();
     loadTileMap();
 
-    timer = new Timer(TIME_TIMER);
+
+    int time = game->TIME_TIMER * 60;
+    timer = new Timer(time);
     timer->setTimeout([&](){
-//                 timer->reset();
-//                 miner->reset();
-                 },TIME_TIMER * 1000);
+                GestionUser::getInstance()->addScoreCurrentUser(score);
+                cout<<GestionUser::getInstance()->str();
+                GestionUser::getInstance()->writeFromFile("User.txt");
+                this->game->pushState(new GameStateTableScore(this->game));
+                 },time * 1000);
     timer->run();
 }
 
@@ -67,9 +71,20 @@ void GameStateGame::draw(const float time)
     timer->draw(this->game->window);
     oreBar.draw(this->game->window);
 }
+void GameStateGame::setScore(int newScore){
+    this->score = newScore;
+}
 void GameStateGame::update(const float time)
 {
     miner->update(time);
+    if(!miner->getEntity()->getLife()){
+        View viewChange(sf::FloatRect(0,0,screen_w,screen_h));
+        this->game->window.setView(viewChange);
+        GestionUser::getInstance()->addScoreCurrentUser(score);
+        cout<<GestionUser::getInstance()->str();
+        GestionUser::getInstance()->writeFromFile("User.txt");
+        this->game->pushState(new GameStateTableScore(this->game));
+    }
     int toDisplay = (screen_h+tile_size*2)/2;
 
     for(auto it = enemies.begin();it!=enemies.end() ;){
@@ -109,6 +124,8 @@ void GameStateGame::handleInput()
     Event event;
     while (this->game->window.pollEvent(event))
     {
+        int scoreLvl =(int) miner->getY()/tile_size;
+        setScore(scoreLvl);
         if (event.type == Event::Closed)
             this->game->window.close();
 
@@ -152,6 +169,9 @@ void GameStateGame::loadTileMap(){
     spawnEnemy =            {0.00,0.002,0.004,0.006,0.008,0.008};
 
     blocks = {bDirt,bStone,bIron,bGold,bDiamond,bEmerald,bObsidian,bLava};
+
+    for(int i = 0 ; i < blocks.size()-1 ; i++)
+        blocks[i].setDuration(blocks[i].getDuration() * game->DURABILITY);
 
     TileMap* temp;
     int pallier = 0,nbVoid = 0;

@@ -1,14 +1,14 @@
 #ifndef PICKAXE_H
 #define PICKAXE_H
 
-#include "model/Block.h";
+#include "model/Block.h"
 #include <iostream>
 
 enum EnumPickaxe{
     PX_WOOD,PX_STONE,PX_IRON,PX_GOLD,PX_DIAMOND,PX_EMERALD
 };
 
-const int nbOres = 3;
+const int nbOres = 13;
 
 class PX_Strategy;
 

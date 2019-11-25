@@ -17,11 +17,11 @@ Timer::Timer(float timeEnd):timeEnd(timeEnd)
 
     timerText.setFont(font);
     timerText.setCharacterSize(20);
-    timerText.setColor(Color::White);
+    timerText.setFillColor(Color::White);
 
     scoreText.setFont(font);
     scoreText.setCharacterSize(35);
-    scoreText.setColor(Color::Black);
+    scoreText.setFillColor(Color::Black);
 
     timerBar.setFillColor(barColor);
     timerBorder.setFillColor(Color::Transparent);

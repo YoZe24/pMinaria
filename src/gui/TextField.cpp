@@ -21,7 +21,7 @@ TextField::TextField(Vector2f position,string textStr,string strFile)
     font.loadFromFile("PixelEmulator-xq08.ttf");
 
     text.setString(textStr);
-    text.setColor(Color::Black);
+    text.setFillColor(Color::Black);
     text.setFont(font);
     text.setCharacterSize(25);
     text.setPosition(position.x + sprite.getGlobalBounds().width/2 - text.getGlobalBounds().width/2, position.y + sprite.getGlobalBounds().height/2 - text.getGlobalBounds().height/1.2);
@@ -55,7 +55,7 @@ TextField::TextField(Vector2f position, Texture& tex, string textStr){
     font.loadFromFile("PixelEmulator-xq08.ttf");
 
     text.setString(textStr);
-    text.setColor(Color::Black);
+    text.setFillColor(Color::Black);
     text.setFont(font);
     text.setCharacterSize(25);
     text.setPosition(position.x + sprite.getGlobalBounds().width/2 - text.getGlobalBounds().width/2, position.y + sprite.getGlobalBounds().height/2 - text.getGlobalBounds().height/1.2);

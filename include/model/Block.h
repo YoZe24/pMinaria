@@ -20,6 +20,7 @@ class Block
         std::string str() const;
 
         std::vector<float> getSpawn() {return spawn;}
+        void setDuration(float value) {duration = value;};
         float getDuration() const{return duration;}
         EnumBlock getType() const{return type;}
 

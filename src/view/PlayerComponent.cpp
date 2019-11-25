@@ -159,7 +159,6 @@ void PlayerComponent::Animation(float time){
     anim.tick(time);
 }
 
-
 void PlayerComponent::hittedByMob(){
     getEntity()->updateHealth(-25);
     setDY(-0.17);
@@ -183,7 +182,7 @@ void PlayerComponent::hittedByMob(){
 void PlayerComponent::update(float time){
     sf::Clock c;
     if(!getEntity()->getLife()){
-        reset();
+        //reset();
     }
 
     Player* player = dynamic_cast<Player*>(getEntity());

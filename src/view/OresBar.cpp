@@ -19,7 +19,7 @@ OresBar::OresBar()
     oreText.setFont(font);
 
     oreText.setCharacterSize(20);
-    oreText.setColor(Color::White);
+    oreText.setFillColor(Color::White);
 
     oreBar.setFillColor(oreColor);
     oreBorder.setFillColor(Color::Transparent);

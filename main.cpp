@@ -17,18 +17,18 @@
 #include "model/LavaBlock.h"
 #include "model/Pickaxe.h"
 #include "model/GestionUser.h"
-#include "gui/InterfaceAdmin.h"
-#include "gui/InterfaceConAdmin.h"
-#include "gui/InterfaceCon.h"
-#include "gui/InterfaceTableScore.h"
 #include <map>
 #include <cmath>
 #include "view/EnemyComponent.h"
 #include "gamestate/Game.h"
 #include "gamestate/GameStateGame.h"
+#include "gamestate/GameStateMainMenu.h"
+#include "gamestate/GameStateAdmin.h"
+#include "gamestate/GameStateConAdmin.h"
+#include "gamestate/GameStateTableScore.h"
+#include "gamestate/GameStateOptionMenu.h"
 #include "view/Timer.h"
-#include "gui/MainMenu.h"
-#include "gui/OptionMenu.h"
+#include "gui/SliderSFML.h"
 
 using namespace sf;
 using namespace std;
@@ -41,14 +41,17 @@ TileMap tileMap(tileMap_width,tileMap_height,tile_size,screen_w,screen_h);
 
 int main()
 {
-//    GestionUser* gestion = GestionUser::getInstance();
-//    gestion->readFromFile("User.txt");
-//    cout<<gestion->str();
+    GestionUser* gestion = GestionUser::getInstance();
+    gestion->readFromFile("User.txt");
+    //cout<<gestion->str();
 
     srand(time(NULL));
     Game game;
-    game.pushState(new GameStateGame(&game));
+    game.pushState(new GameStateMainMenu(&game));
     game.gameLoop();
+
+    //gestion->writeFromFile("User.txt");
+
 //
 //    RenderWindow window(VideoMode(1200, 700), "The Game!");
 //
